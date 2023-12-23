@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <!-- dotnet run|test -c test|test_debug|Release /clp:ErrorsOnly /p:WarningLevel=0 -->
+  
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\"/>
+    <None Include="LICENSE" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <PackageId>collection-iterable-methods</PackageId>
+    <Authors>johnny-quesada-developer</Authors>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>collection_iterable_methods</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Version>1.0.2</Version>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/johnny-quesada-developer/collection-iterable-methods</PackageProjectUrl>
+    <PackageTags>collection, iterable, methods, c#, dotnet, .net, .net core, .net standard, .net framework, .net 5, .net 6</PackageTags>
+    <Description>Welcome to **collection-iterable-methods** – your comprehensive solution for handling collections in .NET with both synchronous and asynchronous approaches! This library provides a wide range of methods for manipulating and querying collections, arrays, and enumerable types, giving you the power to write cleaner, more efficient, and responsive code.
+
+**collection-iterable-methods** integrates seamlessly with your .NET projects, offering a fluent and intuitive API for common collection operations. It includes synchronous methods for immediate execution and asynchronous methods for non-blocking operations, ensuring improved scalability and performance in your applications.
+</Description>
+  </PropertyGroup>  
+
+  <!-- define test constants -->
+  <PropertyGroup Condition="'$(Configuration)' == 'test' OR '$(Configuration)' == 'test_debug'">
+    <DefineConstants>$(DefineConstants);TEST</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'test_debug'">
+    <DefineConstants>$(DefineConstants);TEST_DEBUG</DefineConstants>
+  </PropertyGroup>
+
+  <!-- adding test dependencies -->
+  <ItemGroup Condition="'$(Configuration)' == 'test' OR '$(Configuration)' == 'test_debug'">
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
+    <PackageReference Include="xunit" Version="2.6.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.4" />
+  </ItemGroup>
+
+  <!-- remove test files whatever build different from test -->
+  <ItemGroup Condition="'$(Configuration)' != 'test' AND '$(Configuration)' != 'test_debug'">
+    <Compile Remove="**/Test.cs" />
+  </ItemGroup>
+  
+</Project>

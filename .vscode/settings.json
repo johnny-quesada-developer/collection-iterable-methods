@@ -1,0 +1,11 @@
+{
+  "csharp.format.enable": true,
+  "editor.parameterHints.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 4,
+  "editor.detectIndentation": true,
+  "[csharp]": {
+    "editor.tabSize": 4,
+    "editor.detectIndentation": true
+  }
+}

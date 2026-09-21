@@ -1,21 +1,41 @@
 # collection-iterable-methods
 
-**Familiar collection methods. Native C#.**
+**Write expressive C#. Get more from every collection.**
 
 [![NuGet](https://img.shields.io/nuget/v/collection-iterable-methods.svg?color=24634b)](https://www.nuget.org/packages/collection-iterable-methods)
 [![Target framework](https://img.shields.io/badge/.NET-8.0-1d5578)](https://dotnet.microsoft.com/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-24634b)](LICENSE)
 
-Node-style `Filter`, `Map`, `Reduce`, and more for .NET 8 collections. Use strongly typed transformations on arrays, collections, and enumerables, with explicit sequential, async, and parallel execution contracts. No package dependencies.
+Bring the simplicity of `Filter`, `Map`, and `Reduce` to .NET 8. Turn arrays, lists, and enumerables into readable pipelines with automatic type inference, LINQ integration, and powerful async and parallel operations. **Zero package dependencies.**
 
-**[Website & guide](https://johnny-quesada-developer.github.io/collection-iterable-methods/)** · [NuGet](https://www.nuget.org/packages/collection-iterable-methods) · [API overview](https://johnny-quesada-developer.github.io/collection-iterable-methods/#reference) · [About the developer](https://johnny-quesada-developer.github.io/react-global-state-hooks/about/)
+**[Explore the website](https://johnny-quesada-developer.github.io/collection-iterable-methods/)** · [Install from NuGet](https://www.nuget.org/packages/collection-iterable-methods) · [API guide](https://github.com/johnny-quesada-developer/collection-iterable-methods/blob/main/docs/API.md) · [About the developer](https://johnny-quesada-developer.github.io/react-global-state-hooks/about/)
+
+## Why use it?
+
+- **Express the transformation.** Filter, map, slice, sort, and reduce with familiar names and concise, chainable code.
+- **Keep the power of C#.** Transform between types with full inference, use indexed callbacks, and compose with LINQ.
+- **Put concurrency to work.** Await CPU operations, run callbacks in parallel, and configure cancellation and concurrency in one place.
+- **Benefit from optimized paths.** LINQ-backed transformations, bounded streaming slices, and cached sort keys improve core collection operations.
+
+## Faster where it counts
+
+Selected operations show substantial improvements in the recorded 2.0 candidate vs. 1.0.2 source benchmarks:
+
+| Operation | Measured speedup | Repeat run |
+|---|---:|---:|
+| Map | **2.31–9.89×** | 2.14–10.29× |
+| Filter | **1.35–4.61×** | 1.38–4.63× |
+| Slice | **1.59–12.43×** | 1.68–12.40× |
+| ForEach | **1.49–3.94×** | 1.64–3.78× |
+
+Ranges cover the tested inputs for each operation. Explore all **156 workloads**, methodology, and allocation measurements in the [full benchmark report](https://github.com/johnny-quesada-developer/collection-iterable-methods/blob/main/Performance/README.md).
 
 ## Install
 
-Requires a .NET 8-compatible project. Current stable release: **2.0.1**.
+Requires a .NET 8-compatible project. Current stable release: **2.0.2**.
 
 ```sh
-dotnet add package collection-iterable-methods --version 2.0.1
+dotnet add package collection-iterable-methods --version 2.0.2
 ```
 
 ## A first transformation
@@ -42,12 +62,12 @@ var indexed = numbers.Map((number, index) => $"{index}: {number}");
 
 | Use case | Namespace | Start with |
 |---|---|---|
-| Ordinary in-memory transformations | `CollectionIterable` | `Filter`, `Map`, `Reduce`, `Slice` |
-| Offloading synchronous CPU work | `CollectionIterableAsync` | `FilterAsync`, `ForEachAsync` |
+| Expressive collection pipelines | `CollectionIterable` | `Filter`, `Map`, `Reduce`, `Slice` |
+| Awaitable CPU operations | `CollectionIterableAsync` | `FilterAsync`, `ForEachAsync` |
 | Concurrent CPU callbacks | `CollectionIterableParallel` | `FilterParallel`, `ForEachParallel` |
 | Cancellation and concurrency options | `CollectionIterableUtils` | `IIterableOptions` |
 
-### Await completed work
+### Put async to work
 
 ```csharp
 using CollectionIterableAsync;
@@ -56,7 +76,7 @@ var evens = await new[] { 1, 2, 3, 4 }.FilterAsync(n => n % 2 == 0);
 // Work is complete; evens contains 2, 4.
 ```
 
-### Bound parallelism and support cancellation
+### Take control of parallel execution
 
 ```csharp
 using CollectionIterableParallel;
@@ -72,73 +92,10 @@ var evens = new[] { 1, 2, 3, 4 }.FilterParallel(n => n % 2 == 0, options);
 // Contains 2, 4. Order is unspecified.
 ```
 
-## Contracts
+## Everything you need to keep building
 
-| Methods | Execution / ordering |
-|---|---|
-| Filter, Map | Lazy, ordered, replayable when the source is replayable |
-| Slice | Lazy, ordered, start inclusive/end exclusive; negative start rejected |
-| Reduce, ForEach, ToRecord, SortCollection | Complete synchronously |
-| Concat | Arrays/collections copied immediately; general enumerables lazy |
-| FilterAsync, ConcatAsync, ForEachAsync | Synchronous callbacks/work run on Task.Run; complete before await returns |
-| FilterParallel, FilterParallelAsync | Complete before return/await; **unordered** output |
-| ForEachParallel, ForEachParallelAsync | Concurrent callbacks; caller must synchronize shared mutable state |
-| SortCollectionParallel | Sorted output; equal-key order unspecified; small inputs may sort sequentially |
-| ToDictionaryParallel | Concurrent callbacks; duplicate-key winner unspecified; returns a ConcurrentDictionary through IDictionary |
+Explore the [API and migration guide](https://github.com/johnny-quesada-developer/collection-iterable-methods/blob/main/docs/API.md) for execution behavior, ordering, cancellation, and upgrading from 1.0.2. Async methods accept synchronous CPU callbacks; use native async APIs for I/O. Parallel filter results are unordered.
 
-Both indexed and non-indexed callbacks are supported for ordinary transformations. Map supports different input/output types. ToRecord rejects duplicate keys. Sorts preserve source contents and are not stable for equal keys. Selectors should be pure.
+Want to contribute? See the [development guide](https://github.com/johnny-quesada-developer/collection-iterable-methods/blob/main/docs/CONTRIBUTING.md) for builds, tests, benchmarks, and website deployment.
 
-Async callbacks remain synchronous delegates: these methods are CPU offloading helpers, not async-I/O pipelines. Do not pass async-void lambdas. Use native async APIs for I/O and async streams. Cancellation is cooperative; running callbacks cannot be forcibly interrupted. Parallel options are copied, not mutated; either supplied token can cancel the operation. Default maximum parallelism is five.
-
-The legacy void `CollectionIterableAsync.ForeachParallel` overloads remain but are obsolete. Use `ForEachParallelAsync` and await it to observe completion and errors.
-
-## Migration from 1.0.2
-
-- Rebuild consumers: Map now uses `<TSource,TResult>`. Inferred calls such as `.Map(x => x + 1)` remain valid. Explicit `.Map<int>(...)` becomes `.Map<int,int>(...)` or omits type arguments.
-- FilterAsync and general-enumerable ConcatAsync now materialize before completing; work/errors no longer wait until result enumeration. This changes timing and memory lifetime.
-- Registered parallel cancellation raises OperationCanceledException directly instead of the previous manual-check AggregateException. Callback failures remain observable; dictionary merge/key failures may now surface directly after callback processing.
-- Framework-backed methods use framework argument validation; sorts cache keys and can change comparator exception wrapping, null-key handling and tie order.
-
-## Performance and scope
-
-The [benchmark report](Performance/README.md) compares 156 workloads across two final runs, with timings, allocations, and reproduction commands. These are historical source-to-source measurements of the 2.0 preview candidate against 1.0.2 source, not measurements of published NuGet binaries.
-
-Gains depend on method and input. Some async and parallel paths are unchanged or slower; extra buffers trade memory for speed. Use the report to choose representative workloads, then measure your application.
-
-This library operates on in-memory `IEnumerable` collections. Use `Queryable` directly for database expression trees to retain provider translation, and native async APIs or async streams for I/O.
-
-## Build and verify
-
-With the .NET 8 SDK installed:
-
-```sh
-dotnet build collection-iterable-methods.csproj -c Release
-dotnet test collection-iterable-methods.csproj -c test
-dotnet test Performance/Tests/Tests.csproj -c Release
-```
-
-The extended test project also includes the original tests. The release validation passed 50 tests in the original suite and 107 in the extended suite.
-
-Reproduce the benchmarks:
-
-```sh
-DOTNET_TieredCompilation=0 dotnet run --project Performance/Benchmarks.csproj -c Release
-```
-
-## Website
-
-The site lives in `website/`: static HTML, CSS, and a small script for accessible example tabs and copy buttons. No Node dependencies or build step are needed. Its palette follows the sibling react-global-state-hooks website; the developer link goes to that site's About page.
-
-Preview locally:
-
-```sh
-python3 -m http.server 8080 --directory website
-```
-
-The GitHub Pages workflow publishes only `website/` when its files change on `main`. Repository settings must use **GitHub Actions** as the Pages source. The workflow can also be run manually.
-
-## Contributing and license
-
-Issues and focused pull requests are welcome. Include a reproduction and the expected execution behavior for bug reports; include measurements and allocation tradeoffs for performance changes.
-
-Created by [Johnny Quesada](https://johnny-quesada-developer.github.io/react-global-state-hooks/about/). Licensed under [MIT](LICENSE).
+Created by [Johnny Quesada](https://johnny-quesada-developer.github.io/react-global-state-hooks/about/). Open source under the [MIT license](LICENSE).

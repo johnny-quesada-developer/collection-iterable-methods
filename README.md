@@ -12,10 +12,10 @@ Node-style `Filter`, `Map`, `Reduce`, and more for .NET 8 collections. Use stron
 
 ## Install
 
-Requires a .NET 8-compatible project. Current stable release: **2.0.0**.
+Requires a .NET 8-compatible project. Current stable release: **2.0.1**.
 
 ```sh
-dotnet add package collection-iterable-methods --version 2.0.0
+dotnet add package collection-iterable-methods --version 2.0.1
 ```
 
 ## A first transformation

@@ -29,3 +29,12 @@ The legacy void `CollectionIterableAsync.ForeachParallel` overloads remain but a
 - Registered parallel cancellation raises OperationCanceledException directly instead of the previous manual-check AggregateException. Callback failures remain observable; dictionary merge/key failures may now surface directly after callback processing.
 - Framework-backed methods use framework argument validation; sorts cache keys and can change comparator exception wrapping, null-key handling and tie order.
 
+
+## Implementation and allocation details
+
+- **Map is a deliberate major-version API change:** six overloads now use `<TSource,TResult>`. Ordinary inferred calls keep working; `Map<int>(...)` becomes `Map<int,int>(...)` or drops explicit type arguments. Rebuild binary consumers; do not replace a 1.0.2 DLL in place.
+- Filter/Map remain lazy and ordered; parallel results remain unordered. LINQ-backed methods validate null arguments using framework behavior. Slice validates arguments eagerly and rejects negative start consistently instead of inconsistent old errors. Sorting is still unstable for equal keys; selector call count/order and comparator exception wrapping can change.
+- FilterAsync and enumerable ConcatAsync now materialize before completing. This fixes misleading completion but changes evaluation timing and memory lifetime. Callbacks are synchronous CPU callbacks, not asynchronous I/O callbacks; do not pass async-void lambdas. Parallel pre-cancellation now throws OperationCanceledException directly rather than the earlier manual-check AggregateException.
+- Key caching costs O(n) extra memory; at 5,000 integer items sequential sorting uses about 40 KB instead of 20 KB. Parallel sorting and dictionary batching also use additional buffers. Synchronous per-case allocation measurements are in CSV. Threaded allocation totals are intentionally omitted: current-thread counters miss worker allocations.
+- No runtime dependency was added. This remains an in-memory IEnumerable library. Use Queryable directly for database expressions and native asynchronous APIs for I/O/async streams. Public method return types other than generalized Map remain unchanged. ConcurrentDictionary results remain ConcurrentDictionary instances.
+

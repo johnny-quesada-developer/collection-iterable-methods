@@ -41,7 +41,7 @@ Recorded on 2026-09-20 against the 1.0.2 source baseline (`fb87e6795ad60b353a2cd
 
 [All individual timings](Results/comparison.md) · [CSV, allocation and LINQ comparisons](Results/comparison.csv) · [Initial baseline](Results/before.json) · [First comparison](Results/retained-final.json) · [Repeat](Results/retained-repeat.json).
 
-The final comparison and repeat are the reference runs for this report. Earlier experiments remain available in the [experiment archive](EXPERIMENTS.md).
+The final comparison and repeat are the reference runs for this report.
 
 ## What makes 2.0 fast
 
@@ -62,7 +62,7 @@ See the [API and migration guide](../docs/API.md) for execution contracts and up
 
 .NET 8.0.31, Arm64, 10 reported logical processors, Release, SDK 8.0.425, tiered compilation disabled for every variant. Eight warmups per variant; three-operation pilot; adaptive batches targeting 5 ms (max 20,000 synchronous or 200 threaded operations); nine samples; medians reported. Variant order rotates per sample. Original source is preserved with renamed namespaces in Baseline/ so old and new execute in the same process. Baseline timing was captured before candidate edits.
 
-Inputs: arrays, Lists and replayable iterators, 32/1,000/10,000 integers; sorts additionally use ordered, shuffled (seed 1729) and duplicate-heavy inputs at 32/1,000/5,000. Async and non-sort parallel timings use arrays; a deterministic 200-step arithmetic predicate supplements cheap parallel filtering. Sequence operations are consumed, with callback work/materialization included. Async measurements block on task completion and consume results, so the old lazy FilterAsync cannot look faster merely by returning an unevaluated iterator. Most wrapper benchmark call sites use IEnumerable; six additional cases explicitly exercise typed-array indexed Reduce and ForEach. Typed array Map behavior is tested separately because the original array constraint was defective. The initial standalone baseline contains 150 cases; both final comparisons remeasure the original source for all 156 cases.
+Inputs: arrays, Lists and replayable iterators, 32/1,000/10,000 integers; sorts additionally use ordered, shuffled (seed 1729) and duplicate-heavy inputs at 32/1,000/5,000. Async and non-sort parallel timings use arrays; a deterministic 200-step arithmetic predicate supplements cheap parallel filtering. Sequence operations are consumed, with callback work/materialization included. Async measurements include task completion and result materialization for both implementations. Most wrapper benchmark call sites use IEnumerable; six additional cases explicitly exercise typed-array indexed Reduce and ForEach. Typed-array Map behavior has dedicated coverage in the behavior suite. The initial standalone baseline contains 150 cases; both final comparisons remeasure the original source for all 156 cases.
 
 Results cover the machines, input shapes, sizes, and callbacks described above. The harness reports microbenchmark medians and includes native LINQ comparisons where semantically comparable. All current method families with measurable completion are covered; the awaitable replacement for legacy void async iteration is verified by behavior tests.
 

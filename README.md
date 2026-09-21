@@ -3,10 +3,10 @@
 **Write expressive C#. Get more from every collection.**
 
 [![NuGet](https://img.shields.io/nuget/v/collection-iterable-methods.svg?color=24634b)](https://www.nuget.org/packages/collection-iterable-methods)
-[![Target framework](https://img.shields.io/badge/.NET-8.0-1d5578)](https://dotnet.microsoft.com/)
+[![Supported .NET versions](https://img.shields.io/badge/.NET-8%2B-1d5578)](https://dotnet.microsoft.com/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-24634b)](LICENSE)
 
-Bring the simplicity of `Filter`, `Map`, and `Reduce` to .NET 8. Turn arrays, lists, and enumerables into readable pipelines with automatic type inference, LINQ integration, and powerful async and parallel operations. **Zero package dependencies.**
+Bring the simplicity of `Filter`, `Map`, and `Reduce` to .NET 8 and later. Turn arrays, lists, and enumerables into readable pipelines with automatic type inference, LINQ integration, and powerful async and parallel operations. **Zero package dependencies.**
 
 **[Explore the website](https://johnny-quesada-developer.github.io/collection-iterable-methods/)** · [Install from NuGet](https://www.nuget.org/packages/collection-iterable-methods) · [API guide](https://github.com/johnny-quesada-developer/collection-iterable-methods/blob/main/docs/API.md) · [About the developer](https://johnny-quesada-developer.github.io/react-global-state-hooks/about/)
 
@@ -32,10 +32,12 @@ Ranges cover the tested inputs for each operation. Explore all **156 workloads**
 
 ## Install
 
-Requires a .NET 8-compatible project. Current stable release: **2.0.2**.
+**Works with .NET 8, .NET 9, .NET 10, and later compatible versions.** .NET 8 is the minimum supported version. Use the same package across these versions.
+
+Current stable release: **2.0.3**.
 
 ```sh
-dotnet add package collection-iterable-methods --version 2.0.2
+dotnet add package collection-iterable-methods --version 2.0.3
 ```
 
 ## A first transformation

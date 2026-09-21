@@ -1,0 +1,652 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="adf6272c-89c7-40c1-90e0-3b2cceaf6cfa" name="@Johnnys-MacBook-Pro 2026-09-20 14:16:01" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-09-20T14:16:01.4743990+02:00" queuing="2026-09-20T14:16:01.4743990+02:00" start="2026-09-20T14:16:01.0667880+02:00" finish="2026-09-20T14:16:01.7740440+02:00" />
+  <TestSettings name="default" id="0ad1f316-4fb2-4605-82dc-cf64c6406cd7">
+    <Deployment runDeploymentRoot="_Johnnys-MacBook-Pro_2026-09-20_14_16_01" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="aa61fc20-b48e-49c8-89f9-6bd35eef2daf" testId="d692e060-644b-e7e4-9374-469bccf4cdf2" testName="BehaviorTests.AsyncOperationsFinishAtAwait(shape: &quot;array&quot;, count: 1000)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0042078" startTime="2026-09-20T14:16:01.4642710+02:00" endTime="2026-09-20T14:16:01.4642710+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aa61fc20-b48e-49c8-89f9-6bd35eef2daf" />
+    <UnitTestResult executionId="a770eba3-1831-4a12-a00e-c5d5746acb73" testId="5ebdc504-bf7a-44bc-2e0a-2147bf31ef98" testName="BehaviorTests.BothSortsHandleOrderedAndDuplicateKeys(count: 5000)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0210849" startTime="2026-09-20T14:16:01.5342890+02:00" endTime="2026-09-20T14:16:01.5342890+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a770eba3-1831-4a12-a00e-c5d5746acb73" />
+    <UnitTestResult executionId="def0c285-f418-45b4-a2d9-1d907f2392d6" testId="f2223e4b-4f78-7bca-e10e-140d3abe7452" testName="BehaviorTests.ParallelOperationsPreserveMembership(shape: &quot;array&quot;, count: 1000)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0230550" startTime="2026-09-20T14:16:01.4546060+02:00" endTime="2026-09-20T14:16:01.4546060+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="def0c285-f418-45b4-a2d9-1d907f2392d6" />
+    <UnitTestResult executionId="88f173c1-d368-408c-9935-43026efeda51" testId="db495b7c-950a-2411-bf37-50f602864525" testName="Test.CollectionIterableAsyncTest.ConcatAsync" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0050042" startTime="2026-09-20T14:16:01.4539160+02:00" endTime="2026-09-20T14:16:01.4539160+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="88f173c1-d368-408c-9935-43026efeda51" />
+    <UnitTestResult executionId="4dfd279d-aa84-4243-bc8c-cd1622559b57" testId="601f1de8-1ff7-04bd-76f4-1ed65b91197d" testName="Test.CollectionIterableAsyncTest.FilterParallelAsyncIEnumerable" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0011282" startTime="2026-09-20T14:16:01.4547580+02:00" endTime="2026-09-20T14:16:01.4547580+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4dfd279d-aa84-4243-bc8c-cd1622559b57" />
+    <UnitTestResult executionId="77e0f615-1001-4fca-afdc-10702a1a5b70" testId="a2d36c93-a4ea-6b87-e58d-e86df7ed8e62" testName="BehaviorTests.MapInferenceWorksForArrayAndCollection" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0004116" startTime="2026-09-20T14:16:01.7374490+02:00" endTime="2026-09-20T14:16:01.7374490+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="77e0f615-1001-4fca-afdc-10702a1a5b70" />
+    <UnitTestResult executionId="ce0d55b2-a701-41d0-a429-e7eded1a0b10" testId="7080445b-9b75-180b-964b-e7277299103b" testName="BehaviorTests.ParallelOperationsPreserveMembership(shape: &quot;list&quot;, count: 1)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0003695" startTime="2026-09-20T14:16:01.4549080+02:00" endTime="2026-09-20T14:16:01.4549080+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ce0d55b2-a701-41d0-a429-e7eded1a0b10" />
+    <UnitTestResult executionId="cbeb435f-2ca8-4f4a-86a6-66a77a527549" testId="1e1aa50f-2a24-7526-8c3d-087ea9f74355" testName="Test.CollectionIterableParallelTest.ForEachParallel" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0004041" startTime="2026-09-20T14:16:01.4541520+02:00" endTime="2026-09-20T14:16:01.4541520+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cbeb435f-2ca8-4f4a-86a6-66a77a527549" />
+    <UnitTestResult executionId="fdf07a96-e3de-441c-afd8-4e06387be625" testId="6ca11de3-02c9-2639-3153-e4fdbca04544" testName="Test.CollectionIterableAsyncTest.FilterParallelAsync" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0012344" startTime="2026-09-20T14:16:01.4544480+02:00" endTime="2026-09-20T14:16:01.4544480+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fdf07a96-e3de-441c-afd8-4e06387be625" />
+    <UnitTestResult executionId="96ef30bc-d97f-48ed-b3de-51cd1b1afcc2" testId="891decea-b534-8a43-a60b-ad70264205c2" testName="BehaviorTests.ParallelHonorsEitherCancellationSource(secondary: True)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0003029" startTime="2026-09-20T14:16:01.7261470+02:00" endTime="2026-09-20T14:16:01.7261470+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="96ef30bc-d97f-48ed-b3de-51cd1b1afcc2" />
+    <UnitTestResult executionId="9c4e444f-42aa-4479-a581-7fc1e84b9a85" testId="a72524f3-ba13-5632-ba84-5385bb52e92f" testName="BehaviorTests.BothSortsHandleOrderedAndDuplicateKeys(count: 32)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0001771" startTime="2026-09-20T14:16:01.5420070+02:00" endTime="2026-09-20T14:16:01.5420070+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9c4e444f-42aa-4479-a581-7fc1e84b9a85" />
+    <UnitTestResult executionId="4d4bb3c3-49d5-4730-9a65-40323d097c7d" testId="aeb2c5b5-8ac4-cfbf-62ff-9dd05374bdaf" testName="BehaviorTests.SequentialOperationsMatchReference(shape: &quot;list&quot;, count: 1000)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0052190" startTime="2026-09-20T14:16:01.4976070+02:00" endTime="2026-09-20T14:16:01.4976070+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4d4bb3c3-49d5-4730-9a65-40323d097c7d" />
+    <UnitTestResult executionId="013cabad-a6d4-4bc0-a3aa-6b1063c0d942" testId="b5d53198-321c-1220-93a1-158a73e2deff" testName="Test.CollectionIterableParallelTest.SortCollectionParallelAscending" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0001144" startTime="2026-09-20T14:16:01.4545000+02:00" endTime="2026-09-20T14:16:01.4545000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="013cabad-a6d4-4bc0-a3aa-6b1063c0d942" />
+    <UnitTestResult executionId="d6744e45-d763-438b-bd67-d3531b3f3d40" testId="51b948b1-4c6d-5ece-3f77-1ea81ea322b6" testName="BehaviorTests.SequentialOperationsMatchReference(shape: &quot;array&quot;, count: 32)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0001694" startTime="2026-09-20T14:16:01.4923060+02:00" endTime="2026-09-20T14:16:01.4923060+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d6744e45-d763-438b-bd67-d3531b3f3d40" />
+    <UnitTestResult executionId="c6d4a581-345c-478c-993c-6cf4232b14cf" testId="14160670-1272-8381-ad25-bd6df2258713" testName="BehaviorTests.AsyncOperationsFinishAtAwait(shape: &quot;list&quot;, count: 32)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0003777" startTime="2026-09-20T14:16:01.4716110+02:00" endTime="2026-09-20T14:16:01.4716110+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c6d4a581-345c-478c-993c-6cf4232b14cf" />
+    <UnitTestResult executionId="e78adb4d-248f-4f76-8562-4c8718c91279" testId="b96bfae6-4535-f629-4a6f-251ec649c264" testName="Test.CollectionIterableTest.ToRecordCollection" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0001694" startTime="2026-09-20T14:16:01.4542150+02:00" endTime="2026-09-20T14:16:01.4542150+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e78adb4d-248f-4f76-8562-4c8718c91279" />
+    <UnitTestResult executionId="fbab136e-94d2-43f1-9091-1ad6cf20aee0" testId="e2c1855e-5036-f3f1-db57-251a2bb2ec05" testName="BehaviorTests.SliceEnumeratesOnceOnlyThroughEndAndDisposes" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0011737" startTime="2026-09-20T14:16:01.5089000+02:00" endTime="2026-09-20T14:16:01.5089000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fbab136e-94d2-43f1-9091-1ad6cf20aee0" />
+    <UnitTestResult executionId="86c7a484-9277-46d7-b60f-1b87616414da" testId="a8689b89-91d2-aa36-69da-b336f2a96078" testName="Test.CollectionIterableTest.ForEach" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0001961" startTime="2026-09-20T14:16:01.4541730+02:00" endTime="2026-09-20T14:16:01.4541730+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="86c7a484-9277-46d7-b60f-1b87616414da" />
+    <UnitTestResult executionId="d407f075-c7e1-43c1-b93a-6a5fbaa25d66" testId="10c05642-0d2e-92a3-d6a4-725f1fc285c4" testName="Test.CollectionIterableTest.ForEachEnumerable" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0007012" startTime="2026-09-20T14:16:01.4526730+02:00" endTime="2026-09-20T14:16:01.4526730+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d407f075-c7e1-43c1-b93a-6a5fbaa25d66" />
+    <UnitTestResult executionId="4fd3d47e-7b39-449d-a607-fa60ea04e28b" testId="941956aa-0016-a7c1-1a4a-0d2c8a7ecbb0" testName="Test.CollectionIterableTest.Concat" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0002245" startTime="2026-09-20T14:16:01.4528270+02:00" endTime="2026-09-20T14:16:01.4528270+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4fd3d47e-7b39-449d-a607-fa60ea04e28b" />
+    <UnitTestResult executionId="ef30788f-4940-49b4-97b1-a109cf90f665" testId="89412c8d-8cab-7bd0-bdf1-2799d79c2025" testName="Test.CollectionIterableAsyncTest.FilterParallelAsyncICollection" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0011479" startTime="2026-09-20T14:16:01.4548550+02:00" endTime="2026-09-20T14:16:01.4548560+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ef30788f-4940-49b4-97b1-a109cf90f665" />
+    <UnitTestResult executionId="0d010484-b235-4cbb-84e5-138c4ae9692b" testId="1d1a02f3-8f2c-c8ce-bd0f-7602789deeb8" testName="BehaviorTests.BothSortsHandleOrderedAndDuplicateKeys(count: 2048)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0073761" startTime="2026-09-20T14:16:01.5417190+02:00" endTime="2026-09-20T14:16:01.5417190+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0d010484-b235-4cbb-84e5-138c4ae9692b" />
+    <UnitTestResult executionId="d575678e-9fa3-4a9e-8541-349959ab688a" testId="d5d72f3e-46a3-06ae-e44a-6411aa75b31e" testName="Test.CollectionIterableParallelTest.ToDictionaryParallelIEnumerable" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0028212" startTime="2026-09-20T14:16:01.4529170+02:00" endTime="2026-09-20T14:16:01.4529170+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d575678e-9fa3-4a9e-8541-349959ab688a" />
+    <UnitTestResult executionId="6ddee145-050c-4242-bd02-63965465766c" testId="d3f5331d-4164-de88-b6d6-1ab1d5894410" testName="Test.CollectionIterableParallelTest.ForEachParallelWhenCancelled" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0003050" startTime="2026-09-20T14:16:01.4542570+02:00" endTime="2026-09-20T14:16:01.4542570+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6ddee145-050c-4242-bd02-63965465766c" />
+    <UnitTestResult executionId="a4d73846-6437-44be-bde6-47233a649349" testId="49d00f7f-bac5-0f84-243b-c18c80e5982c" testName="BehaviorTests.ParallelOperationsPreserveMembership(shape: &quot;list&quot;, count: 1000)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0015279" startTime="2026-09-20T14:16:01.4584940+02:00" endTime="2026-09-20T14:16:01.4584940+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a4d73846-6437-44be-bde6-47233a649349" />
+    <UnitTestResult executionId="375cdebd-3f4f-4083-b8dd-91d19bbd0dd5" testId="4a383bd6-5d76-dabb-5df3-4dbe3023a656" testName="BehaviorTests.SequentialOperationsMatchReference(shape: &quot;iterator&quot;, count: 0)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0000348" startTime="2026-09-20T14:16:01.4979060+02:00" endTime="2026-09-20T14:16:01.4979070+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="375cdebd-3f4f-4083-b8dd-91d19bbd0dd5" />
+    <UnitTestResult executionId="7d0f3039-4520-404e-aae3-387dc573fb5e" testId="38207d83-f77c-3e53-2a82-cc7302347856" testName="Test.CollectionIterableParallelTest.FilterParallelWhenCancelled" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0008487" startTime="2026-09-20T14:16:01.4536270+02:00" endTime="2026-09-20T14:16:01.4536270+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7d0f3039-4520-404e-aae3-387dc573fb5e" />
+    <UnitTestResult executionId="8bbd2f75-e2b0-4f46-9051-bfc2f54ab0de" testId="f665950b-ed03-d9d0-a0fe-37c5e75d6d9c" testName="Test.CollectionIterableTest.FilterEnumerable" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0006673" startTime="2026-09-20T14:16:01.4333280+02:00" endTime="2026-09-20T14:16:01.4333280+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8bbd2f75-e2b0-4f46-9051-bfc2f54ab0de" />
+    <UnitTestResult executionId="90d2b610-1231-407b-aa55-4e5df964fa82" testId="a290bedb-520d-fc53-af65-fe28b60117c2" testName="Test.CollectionIterableTest.ReduceCollection" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0001659" startTime="2026-09-20T14:16:01.4536060+02:00" endTime="2026-09-20T14:16:01.4536060+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="90d2b610-1231-407b-aa55-4e5df964fa82" />
+    <UnitTestResult executionId="1ee15fc5-f71d-4bb1-8bea-629d0b498b28" testId="32eb8e5b-0c4a-0404-56a6-0a4033f1f519" testName="Test.CollectionIterableTest.Filter" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0004212" startTime="2026-09-20T14:16:01.4535860+02:00" endTime="2026-09-20T14:16:01.4535860+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1ee15fc5-f71d-4bb1-8bea-629d0b498b28" />
+    <UnitTestResult executionId="f21cf1c7-5297-47ed-bd2d-914f09f2b51e" testId="90a46e78-b21c-e036-c874-dc7ede0ca5fd" testName="BehaviorTests.SequentialOperationsMatchReference(shape: &quot;iterator&quot;, count: 1)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0000365" startTime="2026-09-20T14:16:01.4923550+02:00" endTime="2026-09-20T14:16:01.4923550+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f21cf1c7-5297-47ed-bd2d-914f09f2b51e" />
+    <UnitTestResult executionId="5f3df637-36f4-4b2e-ac71-13841c2da69c" testId="1acba469-1360-4b37-a81e-7139580d586d" testName="Test.CollectionIterableParallelTest.SortCollectionParallelDescending" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0094194" startTime="2026-09-20T14:16:01.4333050+02:00" endTime="2026-09-20T14:16:01.4333050+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5f3df637-36f4-4b2e-ac71-13841c2da69c" />
+    <UnitTestResult executionId="214cbde0-ea8b-422c-a85f-1af1cfb1c5b4" testId="9e34faa7-9f8d-05a0-791c-30381ab3fb0c" testName="BehaviorTests.SequentialOperationsMatchReference(shape: &quot;list&quot;, count: 1)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0000361" startTime="2026-09-20T14:16:01.4978530+02:00" endTime="2026-09-20T14:16:01.4978540+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="214cbde0-ea8b-422c-a85f-1af1cfb1c5b4" />
+    <UnitTestResult executionId="b01f14ff-572d-40c5-b48b-fb1fc608a98c" testId="1506c9fd-d30d-707f-c5c0-ac13545005ee" testName="BehaviorTests.AsyncOperationsFinishAtAwait(shape: &quot;iterator&quot;, count: 32)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0003533" startTime="2026-09-20T14:16:01.4756020+02:00" endTime="2026-09-20T14:16:01.4756020+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b01f14ff-572d-40c5-b48b-fb1fc608a98c" />
+    <UnitTestResult executionId="65a44613-8277-4733-a012-3553f640c1b7" testId="433a116f-43fe-85ef-c96e-938cb4bdf2b7" testName="Test.CollectionIterableParallelTest.ForEachParallelICollection" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0001658" startTime="2026-09-20T14:16:01.4545210+02:00" endTime="2026-09-20T14:16:01.4545210+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="65a44613-8277-4733-a012-3553f640c1b7" />
+    <UnitTestResult executionId="5de601bb-d383-4d56-b99d-1b5d2a0ada0c" testId="1c6819ef-2b9d-31de-eae6-91ba5aced3e2" testName="BehaviorTests.SequentialOperationsMatchReference(shape: &quot;iterator&quot;, count: 32)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0002460" startTime="2026-09-20T14:16:01.4920920+02:00" endTime="2026-09-20T14:16:01.4920920+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5de601bb-d383-4d56-b99d-1b5d2a0ada0c" />
+    <UnitTestResult executionId="e627492d-6799-42d5-8d32-c28410f00ae7" testId="39dc3176-a5d3-3b03-6951-f3aa9d110405" testName="BehaviorTests.AsyncOperationsFinishAtAwait(shape: &quot;list&quot;, count: 1000)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0018352" startTime="2026-09-20T14:16:01.4750830+02:00" endTime="2026-09-20T14:16:01.4750830+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e627492d-6799-42d5-8d32-c28410f00ae7" />
+    <UnitTestResult executionId="dc8c6b79-2d76-42f9-bff8-a88329af42f2" testId="c519ca39-85ea-71ce-c155-6e2416756398" testName="Test.CollectionIterableTest.SliceCollection" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0007053" startTime="2026-09-20T14:16:01.4536890+02:00" endTime="2026-09-20T14:16:01.4536890+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dc8c6b79-2d76-42f9-bff8-a88329af42f2" />
+    <UnitTestResult executionId="ca94962a-4ed1-4b21-b6ef-30f0c659c297" testId="847b3b43-69b8-5908-2424-5296a2dd569a" testName="Test.CollectionIterableParallelTest.FilterParallelIEnumerable" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0040197" startTime="2026-09-20T14:16:01.4538740+02:00" endTime="2026-09-20T14:16:01.4538740+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ca94962a-4ed1-4b21-b6ef-30f0c659c297" />
+    <UnitTestResult executionId="de074168-f8fc-4ec7-ab03-817bacedffb6" testId="b4a5b523-9e5c-f353-acf8-632ef71e5447" testName="Test.CollectionIterableParallelTest.SortCollectionParallelIEnumerableDescending" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0003493" startTime="2026-09-20T14:16:01.4544800+02:00" endTime="2026-09-20T14:16:01.4544800+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="de074168-f8fc-4ec7-ab03-817bacedffb6" />
+    <UnitTestResult executionId="faae50d1-b517-4022-b445-50c44015bfcb" testId="0eba5a24-84cb-4042-9666-dfb2e01fae19" testName="Test.CollectionIterableAsyncTest.ForEachAsync" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0012533" startTime="2026-09-20T14:16:01.4536480+02:00" endTime="2026-09-20T14:16:01.4536480+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="faae50d1-b517-4022-b445-50c44015bfcb" />
+    <UnitTestResult executionId="b5f449d3-2d68-4377-b8f7-a9047d82fa85" testId="461a0e94-1ce6-9f59-96b7-33ada46728ac" testName="BehaviorTests.ParallelOperationsPreserveMembership(shape: &quot;iterator&quot;, count: 1000)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0053314" startTime="2026-09-20T14:16:01.4548910+02:00" endTime="2026-09-20T14:16:01.4548910+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b5f449d3-2d68-4377-b8f7-a9047d82fa85" />
+    <UnitTestResult executionId="59ab3226-81c1-4fa8-9e24-46ed9b9791c8" testId="d6bd93a6-5192-e5db-46e5-f82aef5d6693" testName="BehaviorTests.SequentialOperationsMatchReference(shape: &quot;array&quot;, count: 0)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0036354" startTime="2026-09-20T14:16:01.4802050+02:00" endTime="2026-09-20T14:16:01.4802050+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="59ab3226-81c1-4fa8-9e24-46ed9b9791c8" />
+    <UnitTestResult executionId="adf99efe-5dc5-4c5b-89a1-f8ed5f625c25" testId="e5c5c89a-75a1-5fbe-ae00-31daa1d0643b" testName="BehaviorTests.BothSortsHandleOrderedAndDuplicateKeys(count: 0)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0028314" startTime="2026-09-20T14:16:01.5117960+02:00" endTime="2026-09-20T14:16:01.5117960+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="adf99efe-5dc5-4c5b-89a1-f8ed5f625c25" />
+    <UnitTestResult executionId="5ade305e-6e96-4ddb-94f0-c5437d68247f" testId="5c2d404a-00d1-3694-4f2f-46a6b8dc1b57" testName="Test.CollectionIterableTest.FilterCollection" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0001697" startTime="2026-09-20T14:16:01.4535610+02:00" endTime="2026-09-20T14:16:01.4535610+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5ade305e-6e96-4ddb-94f0-c5437d68247f" />
+    <UnitTestResult executionId="393278c4-92da-4dec-af80-1dc2dd4dda4f" testId="eeb46e38-d618-6025-e481-e76078b42bb3" testName="BehaviorTests.ParallelOperationsPreserveMembership(shape: &quot;iterator&quot;, count: 1)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0003254" startTime="2026-09-20T14:16:01.4567030+02:00" endTime="2026-09-20T14:16:01.4567030+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="393278c4-92da-4dec-af80-1dc2dd4dda4f" />
+    <UnitTestResult executionId="69ea52df-984e-4c24-be9b-a5f7dbb463bd" testId="4d05be38-9243-1d31-7400-741e5655cfb7" testName="Test.CollectionIterableAsyncTest.ConcatAsyncIEnumerable" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0043328" startTime="2026-09-20T14:16:01.4329560+02:00" endTime="2026-09-20T14:16:01.4329560+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="69ea52df-984e-4c24-be9b-a5f7dbb463bd" />
+    <UnitTestResult executionId="dbbd90a2-b79b-4d35-bd05-4741285a6caf" testId="94b36a89-7797-253d-a55f-7e4c1089d187" testName="BehaviorTests.LazyOperationsRemainLazyAndReplayable" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0003750" startTime="2026-09-20T14:16:01.7311120+02:00" endTime="2026-09-20T14:16:01.7311120+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dbbd90a2-b79b-4d35-bd05-4741285a6caf" />
+    <UnitTestResult executionId="3278516f-7993-4cb0-9a5b-104c08a456f0" testId="af83f971-bf53-48ea-cf89-2910c14eea30" testName="BehaviorTests.AsyncOperationsFinishAtAwait(shape: &quot;iterator&quot;, count: 0)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0002610" startTime="2026-09-20T14:16:01.4730810+02:00" endTime="2026-09-20T14:16:01.4730810+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3278516f-7993-4cb0-9a5b-104c08a456f0" />
+    <UnitTestResult executionId="7281f3d5-8a83-4feb-b162-48744e6294c4" testId="798defdc-d99d-2fac-d532-3568b67354d9" testName="Test.CollectionIterableParallelTest.FilterParallel" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0001110" startTime="2026-09-20T14:16:01.4542780+02:00" endTime="2026-09-20T14:16:01.4542780+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7281f3d5-8a83-4feb-b162-48744e6294c4" />
+    <UnitTestResult executionId="327947e2-0fc1-40de-bc99-0e26188e7e05" testId="82e5473b-443e-d95f-2af3-610c893cb1f5" testName="Test.CollectionIterableAsyncTest.FilterAsyncICollection" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0011193" startTime="2026-09-20T14:16:01.4548770+02:00" endTime="2026-09-20T14:16:01.4548770+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="327947e2-0fc1-40de-bc99-0e26188e7e05" />
+    <UnitTestResult executionId="95d0972b-e12d-4408-b5d3-553298ab4efb" testId="eac78a5b-8fe7-8752-a1bc-c6c6dcebd47f" testName="Test.CollectionIterableAsyncTest.FilterAsync" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0011590" startTime="2026-09-20T14:16:01.4548350+02:00" endTime="2026-09-20T14:16:01.4548350+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="95d0972b-e12d-4408-b5d3-553298ab4efb" />
+    <UnitTestResult executionId="4caa6834-1147-4245-a2e1-6763a2ef6f2c" testId="af425b93-b025-f073-1a5d-74dba367dec9" testName="Test.CollectionIterableAsyncTest.ConcatAsyncICollection" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0012952" startTime="2026-09-20T14:16:01.4548150+02:00" endTime="2026-09-20T14:16:01.4548150+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4caa6834-1147-4245-a2e1-6763a2ef6f2c" />
+    <UnitTestResult executionId="7d93e1cc-2928-4c10-b6c5-66a5748613fe" testId="65ddab89-99c7-da66-cb07-cc88b5c12143" testName="Test.CollectionIterableTest.MapEnumerable" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0002792" startTime="2026-09-20T14:16:01.4544700+02:00" endTime="2026-09-20T14:16:01.4544700+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7d93e1cc-2928-4c10-b6c5-66a5748613fe" />
+    <UnitTestResult executionId="3ca90df5-b8cf-4306-a982-7f8ae1431530" testId="473e5f08-c12e-f60c-3c01-eb8300fa0d12" testName="BehaviorTests.AsyncOperationsFinishAtAwait(shape: &quot;array&quot;, count: 32)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0003177" startTime="2026-09-20T14:16:01.4764970+02:00" endTime="2026-09-20T14:16:01.4764970+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3ca90df5-b8cf-4306-a982-7f8ae1431530" />
+    <UnitTestResult executionId="31ab751d-eddb-4c28-9718-9460c3a61cc6" testId="7f4d901d-8204-70b1-b495-65b992ce5130" testName="BehaviorTests.SequentialOperationsMatchReference(shape: &quot;array&quot;, count: 1000)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0045419" startTime="2026-09-20T14:16:01.4918140+02:00" endTime="2026-09-20T14:16:01.4918140+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="31ab751d-eddb-4c28-9718-9460c3a61cc6" />
+    <UnitTestResult executionId="c66608b7-479a-4050-bc8f-6687dc07644a" testId="c9b54675-5ad8-1bfb-3f8a-66aa8903952a" testName="Test.CollectionIterableTest.Reduce" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0002162" startTime="2026-09-20T14:16:01.4528050+02:00" endTime="2026-09-20T14:16:01.4528050+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c66608b7-479a-4050-bc8f-6687dc07644a" />
+    <UnitTestResult executionId="a18d7015-4f2b-4ea9-a4f3-c183657e23cd" testId="ff9a75db-c85b-029f-4dea-8535625544a0" testName="BehaviorTests.AsyncOperationsFinishAtAwait(shape: &quot;iterator&quot;, count: 1000)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0047980" startTime="2026-09-20T14:16:01.4702440+02:00" endTime="2026-09-20T14:16:01.4702440+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a18d7015-4f2b-4ea9-a4f3-c183657e23cd" />
+    <UnitTestResult executionId="0af84133-5b65-4ef4-8d9b-0c5ee0486645" testId="3ca1a663-9631-63a2-9322-076fd6cd1f92" testName="BehaviorTests.AsyncOperationsFinishAtAwait(shape: &quot;array&quot;, count: 1)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0003420" startTime="2026-09-20T14:16:01.4721440+02:00" endTime="2026-09-20T14:16:01.4721440+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0af84133-5b65-4ef4-8d9b-0c5ee0486645" />
+    <UnitTestResult executionId="3e3754a5-c19d-4c79-90fe-9f17144dfcd1" testId="c09a8426-77ff-447f-f31e-d895be906053" testName="BehaviorTests.ParallelDictionaryKeepsDuplicateKeyContractForLargerInputs" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0007128" startTime="2026-09-20T14:16:01.7283550+02:00" endTime="2026-09-20T14:16:01.7283560+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3e3754a5-c19d-4c79-90fe-9f17144dfcd1" />
+    <UnitTestResult executionId="34b28340-f74d-42a1-b5f6-0a8d422ee69f" testId="4696a9b9-a8c5-332d-d43f-d22f8b236523" testName="Test.CollectionIterableTest.Slice" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0001273" startTime="2026-09-20T14:16:01.4542360+02:00" endTime="2026-09-20T14:16:01.4542360+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="34b28340-f74d-42a1-b5f6-0a8d422ee69f" />
+    <UnitTestResult executionId="74f88464-9ac6-4c4b-a7d1-8d644560e03e" testId="632ada4b-1ac5-73f3-54f7-871228d68291" testName="BehaviorTests.BothSortsHandleOrderedAndDuplicateKeys(count: 50000)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.1814006" startTime="2026-09-20T14:16:01.7234930+02:00" endTime="2026-09-20T14:16:01.7234930+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="74f88464-9ac6-4c4b-a7d1-8d644560e03e" />
+    <UnitTestResult executionId="7d300d1a-48b6-42d8-8c47-3ae5c5c92730" testId="41123350-ef1d-8452-b33b-49ec907e37ac" testName="BehaviorTests.SequentialOperationsMatchReference(shape: &quot;array&quot;, count: 1)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0003761" startTime="2026-09-20T14:16:01.4869910+02:00" endTime="2026-09-20T14:16:01.4869920+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7d300d1a-48b6-42d8-8c47-3ae5c5c92730" />
+    <UnitTestResult executionId="191ad1dc-eaf5-4698-b294-9b6baef56798" testId="d9f469a1-f624-c004-b17d-818c2269ff06" testName="Test.CollectionIterableTest.Map" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0002853" startTime="2026-09-20T14:16:01.4528940+02:00" endTime="2026-09-20T14:16:01.4528940+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="191ad1dc-eaf5-4698-b294-9b6baef56798" />
+    <UnitTestResult executionId="84b11e77-0784-4cb5-8aa2-497050bda3aa" testId="8dd63cfe-3b21-6c74-e6d7-bbadf6dda5d2" testName="Test.CollectionIterableTest.ReduceEnumerable" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0005151" startTime="2026-09-20T14:16:01.4332360+02:00" endTime="2026-09-20T14:16:01.4332360+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="84b11e77-0784-4cb5-8aa2-497050bda3aa" />
+    <UnitTestResult executionId="a7b03653-1611-4da9-bedf-290aefae12b8" testId="0c8fd6c5-bd7d-0162-8855-ded0fc443b1d" testName="BehaviorTests.ParallelOperationsPreserveMembership(shape: &quot;array&quot;, count: 1)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0004260" startTime="2026-09-20T14:16:01.4556760+02:00" endTime="2026-09-20T14:16:01.4556760+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a7b03653-1611-4da9-bedf-290aefae12b8" />
+    <UnitTestResult executionId="e516977a-9b5c-4034-a2c2-592977412891" testId="3630ee18-cb29-cbff-26a6-c9b4dc1b3588" testName="Test.CollectionIterableAsyncTest.ForEachAsyncIEnumerable" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0011519" startTime="2026-09-20T14:16:01.4545550+02:00" endTime="2026-09-20T14:16:01.4545550+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e516977a-9b5c-4034-a2c2-592977412891" />
+    <UnitTestResult executionId="cfa24b49-8885-426b-a598-84dfcb17e73e" testId="d534f18b-441b-c78e-d608-4dad93b5acd1" testName="BehaviorTests.SequentialOperationsMatchReference(shape: &quot;list&quot;, count: 32)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0001937" startTime="2026-09-20T14:16:01.4978180+02:00" endTime="2026-09-20T14:16:01.4978180+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cfa24b49-8885-426b-a598-84dfcb17e73e" />
+    <UnitTestResult executionId="1b6a2819-5cd1-4120-907e-b3f315750c51" testId="7f9701f3-573c-8caf-491c-8ba8aef7cd59" testName="BehaviorTests.AsyncOperationsFinishAtAwait(shape: &quot;list&quot;, count: 0)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0002771" startTime="2026-09-20T14:16:01.4760180+02:00" endTime="2026-09-20T14:16:01.4760180+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1b6a2819-5cd1-4120-907e-b3f315750c51" />
+    <UnitTestResult executionId="4e8c8fb0-d3b5-41fd-ad1f-2ad1295353e2" testId="827acfff-ce41-7cf3-031b-7e9ab60cc54a" testName="BehaviorTests.SequentialOperationsMatchReference(shape: &quot;list&quot;, count: 0)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0002246" startTime="2026-09-20T14:16:01.4872130+02:00" endTime="2026-09-20T14:16:01.4872130+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4e8c8fb0-d3b5-41fd-ad1f-2ad1295353e2" />
+    <UnitTestResult executionId="2d7205b7-9657-42b0-9b20-b8268064192c" testId="d68a6387-0e24-737e-5915-673c9a2d5c59" testName="BehaviorTests.SequentialOperationsMatchReference(shape: &quot;iterator&quot;, count: 1000)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0062505" startTime="2026-09-20T14:16:01.4865490+02:00" endTime="2026-09-20T14:16:01.4865490+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2d7205b7-9657-42b0-9b20-b8268064192c" />
+    <UnitTestResult executionId="2785c36b-c577-427c-935f-324cae760d27" testId="ee7dcacf-32c1-0ca8-9888-90517ab2fa55" testName="BehaviorTests.ParallelOperationsPreserveMembership(shape: &quot;iterator&quot;, count: 32)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0003777" startTime="2026-09-20T14:16:01.4550500+02:00" endTime="2026-09-20T14:16:01.4550500+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2785c36b-c577-427c-935f-324cae760d27" />
+    <UnitTestResult executionId="f57f66bb-9384-4722-8b67-5fc870db5373" testId="769280fc-113e-a96d-920a-8e574fcaeb2c" testName="BehaviorTests.ParallelDoesNotMutateOptionsAndPropagatesCallbackErrors" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0030016" startTime="2026-09-20T14:16:01.7369580+02:00" endTime="2026-09-20T14:16:01.7369580+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f57f66bb-9384-4722-8b67-5fc870db5373" />
+    <UnitTestResult executionId="3aecb845-35b9-49d6-9d79-4c1fe33d5460" testId="2ddad672-5f26-ac6f-d96c-5394d290fea0" testName="BehaviorTests.SortsStringKeysInBothDirections" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0013680" startTime="2026-09-20T14:16:01.7275530+02:00" endTime="2026-09-20T14:16:01.7275540+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3aecb845-35b9-49d6-9d79-4c1fe33d5460" />
+    <UnitTestResult executionId="0792e45c-a77f-4488-81f5-761524fde1e2" testId="63038738-2c9b-33a0-f777-21bcac93f079" testName="Test.CollectionIterableTest.ToRecord" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0002560" startTime="2026-09-20T14:16:01.4539360+02:00" endTime="2026-09-20T14:16:01.4539360+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0792e45c-a77f-4488-81f5-761524fde1e2" />
+    <UnitTestResult executionId="532d6790-4cd5-45ea-b955-329a32271b40" testId="a04f290c-67e9-15e5-dc8c-f766987b0e7e" testName="Test.CollectionIterableParallelTest.ForEachParallelIEnumerable" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0006073" startTime="2026-09-20T14:16:01.4538420+02:00" endTime="2026-09-20T14:16:01.4538420+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="532d6790-4cd5-45ea-b955-329a32271b40" />
+    <UnitTestResult executionId="9a7a2a2a-01fd-4511-a3b4-a4a9388b09d5" testId="1f6f5437-a1e0-6863-1215-e35aa544dd7a" testName="BehaviorTests.AsyncOperationsFinishAtAwait(shape: &quot;iterator&quot;, count: 1)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0003533" startTime="2026-09-20T14:16:01.4726380+02:00" endTime="2026-09-20T14:16:01.4726380+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9a7a2a2a-01fd-4511-a3b4-a4a9388b09d5" />
+    <UnitTestResult executionId="a4e9568f-11fd-40e5-921c-5a14062fd28d" testId="bac1b5ad-fb22-e3ba-129e-e1d1ef6b65df" testName="Test.CollectionIterableParallelTest.FilterParallelICollection" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0000983" startTime="2026-09-20T14:16:01.4541940+02:00" endTime="2026-09-20T14:16:01.4541940+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a4e9568f-11fd-40e5-921c-5a14062fd28d" />
+    <UnitTestResult executionId="17a82e64-c41e-46c1-a5db-27a58693d69d" testId="9ecec512-7534-47bb-a555-253d4b54abc1" testName="BehaviorTests.AsyncOperationsFinishAtAwait(shape: &quot;list&quot;, count: 1)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0006923" startTime="2026-09-20T14:16:01.4651710+02:00" endTime="2026-09-20T14:16:01.4651710+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="17a82e64-c41e-46c1-a5db-27a58693d69d" />
+    <UnitTestResult executionId="b93ec4ed-50e5-461f-8866-5765c875c146" testId="d16a8acc-254b-7dca-738b-07958409e7d9" testName="BehaviorTests.ParallelOperationsPreserveMembership(shape: &quot;array&quot;, count: 32)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0008477" startTime="2026-09-20T14:16:01.4547980+02:00" endTime="2026-09-20T14:16:01.4547980+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b93ec4ed-50e5-461f-8866-5765c875c146" />
+    <UnitTestResult executionId="b59ccfe8-b071-445e-abfb-f118e2bc2c7b" testId="64914c10-6625-af28-8d8a-9e55bcbb424c" testName="Test.CollectionIterableParallelTest.ToDictionaryParallel" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0007013" startTime="2026-09-20T14:16:01.4539700+02:00" endTime="2026-09-20T14:16:01.4539700+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b59ccfe8-b071-445e-abfb-f118e2bc2c7b" />
+    <UnitTestResult executionId="45809788-45c3-44cd-8982-6ec64bd57a48" testId="c5d01b0a-5938-a6c4-e1b2-0d784c29ff45" testName="Test.CollectionIterableTest.ConcatCollection" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0001504" startTime="2026-09-20T14:16:01.4538310+02:00" endTime="2026-09-20T14:16:01.4538310+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="45809788-45c3-44cd-8982-6ec64bd57a48" />
+    <UnitTestResult executionId="20253b4b-9d01-43eb-b001-35cb713aa9b2" testId="54e640ee-3b05-6eed-7eba-c70724cfd828" testName="BehaviorTests.ParallelOperationsPreserveMembership(shape: &quot;array&quot;, count: 0)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0003756" startTime="2026-09-20T14:16:01.4590670+02:00" endTime="2026-09-20T14:16:01.4590670+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="20253b4b-9d01-43eb-b001-35cb713aa9b2" />
+    <UnitTestResult executionId="728e8477-59fa-4f5a-ad5d-fa3106c42125" testId="dc4d71cc-b192-5917-1e8d-ee4fd98c5930" testName="Test.CollectionIterableTest.ToRecordEnumerable" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0011079" startTime="2026-09-20T14:16:01.4332670+02:00" endTime="2026-09-20T14:16:01.4332670+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="728e8477-59fa-4f5a-ad5d-fa3106c42125" />
+    <UnitTestResult executionId="b20ee7a7-9fb3-4f65-90a4-f61f6f10f0cd" testId="de748f2a-30ae-21c1-3931-346381649a13" testName="Test.CollectionIterableTest.SortCollectionDescending" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0002362" startTime="2026-09-20T14:16:01.4541300+02:00" endTime="2026-09-20T14:16:01.4541300+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b20ee7a7-9fb3-4f65-90a4-f61f6f10f0cd" />
+    <UnitTestResult executionId="47c2ee7d-55a3-4c04-92e5-26f5305aba88" testId="1237d985-9ccb-7c7f-ea19-c85f48981d51" testName="BehaviorTests.BothSortsHandleOrderedAndDuplicateKeys(count: 1)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0012420" startTime="2026-09-20T14:16:01.5131380+02:00" endTime="2026-09-20T14:16:01.5131380+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="47c2ee7d-55a3-4c04-92e5-26f5305aba88" />
+    <UnitTestResult executionId="d8be9eb0-5bd4-459b-90a1-e28df6488de9" testId="388942b0-9251-77f9-66bb-31d94382b46a" testName="Test.CollectionIterableTest.MapCollection" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0006021" startTime="2026-09-20T14:16:01.4527790+02:00" endTime="2026-09-20T14:16:01.4527790+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d8be9eb0-5bd4-459b-90a1-e28df6488de9" />
+    <UnitTestResult executionId="39f28c9d-a984-4fa2-b634-24aa5f2d73dd" testId="19a331a2-a6ff-681b-2a88-24b42c1dcbce" testName="BehaviorTests.AsyncOperationsFinishAtAwait(shape: &quot;array&quot;, count: 0)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0005607" startTime="2026-09-20T14:16:01.4710690+02:00" endTime="2026-09-20T14:16:01.4710690+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="39f28c9d-a984-4fa2-b634-24aa5f2d73dd" />
+    <UnitTestResult executionId="f72e4dc0-6d9a-4439-b6be-44709aac3df1" testId="50cad885-d269-e24f-1f35-a450a6fa29e4" testName="BehaviorTests.ParallelOperationsPreserveMembership(shape: &quot;list&quot;, count: 32)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0004486" startTime="2026-09-20T14:16:01.4597070+02:00" endTime="2026-09-20T14:16:01.4597070+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f72e4dc0-6d9a-4439-b6be-44709aac3df1" />
+    <UnitTestResult executionId="dad2db4f-23f4-449b-a3fe-40587d423c50" testId="bbbdba5c-6873-31f9-0574-80feb27bacbe" testName="Test.CollectionIterableAsyncTest.ForEachAsyncICollection" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0010709" startTime="2026-09-20T14:16:01.4545840+02:00" endTime="2026-09-20T14:16:01.4545850+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dad2db4f-23f4-449b-a3fe-40587d423c50" />
+    <UnitTestResult executionId="74c9c52f-1a6e-4f28-ba45-5ef0c1f5140e" testId="7b0905b7-2a5e-f3f6-74a7-8589f3fdc596" testName="Test.CollectionIterableAsyncTest.FilterAsyncIEnumerable" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0023026" startTime="2026-09-20T14:16:01.4528490+02:00" endTime="2026-09-20T14:16:01.4528490+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="74c9c52f-1a6e-4f28-ba45-5ef0c1f5140e" />
+    <UnitTestResult executionId="c5fd877b-2480-4989-a41e-b0abccc97483" testId="eb399cc0-5e44-ad7b-a61f-99f02cfee20d" testName="BehaviorTests.ParallelHonorsEitherCancellationSource(secondary: False)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0021844" startTime="2026-09-20T14:16:01.7257680+02:00" endTime="2026-09-20T14:16:01.7257680+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c5fd877b-2480-4989-a41e-b0abccc97483" />
+    <UnitTestResult executionId="f162c482-49a7-4325-83e8-c9274190b184" testId="15e1f783-b91c-5b7e-8515-422d0e641df5" testName="BehaviorTests.ParallelHonorsDegreeLimitAndCancellationDuringExecution" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0025808" startTime="2026-09-20T14:16:01.7337350+02:00" endTime="2026-09-20T14:16:01.7337350+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f162c482-49a7-4325-83e8-c9274190b184" />
+    <UnitTestResult executionId="3bca6896-d216-4b2b-889c-194519bc283a" testId="6115f649-ed56-e021-f01b-031ce26ab371" testName="BehaviorTests.AsyncExceptionsAndCancellationAreObservable" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0095068" startTime="2026-09-20T14:16:01.5076420+02:00" endTime="2026-09-20T14:16:01.5076420+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3bca6896-d216-4b2b-889c-194519bc283a" />
+    <UnitTestResult executionId="915821c7-be6d-49f8-bf73-9cf0ba9531a9" testId="a610c374-9f87-75ec-a19b-7743e3131f45" testName="BehaviorTests.RecordRejectsDuplicatesAndCallbacksRunOnce" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0003097" startTime="2026-09-20T14:16:01.7306910+02:00" endTime="2026-09-20T14:16:01.7306910+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="915821c7-be6d-49f8-bf73-9cf0ba9531a9" />
+    <UnitTestResult executionId="31107070-1db6-4876-9215-5ee55e8b051e" testId="1d2757f3-51fa-2f82-50f8-d81595e85e32" testName="BehaviorTests.ParallelOperationsPreserveMembership(shape: &quot;list&quot;, count: 0)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0007464" startTime="2026-09-20T14:16:01.4547800+02:00" endTime="2026-09-20T14:16:01.4547800+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="31107070-1db6-4876-9215-5ee55e8b051e" />
+    <UnitTestResult executionId="8011880e-6b55-4974-af76-04822def2c69" testId="9a0b8d6f-da7e-126f-7cc1-64bdaf244d09" testName="Test.CollectionIterableTest.ConcatEnumerable" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0056180" startTime="2026-09-20T14:16:01.4299870+02:00" endTime="2026-09-20T14:16:01.4300000+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8011880e-6b55-4974-af76-04822def2c69" />
+    <UnitTestResult executionId="e24d4549-4acf-4c5d-bb7e-8ac5781c443a" testId="d51844c2-6632-dcb3-0045-27bfc4388db0" testName="Test.CollectionIterableTest.ForEachCollection" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0002100" startTime="2026-09-20T14:16:01.4544260+02:00" endTime="2026-09-20T14:16:01.4544260+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e24d4549-4acf-4c5d-bb7e-8ac5781c443a" />
+    <UnitTestResult executionId="52be7a3b-99bc-47ba-99d7-effe109f1886" testId="c63294a8-69c1-ffcf-e6cb-2f75a22b4186" testName="Test.CollectionIterableTest.SortCollectionAscending" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0004587" startTime="2026-09-20T14:16:01.4528730+02:00" endTime="2026-09-20T14:16:01.4528730+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="52be7a3b-99bc-47ba-99d7-effe109f1886" />
+    <UnitTestResult executionId="381d53de-4e5c-4952-a889-d617137aac64" testId="67c16d20-fc9e-cd4b-3386-54ce406d5c2e" testName="Test.CollectionIterableTest.ToRecordStringAndNumbers" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0043771" startTime="2026-09-20T14:16:01.4538960+02:00" endTime="2026-09-20T14:16:01.4538960+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="381d53de-4e5c-4952-a889-d617137aac64" />
+    <UnitTestResult executionId="efc5d9f5-44db-47d7-aa2d-7517e2e5fbd3" testId="336be225-a841-f5f6-8543-7ae0582e5902" testName="Test.CollectionIterableTest.SliceEnumerable" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0001098" startTime="2026-09-20T14:16:01.4539580+02:00" endTime="2026-09-20T14:16:01.4539580+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="efc5d9f5-44db-47d7-aa2d-7517e2e5fbd3" />
+    <UnitTestResult executionId="17ad9e5b-5961-4f42-83f9-2888ed7c9c43" testId="6fc74593-bdbf-39bb-18f6-ef0fe172c80e" testName="BehaviorTests.CancellationDuringFinalCallbackCancelsTask" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0017436" startTime="2026-09-20T14:16:01.7302990+02:00" endTime="2026-09-20T14:16:01.7302990+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="17ad9e5b-5961-4f42-83f9-2888ed7c9c43" />
+    <UnitTestResult executionId="c9d982bc-161a-4d22-a9d7-0edc92c63e55" testId="50c590f1-0ab3-c531-0d50-6fffff7eaedd" testName="BehaviorTests.ParallelOperationsPreserveMembership(shape: &quot;iterator&quot;, count: 0)" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0003895" startTime="2026-09-20T14:16:01.4561940+02:00" endTime="2026-09-20T14:16:01.4561940+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c9d982bc-161a-4d22-a9d7-0edc92c63e55" />
+    <UnitTestResult executionId="18788f19-0417-4b04-a9f6-bdeb063c1279" testId="7cba0af7-ba70-3d52-4f92-890ddbf5429f" testName="Test.CollectionIterableParallelTest.SortCollectionParallelIEnumerableAscending" computerName="Johnnys-MacBook-Pro" duration="00:00:00.0001361" startTime="2026-09-20T14:16:01.4536560+02:00" endTime="2026-09-20T14:16:01.4536560+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="18788f19-0417-4b04-a9f6-bdeb063c1279" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Test.CollectionIterableTest.Filter" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="32eb8e5b-0c4a-0404-56a6-0a4033f1f519">
+      <Execution id="1ee15fc5-f71d-4bb1-8bea-629d0b498b28" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableTest" name="Filter" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.AsyncOperationsFinishAtAwait(shape: &quot;list&quot;, count: 1)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="9ecec512-7534-47bb-a555-253d4b54abc1">
+      <Execution id="17a82e64-c41e-46c1-a5db-27a58693d69d" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="AsyncOperationsFinishAtAwait" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableTest.Reduce" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="c9b54675-5ad8-1bfb-3f8a-66aa8903952a">
+      <Execution id="c66608b7-479a-4050-bc8f-6687dc07644a" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableTest" name="Reduce" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.AsyncOperationsFinishAtAwait(shape: &quot;array&quot;, count: 32)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="473e5f08-c12e-f60c-3c01-eb8300fa0d12">
+      <Execution id="3ca90df5-b8cf-4306-a982-7f8ae1431530" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="AsyncOperationsFinishAtAwait" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableParallelTest.ForEachParallelIEnumerable" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="a04f290c-67e9-15e5-dc8c-f766987b0e7e">
+      <Execution id="532d6790-4cd5-45ea-b955-329a32271b40" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableParallelTest" name="ForEachParallelIEnumerable" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.BothSortsHandleOrderedAndDuplicateKeys(count: 2048)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="1d1a02f3-8f2c-c8ce-bd0f-7602789deeb8">
+      <Execution id="0d010484-b235-4cbb-84e5-138c4ae9692b" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="BothSortsHandleOrderedAndDuplicateKeys" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableTest.Map" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="d9f469a1-f624-c004-b17d-818c2269ff06">
+      <Execution id="191ad1dc-eaf5-4698-b294-9b6baef56798" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableTest" name="Map" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.ParallelOperationsPreserveMembership(shape: &quot;list&quot;, count: 1000)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="49d00f7f-bac5-0f84-243b-c18c80e5982c">
+      <Execution id="a4d73846-6437-44be-bde6-47233a649349" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="ParallelOperationsPreserveMembership" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.AsyncOperationsFinishAtAwait(shape: &quot;array&quot;, count: 0)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="19a331a2-a6ff-681b-2a88-24b42c1dcbce">
+      <Execution id="39f28c9d-a984-4fa2-b634-24aa5f2d73dd" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="AsyncOperationsFinishAtAwait" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.AsyncOperationsFinishAtAwait(shape: &quot;iterator&quot;, count: 1000)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="ff9a75db-c85b-029f-4dea-8535625544a0">
+      <Execution id="a18d7015-4f2b-4ea9-a4f3-c183657e23cd" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="AsyncOperationsFinishAtAwait" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableTest.ConcatCollection" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="c5d01b0a-5938-a6c4-e1b2-0d784c29ff45">
+      <Execution id="45809788-45c3-44cd-8982-6ec64bd57a48" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableTest" name="ConcatCollection" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableTest.ToRecordStringAndNumbers" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="67c16d20-fc9e-cd4b-3386-54ce406d5c2e">
+      <Execution id="381d53de-4e5c-4952-a889-d617137aac64" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableTest" name="ToRecordStringAndNumbers" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableTest.SortCollectionAscending" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="c63294a8-69c1-ffcf-e6cb-2f75a22b4186">
+      <Execution id="52be7a3b-99bc-47ba-99d7-effe109f1886" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableTest" name="SortCollectionAscending" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.ParallelOperationsPreserveMembership(shape: &quot;iterator&quot;, count: 1)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="eeb46e38-d618-6025-e481-e76078b42bb3">
+      <Execution id="393278c4-92da-4dec-af80-1dc2dd4dda4f" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="ParallelOperationsPreserveMembership" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.SequentialOperationsMatchReference(shape: &quot;list&quot;, count: 1)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="9e34faa7-9f8d-05a0-791c-30381ab3fb0c">
+      <Execution id="214cbde0-ea8b-422c-a85f-1af1cfb1c5b4" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="SequentialOperationsMatchReference" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.ParallelOperationsPreserveMembership(shape: &quot;iterator&quot;, count: 32)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="ee7dcacf-32c1-0ca8-9888-90517ab2fa55">
+      <Execution id="2785c36b-c577-427c-935f-324cae760d27" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="ParallelOperationsPreserveMembership" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableTest.SliceCollection" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="c519ca39-85ea-71ce-c155-6e2416756398">
+      <Execution id="dc8c6b79-2d76-42f9-bff8-a88329af42f2" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableTest" name="SliceCollection" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableParallelTest.SortCollectionParallelDescending" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="1acba469-1360-4b37-a81e-7139580d586d">
+      <Execution id="5f3df637-36f4-4b2e-ac71-13841c2da69c" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableParallelTest" name="SortCollectionParallelDescending" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableTest.SortCollectionDescending" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="de748f2a-30ae-21c1-3931-346381649a13">
+      <Execution id="b20ee7a7-9fb3-4f65-90a4-f61f6f10f0cd" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableTest" name="SortCollectionDescending" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableTest.ForEachCollection" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="d51844c2-6632-dcb3-0045-27bfc4388db0">
+      <Execution id="e24d4549-4acf-4c5d-bb7e-8ac5781c443a" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableTest" name="ForEachCollection" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.BothSortsHandleOrderedAndDuplicateKeys(count: 32)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="a72524f3-ba13-5632-ba84-5385bb52e92f">
+      <Execution id="9c4e444f-42aa-4479-a581-7fc1e84b9a85" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="BothSortsHandleOrderedAndDuplicateKeys" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableParallelTest.FilterParallelWhenCancelled" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="38207d83-f77c-3e53-2a82-cc7302347856">
+      <Execution id="7d0f3039-4520-404e-aae3-387dc573fb5e" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableParallelTest" name="FilterParallelWhenCancelled" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.ParallelOperationsPreserveMembership(shape: &quot;list&quot;, count: 32)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="50cad885-d269-e24f-1f35-a450a6fa29e4">
+      <Execution id="f72e4dc0-6d9a-4439-b6be-44709aac3df1" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="ParallelOperationsPreserveMembership" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.AsyncOperationsFinishAtAwait(shape: &quot;array&quot;, count: 1000)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="d692e060-644b-e7e4-9374-469bccf4cdf2">
+      <Execution id="aa61fc20-b48e-49c8-89f9-6bd35eef2daf" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="AsyncOperationsFinishAtAwait" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.AsyncOperationsFinishAtAwait(shape: &quot;list&quot;, count: 32)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="14160670-1272-8381-ad25-bd6df2258713">
+      <Execution id="c6d4a581-345c-478c-993c-6cf4232b14cf" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="AsyncOperationsFinishAtAwait" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableAsyncTest.FilterParallelAsyncICollection" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="89412c8d-8cab-7bd0-bdf1-2799d79c2025">
+      <Execution id="ef30788f-4940-49b4-97b1-a109cf90f665" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableAsyncTest" name="FilterParallelAsyncICollection" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.ParallelOperationsPreserveMembership(shape: &quot;array&quot;, count: 0)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="54e640ee-3b05-6eed-7eba-c70724cfd828">
+      <Execution id="20253b4b-9d01-43eb-b001-35cb713aa9b2" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="ParallelOperationsPreserveMembership" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.BothSortsHandleOrderedAndDuplicateKeys(count: 1)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="1237d985-9ccb-7c7f-ea19-c85f48981d51">
+      <Execution id="47c2ee7d-55a3-4c04-92e5-26f5305aba88" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="BothSortsHandleOrderedAndDuplicateKeys" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableTest.ForEachEnumerable" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="10c05642-0d2e-92a3-d6a4-725f1fc285c4">
+      <Execution id="d407f075-c7e1-43c1-b93a-6a5fbaa25d66" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableTest" name="ForEachEnumerable" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.SequentialOperationsMatchReference(shape: &quot;iterator&quot;, count: 1000)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="d68a6387-0e24-737e-5915-673c9a2d5c59">
+      <Execution id="2d7205b7-9657-42b0-9b20-b8268064192c" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="SequentialOperationsMatchReference" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.SortsStringKeysInBothDirections" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="2ddad672-5f26-ac6f-d96c-5394d290fea0">
+      <Execution id="3aecb845-35b9-49d6-9d79-4c1fe33d5460" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="SortsStringKeysInBothDirections" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableParallelTest.ToDictionaryParallel" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="64914c10-6625-af28-8d8a-9e55bcbb424c">
+      <Execution id="b59ccfe8-b071-445e-abfb-f118e2bc2c7b" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableParallelTest" name="ToDictionaryParallel" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableParallelTest.FilterParallel" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="798defdc-d99d-2fac-d532-3568b67354d9">
+      <Execution id="7281f3d5-8a83-4feb-b162-48744e6294c4" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableParallelTest" name="FilterParallel" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableParallelTest.SortCollectionParallelAscending" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="b5d53198-321c-1220-93a1-158a73e2deff">
+      <Execution id="013cabad-a6d4-4bc0-a3aa-6b1063c0d942" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableParallelTest" name="SortCollectionParallelAscending" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.SliceEnumeratesOnceOnlyThroughEndAndDisposes" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="e2c1855e-5036-f3f1-db57-251a2bb2ec05">
+      <Execution id="fbab136e-94d2-43f1-9091-1ad6cf20aee0" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="SliceEnumeratesOnceOnlyThroughEndAndDisposes" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableAsyncTest.FilterParallelAsyncIEnumerable" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="601f1de8-1ff7-04bd-76f4-1ed65b91197d">
+      <Execution id="4dfd279d-aa84-4243-bc8c-cd1622559b57" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableAsyncTest" name="FilterParallelAsyncIEnumerable" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableParallelTest.SortCollectionParallelIEnumerableDescending" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="b4a5b523-9e5c-f353-acf8-632ef71e5447">
+      <Execution id="de074168-f8fc-4ec7-ab03-817bacedffb6" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableParallelTest" name="SortCollectionParallelIEnumerableDescending" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.SequentialOperationsMatchReference(shape: &quot;iterator&quot;, count: 32)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="1c6819ef-2b9d-31de-eae6-91ba5aced3e2">
+      <Execution id="5de601bb-d383-4d56-b99d-1b5d2a0ada0c" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="SequentialOperationsMatchReference" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.MapInferenceWorksForArrayAndCollection" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="a2d36c93-a4ea-6b87-e58d-e86df7ed8e62">
+      <Execution id="77e0f615-1001-4fca-afdc-10702a1a5b70" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="MapInferenceWorksForArrayAndCollection" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.AsyncOperationsFinishAtAwait(shape: &quot;array&quot;, count: 1)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="3ca1a663-9631-63a2-9322-076fd6cd1f92">
+      <Execution id="0af84133-5b65-4ef4-8d9b-0c5ee0486645" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="AsyncOperationsFinishAtAwait" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableTest.SliceEnumerable" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="336be225-a841-f5f6-8543-7ae0582e5902">
+      <Execution id="efc5d9f5-44db-47d7-aa2d-7517e2e5fbd3" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableTest" name="SliceEnumerable" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.ParallelOperationsPreserveMembership(shape: &quot;array&quot;, count: 1000)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="f2223e4b-4f78-7bca-e10e-140d3abe7452">
+      <Execution id="def0c285-f418-45b4-a2d9-1d907f2392d6" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="ParallelOperationsPreserveMembership" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.ParallelOperationsPreserveMembership(shape: &quot;array&quot;, count: 1)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="0c8fd6c5-bd7d-0162-8855-ded0fc443b1d">
+      <Execution id="a7b03653-1611-4da9-bedf-290aefae12b8" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="ParallelOperationsPreserveMembership" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.SequentialOperationsMatchReference(shape: &quot;list&quot;, count: 32)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="d534f18b-441b-c78e-d608-4dad93b5acd1">
+      <Execution id="cfa24b49-8885-426b-a598-84dfcb17e73e" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="SequentialOperationsMatchReference" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.ParallelOperationsPreserveMembership(shape: &quot;iterator&quot;, count: 1000)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="461a0e94-1ce6-9f59-96b7-33ada46728ac">
+      <Execution id="b5f449d3-2d68-4377-b8f7-a9047d82fa85" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="ParallelOperationsPreserveMembership" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableParallelTest.ToDictionaryParallelIEnumerable" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="d5d72f3e-46a3-06ae-e44a-6411aa75b31e">
+      <Execution id="d575678e-9fa3-4a9e-8541-349959ab688a" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableParallelTest" name="ToDictionaryParallelIEnumerable" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.CancellationDuringFinalCallbackCancelsTask" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="6fc74593-bdbf-39bb-18f6-ef0fe172c80e">
+      <Execution id="17ad9e5b-5961-4f42-83f9-2888ed7c9c43" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="CancellationDuringFinalCallbackCancelsTask" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableAsyncTest.ConcatAsync" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="db495b7c-950a-2411-bf37-50f602864525">
+      <Execution id="88f173c1-d368-408c-9935-43026efeda51" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableAsyncTest" name="ConcatAsync" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableTest.MapEnumerable" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="65ddab89-99c7-da66-cb07-cc88b5c12143">
+      <Execution id="7d93e1cc-2928-4c10-b6c5-66a5748613fe" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableTest" name="MapEnumerable" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.ParallelHonorsDegreeLimitAndCancellationDuringExecution" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="15e1f783-b91c-5b7e-8515-422d0e641df5">
+      <Execution id="f162c482-49a7-4325-83e8-c9274190b184" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="ParallelHonorsDegreeLimitAndCancellationDuringExecution" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableAsyncTest.ConcatAsyncICollection" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="af425b93-b025-f073-1a5d-74dba367dec9">
+      <Execution id="4caa6834-1147-4245-a2e1-6763a2ef6f2c" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableAsyncTest" name="ConcatAsyncICollection" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.AsyncOperationsFinishAtAwait(shape: &quot;list&quot;, count: 1000)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="39dc3176-a5d3-3b03-6951-f3aa9d110405">
+      <Execution id="e627492d-6799-42d5-8d32-c28410f00ae7" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="AsyncOperationsFinishAtAwait" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.SequentialOperationsMatchReference(shape: &quot;array&quot;, count: 1)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="41123350-ef1d-8452-b33b-49ec907e37ac">
+      <Execution id="7d300d1a-48b6-42d8-8c47-3ae5c5c92730" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="SequentialOperationsMatchReference" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableTest.ReduceCollection" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="a290bedb-520d-fc53-af65-fe28b60117c2">
+      <Execution id="90d2b610-1231-407b-aa55-4e5df964fa82" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableTest" name="ReduceCollection" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableParallelTest.SortCollectionParallelIEnumerableAscending" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="7cba0af7-ba70-3d52-4f92-890ddbf5429f">
+      <Execution id="18788f19-0417-4b04-a9f6-bdeb063c1279" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableParallelTest" name="SortCollectionParallelIEnumerableAscending" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableTest.ForEach" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="a8689b89-91d2-aa36-69da-b336f2a96078">
+      <Execution id="86c7a484-9277-46d7-b60f-1b87616414da" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableTest" name="ForEach" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.AsyncOperationsFinishAtAwait(shape: &quot;iterator&quot;, count: 32)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="1506c9fd-d30d-707f-c5c0-ac13545005ee">
+      <Execution id="b01f14ff-572d-40c5-b48b-fb1fc608a98c" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="AsyncOperationsFinishAtAwait" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.AsyncExceptionsAndCancellationAreObservable" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="6115f649-ed56-e021-f01b-031ce26ab371">
+      <Execution id="3bca6896-d216-4b2b-889c-194519bc283a" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="AsyncExceptionsAndCancellationAreObservable" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableAsyncTest.ConcatAsyncIEnumerable" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="4d05be38-9243-1d31-7400-741e5655cfb7">
+      <Execution id="69ea52df-984e-4c24-be9b-a5f7dbb463bd" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableAsyncTest" name="ConcatAsyncIEnumerable" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.ParallelHonorsEitherCancellationSource(secondary: True)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="891decea-b534-8a43-a60b-ad70264205c2">
+      <Execution id="96ef30bc-d97f-48ed-b3de-51cd1b1afcc2" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="ParallelHonorsEitherCancellationSource" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.ParallelDictionaryKeepsDuplicateKeyContractForLargerInputs" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="c09a8426-77ff-447f-f31e-d895be906053">
+      <Execution id="3e3754a5-c19d-4c79-90fe-9f17144dfcd1" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="ParallelDictionaryKeepsDuplicateKeyContractForLargerInputs" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.ParallelDoesNotMutateOptionsAndPropagatesCallbackErrors" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="769280fc-113e-a96d-920a-8e574fcaeb2c">
+      <Execution id="f57f66bb-9384-4722-8b67-5fc870db5373" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="ParallelDoesNotMutateOptionsAndPropagatesCallbackErrors" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.SequentialOperationsMatchReference(shape: &quot;list&quot;, count: 0)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="827acfff-ce41-7cf3-031b-7e9ab60cc54a">
+      <Execution id="4e8c8fb0-d3b5-41fd-ad1f-2ad1295353e2" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="SequentialOperationsMatchReference" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.AsyncOperationsFinishAtAwait(shape: &quot;iterator&quot;, count: 1)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="1f6f5437-a1e0-6863-1215-e35aa544dd7a">
+      <Execution id="9a7a2a2a-01fd-4511-a3b4-a4a9388b09d5" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="AsyncOperationsFinishAtAwait" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableAsyncTest.ForEachAsync" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="0eba5a24-84cb-4042-9666-dfb2e01fae19">
+      <Execution id="faae50d1-b517-4022-b445-50c44015bfcb" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableAsyncTest" name="ForEachAsync" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableParallelTest.ForEachParallelWhenCancelled" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="d3f5331d-4164-de88-b6d6-1ab1d5894410">
+      <Execution id="6ddee145-050c-4242-bd02-63965465766c" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableParallelTest" name="ForEachParallelWhenCancelled" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableTest.Concat" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="941956aa-0016-a7c1-1a4a-0d2c8a7ecbb0">
+      <Execution id="4fd3d47e-7b39-449d-a607-fa60ea04e28b" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableTest" name="Concat" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.SequentialOperationsMatchReference(shape: &quot;array&quot;, count: 32)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="51b948b1-4c6d-5ece-3f77-1ea81ea322b6">
+      <Execution id="d6744e45-d763-438b-bd67-d3531b3f3d40" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="SequentialOperationsMatchReference" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.BothSortsHandleOrderedAndDuplicateKeys(count: 0)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="e5c5c89a-75a1-5fbe-ae00-31daa1d0643b">
+      <Execution id="adf99efe-5dc5-4c5b-89a1-f8ed5f625c25" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="BothSortsHandleOrderedAndDuplicateKeys" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableTest.FilterEnumerable" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="f665950b-ed03-d9d0-a0fe-37c5e75d6d9c">
+      <Execution id="8bbd2f75-e2b0-4f46-9051-bfc2f54ab0de" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableTest" name="FilterEnumerable" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.ParallelOperationsPreserveMembership(shape: &quot;list&quot;, count: 1)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="7080445b-9b75-180b-964b-e7277299103b">
+      <Execution id="ce0d55b2-a701-41d0-a429-e7eded1a0b10" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="ParallelOperationsPreserveMembership" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.ParallelHonorsEitherCancellationSource(secondary: False)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="eb399cc0-5e44-ad7b-a61f-99f02cfee20d">
+      <Execution id="c5fd877b-2480-4989-a41e-b0abccc97483" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="ParallelHonorsEitherCancellationSource" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.ParallelOperationsPreserveMembership(shape: &quot;array&quot;, count: 32)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="d16a8acc-254b-7dca-738b-07958409e7d9">
+      <Execution id="b93ec4ed-50e5-461f-8866-5765c875c146" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="ParallelOperationsPreserveMembership" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.SequentialOperationsMatchReference(shape: &quot;list&quot;, count: 1000)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="aeb2c5b5-8ac4-cfbf-62ff-9dd05374bdaf">
+      <Execution id="4d4bb3c3-49d5-4730-9a65-40323d097c7d" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="SequentialOperationsMatchReference" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableParallelTest.FilterParallelICollection" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="bac1b5ad-fb22-e3ba-129e-e1d1ef6b65df">
+      <Execution id="a4e9568f-11fd-40e5-921c-5a14062fd28d" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableParallelTest" name="FilterParallelICollection" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableAsyncTest.FilterParallelAsync" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="6ca11de3-02c9-2639-3153-e4fdbca04544">
+      <Execution id="fdf07a96-e3de-441c-afd8-4e06387be625" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableAsyncTest" name="FilterParallelAsync" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableParallelTest.ForEachParallelICollection" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="433a116f-43fe-85ef-c96e-938cb4bdf2b7">
+      <Execution id="65a44613-8277-4733-a012-3553f640c1b7" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableParallelTest" name="ForEachParallelICollection" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableAsyncTest.FilterAsync" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="eac78a5b-8fe7-8752-a1bc-c6c6dcebd47f">
+      <Execution id="95d0972b-e12d-4408-b5d3-553298ab4efb" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableAsyncTest" name="FilterAsync" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableTest.ConcatEnumerable" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="9a0b8d6f-da7e-126f-7cc1-64bdaf244d09">
+      <Execution id="8011880e-6b55-4974-af76-04822def2c69" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableTest" name="ConcatEnumerable" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.SequentialOperationsMatchReference(shape: &quot;iterator&quot;, count: 1)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="90a46e78-b21c-e036-c874-dc7ede0ca5fd">
+      <Execution id="f21cf1c7-5297-47ed-bd2d-914f09f2b51e" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="SequentialOperationsMatchReference" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableAsyncTest.FilterAsyncICollection" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="82e5473b-443e-d95f-2af3-610c893cb1f5">
+      <Execution id="327947e2-0fc1-40de-bc99-0e26188e7e05" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableAsyncTest" name="FilterAsyncICollection" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableTest.MapCollection" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="388942b0-9251-77f9-66bb-31d94382b46a">
+      <Execution id="d8be9eb0-5bd4-459b-90a1-e28df6488de9" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableTest" name="MapCollection" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableTest.ToRecordCollection" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="b96bfae6-4535-f629-4a6f-251ec649c264">
+      <Execution id="e78adb4d-248f-4f76-8562-4c8718c91279" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableTest" name="ToRecordCollection" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableParallelTest.FilterParallelIEnumerable" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="847b3b43-69b8-5908-2424-5296a2dd569a">
+      <Execution id="ca94962a-4ed1-4b21-b6ef-30f0c659c297" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableParallelTest" name="FilterParallelIEnumerable" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableTest.FilterCollection" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="5c2d404a-00d1-3694-4f2f-46a6b8dc1b57">
+      <Execution id="5ade305e-6e96-4ddb-94f0-c5437d68247f" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableTest" name="FilterCollection" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.SequentialOperationsMatchReference(shape: &quot;array&quot;, count: 1000)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="7f4d901d-8204-70b1-b495-65b992ce5130">
+      <Execution id="31ab751d-eddb-4c28-9718-9460c3a61cc6" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="SequentialOperationsMatchReference" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.ParallelOperationsPreserveMembership(shape: &quot;list&quot;, count: 0)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="1d2757f3-51fa-2f82-50f8-d81595e85e32">
+      <Execution id="31107070-1db6-4876-9215-5ee55e8b051e" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="ParallelOperationsPreserveMembership" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableAsyncTest.ForEachAsyncIEnumerable" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="3630ee18-cb29-cbff-26a6-c9b4dc1b3588">
+      <Execution id="e516977a-9b5c-4034-a2c2-592977412891" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableAsyncTest" name="ForEachAsyncIEnumerable" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableTest.Slice" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="4696a9b9-a8c5-332d-d43f-d22f8b236523">
+      <Execution id="34b28340-f74d-42a1-b5f6-0a8d422ee69f" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableTest" name="Slice" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.SequentialOperationsMatchReference(shape: &quot;array&quot;, count: 0)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="d6bd93a6-5192-e5db-46e5-f82aef5d6693">
+      <Execution id="59ab3226-81c1-4fa8-9e24-46ed9b9791c8" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="SequentialOperationsMatchReference" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableTest.ToRecord" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="63038738-2c9b-33a0-f777-21bcac93f079">
+      <Execution id="0792e45c-a77f-4488-81f5-761524fde1e2" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableTest" name="ToRecord" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.AsyncOperationsFinishAtAwait(shape: &quot;list&quot;, count: 0)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="7f9701f3-573c-8caf-491c-8ba8aef7cd59">
+      <Execution id="1b6a2819-5cd1-4120-907e-b3f315750c51" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="AsyncOperationsFinishAtAwait" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableAsyncTest.FilterAsyncIEnumerable" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="7b0905b7-2a5e-f3f6-74a7-8589f3fdc596">
+      <Execution id="74c9c52f-1a6e-4f28-ba45-5ef0c1f5140e" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableAsyncTest" name="FilterAsyncIEnumerable" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.RecordRejectsDuplicatesAndCallbacksRunOnce" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="a610c374-9f87-75ec-a19b-7743e3131f45">
+      <Execution id="915821c7-be6d-49f8-bf73-9cf0ba9531a9" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="RecordRejectsDuplicatesAndCallbacksRunOnce" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.LazyOperationsRemainLazyAndReplayable" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="94b36a89-7797-253d-a55f-7e4c1089d187">
+      <Execution id="dbbd90a2-b79b-4d35-bd05-4741285a6caf" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="LazyOperationsRemainLazyAndReplayable" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableAsyncTest.ForEachAsyncICollection" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="bbbdba5c-6873-31f9-0574-80feb27bacbe">
+      <Execution id="dad2db4f-23f4-449b-a3fe-40587d423c50" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableAsyncTest" name="ForEachAsyncICollection" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.BothSortsHandleOrderedAndDuplicateKeys(count: 5000)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="5ebdc504-bf7a-44bc-2e0a-2147bf31ef98">
+      <Execution id="a770eba3-1831-4a12-a00e-c5d5746acb73" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="BothSortsHandleOrderedAndDuplicateKeys" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.BothSortsHandleOrderedAndDuplicateKeys(count: 50000)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="632ada4b-1ac5-73f3-54f7-871228d68291">
+      <Execution id="74f88464-9ac6-4c4b-a7d1-8d644560e03e" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="BothSortsHandleOrderedAndDuplicateKeys" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableParallelTest.ForEachParallel" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="1e1aa50f-2a24-7526-8c3d-087ea9f74355">
+      <Execution id="cbeb435f-2ca8-4f4a-86a6-66a77a527549" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableParallelTest" name="ForEachParallel" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.AsyncOperationsFinishAtAwait(shape: &quot;iterator&quot;, count: 0)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="af83f971-bf53-48ea-cf89-2910c14eea30">
+      <Execution id="3278516f-7993-4cb0-9a5b-104c08a456f0" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="AsyncOperationsFinishAtAwait" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.ParallelOperationsPreserveMembership(shape: &quot;iterator&quot;, count: 0)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="50c590f1-0ab3-c531-0d50-6fffff7eaedd">
+      <Execution id="c9d982bc-161a-4d22-a9d7-0edc92c63e55" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="ParallelOperationsPreserveMembership" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableTest.ToRecordEnumerable" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="dc4d71cc-b192-5917-1e8d-ee4fd98c5930">
+      <Execution id="728e8477-59fa-4f5a-ad5d-fa3106c42125" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableTest" name="ToRecordEnumerable" />
+    </UnitTest>
+    <UnitTest name="BehaviorTests.SequentialOperationsMatchReference(shape: &quot;iterator&quot;, count: 0)" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="4a383bd6-5d76-dabb-5df3-4dbe3023a656">
+      <Execution id="375cdebd-3f4f-4083-b8dd-91d19bbd0dd5" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="BehaviorTests" name="SequentialOperationsMatchReference" />
+    </UnitTest>
+    <UnitTest name="Test.CollectionIterableTest.ReduceEnumerable" storage="/tmp/collection-performance-work/performance/tests/bin/release/net8.0/tests.dll" id="8dd63cfe-3b21-6c74-e6d7-bbadf6dda5d2">
+      <Execution id="84b11e77-0784-4cb5-8aa2-497050bda3aa" />
+      <TestMethod codeBase="/tmp/collection-performance-work/Performance/Tests/bin/Release/net8.0/Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="Test.CollectionIterableTest" name="ReduceEnumerable" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="d692e060-644b-e7e4-9374-469bccf4cdf2" executionId="aa61fc20-b48e-49c8-89f9-6bd35eef2daf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5ebdc504-bf7a-44bc-2e0a-2147bf31ef98" executionId="a770eba3-1831-4a12-a00e-c5d5746acb73" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f2223e4b-4f78-7bca-e10e-140d3abe7452" executionId="def0c285-f418-45b4-a2d9-1d907f2392d6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="db495b7c-950a-2411-bf37-50f602864525" executionId="88f173c1-d368-408c-9935-43026efeda51" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="601f1de8-1ff7-04bd-76f4-1ed65b91197d" executionId="4dfd279d-aa84-4243-bc8c-cd1622559b57" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a2d36c93-a4ea-6b87-e58d-e86df7ed8e62" executionId="77e0f615-1001-4fca-afdc-10702a1a5b70" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7080445b-9b75-180b-964b-e7277299103b" executionId="ce0d55b2-a701-41d0-a429-e7eded1a0b10" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1e1aa50f-2a24-7526-8c3d-087ea9f74355" executionId="cbeb435f-2ca8-4f4a-86a6-66a77a527549" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6ca11de3-02c9-2639-3153-e4fdbca04544" executionId="fdf07a96-e3de-441c-afd8-4e06387be625" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="891decea-b534-8a43-a60b-ad70264205c2" executionId="96ef30bc-d97f-48ed-b3de-51cd1b1afcc2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a72524f3-ba13-5632-ba84-5385bb52e92f" executionId="9c4e444f-42aa-4479-a581-7fc1e84b9a85" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aeb2c5b5-8ac4-cfbf-62ff-9dd05374bdaf" executionId="4d4bb3c3-49d5-4730-9a65-40323d097c7d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b5d53198-321c-1220-93a1-158a73e2deff" executionId="013cabad-a6d4-4bc0-a3aa-6b1063c0d942" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="51b948b1-4c6d-5ece-3f77-1ea81ea322b6" executionId="d6744e45-d763-438b-bd67-d3531b3f3d40" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="14160670-1272-8381-ad25-bd6df2258713" executionId="c6d4a581-345c-478c-993c-6cf4232b14cf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b96bfae6-4535-f629-4a6f-251ec649c264" executionId="e78adb4d-248f-4f76-8562-4c8718c91279" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e2c1855e-5036-f3f1-db57-251a2bb2ec05" executionId="fbab136e-94d2-43f1-9091-1ad6cf20aee0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a8689b89-91d2-aa36-69da-b336f2a96078" executionId="86c7a484-9277-46d7-b60f-1b87616414da" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="10c05642-0d2e-92a3-d6a4-725f1fc285c4" executionId="d407f075-c7e1-43c1-b93a-6a5fbaa25d66" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="941956aa-0016-a7c1-1a4a-0d2c8a7ecbb0" executionId="4fd3d47e-7b39-449d-a607-fa60ea04e28b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="89412c8d-8cab-7bd0-bdf1-2799d79c2025" executionId="ef30788f-4940-49b4-97b1-a109cf90f665" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1d1a02f3-8f2c-c8ce-bd0f-7602789deeb8" executionId="0d010484-b235-4cbb-84e5-138c4ae9692b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d5d72f3e-46a3-06ae-e44a-6411aa75b31e" executionId="d575678e-9fa3-4a9e-8541-349959ab688a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d3f5331d-4164-de88-b6d6-1ab1d5894410" executionId="6ddee145-050c-4242-bd02-63965465766c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="49d00f7f-bac5-0f84-243b-c18c80e5982c" executionId="a4d73846-6437-44be-bde6-47233a649349" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4a383bd6-5d76-dabb-5df3-4dbe3023a656" executionId="375cdebd-3f4f-4083-b8dd-91d19bbd0dd5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="38207d83-f77c-3e53-2a82-cc7302347856" executionId="7d0f3039-4520-404e-aae3-387dc573fb5e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f665950b-ed03-d9d0-a0fe-37c5e75d6d9c" executionId="8bbd2f75-e2b0-4f46-9051-bfc2f54ab0de" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a290bedb-520d-fc53-af65-fe28b60117c2" executionId="90d2b610-1231-407b-aa55-4e5df964fa82" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="32eb8e5b-0c4a-0404-56a6-0a4033f1f519" executionId="1ee15fc5-f71d-4bb1-8bea-629d0b498b28" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="90a46e78-b21c-e036-c874-dc7ede0ca5fd" executionId="f21cf1c7-5297-47ed-bd2d-914f09f2b51e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1acba469-1360-4b37-a81e-7139580d586d" executionId="5f3df637-36f4-4b2e-ac71-13841c2da69c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9e34faa7-9f8d-05a0-791c-30381ab3fb0c" executionId="214cbde0-ea8b-422c-a85f-1af1cfb1c5b4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1506c9fd-d30d-707f-c5c0-ac13545005ee" executionId="b01f14ff-572d-40c5-b48b-fb1fc608a98c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="433a116f-43fe-85ef-c96e-938cb4bdf2b7" executionId="65a44613-8277-4733-a012-3553f640c1b7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1c6819ef-2b9d-31de-eae6-91ba5aced3e2" executionId="5de601bb-d383-4d56-b99d-1b5d2a0ada0c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="39dc3176-a5d3-3b03-6951-f3aa9d110405" executionId="e627492d-6799-42d5-8d32-c28410f00ae7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c519ca39-85ea-71ce-c155-6e2416756398" executionId="dc8c6b79-2d76-42f9-bff8-a88329af42f2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="847b3b43-69b8-5908-2424-5296a2dd569a" executionId="ca94962a-4ed1-4b21-b6ef-30f0c659c297" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b4a5b523-9e5c-f353-acf8-632ef71e5447" executionId="de074168-f8fc-4ec7-ab03-817bacedffb6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0eba5a24-84cb-4042-9666-dfb2e01fae19" executionId="faae50d1-b517-4022-b445-50c44015bfcb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="461a0e94-1ce6-9f59-96b7-33ada46728ac" executionId="b5f449d3-2d68-4377-b8f7-a9047d82fa85" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d6bd93a6-5192-e5db-46e5-f82aef5d6693" executionId="59ab3226-81c1-4fa8-9e24-46ed9b9791c8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e5c5c89a-75a1-5fbe-ae00-31daa1d0643b" executionId="adf99efe-5dc5-4c5b-89a1-f8ed5f625c25" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5c2d404a-00d1-3694-4f2f-46a6b8dc1b57" executionId="5ade305e-6e96-4ddb-94f0-c5437d68247f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eeb46e38-d618-6025-e481-e76078b42bb3" executionId="393278c4-92da-4dec-af80-1dc2dd4dda4f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4d05be38-9243-1d31-7400-741e5655cfb7" executionId="69ea52df-984e-4c24-be9b-a5f7dbb463bd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="94b36a89-7797-253d-a55f-7e4c1089d187" executionId="dbbd90a2-b79b-4d35-bd05-4741285a6caf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="af83f971-bf53-48ea-cf89-2910c14eea30" executionId="3278516f-7993-4cb0-9a5b-104c08a456f0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="798defdc-d99d-2fac-d532-3568b67354d9" executionId="7281f3d5-8a83-4feb-b162-48744e6294c4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="82e5473b-443e-d95f-2af3-610c893cb1f5" executionId="327947e2-0fc1-40de-bc99-0e26188e7e05" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eac78a5b-8fe7-8752-a1bc-c6c6dcebd47f" executionId="95d0972b-e12d-4408-b5d3-553298ab4efb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="af425b93-b025-f073-1a5d-74dba367dec9" executionId="4caa6834-1147-4245-a2e1-6763a2ef6f2c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="65ddab89-99c7-da66-cb07-cc88b5c12143" executionId="7d93e1cc-2928-4c10-b6c5-66a5748613fe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="473e5f08-c12e-f60c-3c01-eb8300fa0d12" executionId="3ca90df5-b8cf-4306-a982-7f8ae1431530" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7f4d901d-8204-70b1-b495-65b992ce5130" executionId="31ab751d-eddb-4c28-9718-9460c3a61cc6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c9b54675-5ad8-1bfb-3f8a-66aa8903952a" executionId="c66608b7-479a-4050-bc8f-6687dc07644a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ff9a75db-c85b-029f-4dea-8535625544a0" executionId="a18d7015-4f2b-4ea9-a4f3-c183657e23cd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3ca1a663-9631-63a2-9322-076fd6cd1f92" executionId="0af84133-5b65-4ef4-8d9b-0c5ee0486645" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c09a8426-77ff-447f-f31e-d895be906053" executionId="3e3754a5-c19d-4c79-90fe-9f17144dfcd1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4696a9b9-a8c5-332d-d43f-d22f8b236523" executionId="34b28340-f74d-42a1-b5f6-0a8d422ee69f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="632ada4b-1ac5-73f3-54f7-871228d68291" executionId="74f88464-9ac6-4c4b-a7d1-8d644560e03e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="41123350-ef1d-8452-b33b-49ec907e37ac" executionId="7d300d1a-48b6-42d8-8c47-3ae5c5c92730" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d9f469a1-f624-c004-b17d-818c2269ff06" executionId="191ad1dc-eaf5-4698-b294-9b6baef56798" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8dd63cfe-3b21-6c74-e6d7-bbadf6dda5d2" executionId="84b11e77-0784-4cb5-8aa2-497050bda3aa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0c8fd6c5-bd7d-0162-8855-ded0fc443b1d" executionId="a7b03653-1611-4da9-bedf-290aefae12b8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3630ee18-cb29-cbff-26a6-c9b4dc1b3588" executionId="e516977a-9b5c-4034-a2c2-592977412891" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d534f18b-441b-c78e-d608-4dad93b5acd1" executionId="cfa24b49-8885-426b-a598-84dfcb17e73e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7f9701f3-573c-8caf-491c-8ba8aef7cd59" executionId="1b6a2819-5cd1-4120-907e-b3f315750c51" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="827acfff-ce41-7cf3-031b-7e9ab60cc54a" executionId="4e8c8fb0-d3b5-41fd-ad1f-2ad1295353e2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d68a6387-0e24-737e-5915-673c9a2d5c59" executionId="2d7205b7-9657-42b0-9b20-b8268064192c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ee7dcacf-32c1-0ca8-9888-90517ab2fa55" executionId="2785c36b-c577-427c-935f-324cae760d27" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="769280fc-113e-a96d-920a-8e574fcaeb2c" executionId="f57f66bb-9384-4722-8b67-5fc870db5373" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2ddad672-5f26-ac6f-d96c-5394d290fea0" executionId="3aecb845-35b9-49d6-9d79-4c1fe33d5460" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="63038738-2c9b-33a0-f777-21bcac93f079" executionId="0792e45c-a77f-4488-81f5-761524fde1e2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a04f290c-67e9-15e5-dc8c-f766987b0e7e" executionId="532d6790-4cd5-45ea-b955-329a32271b40" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1f6f5437-a1e0-6863-1215-e35aa544dd7a" executionId="9a7a2a2a-01fd-4511-a3b4-a4a9388b09d5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bac1b5ad-fb22-e3ba-129e-e1d1ef6b65df" executionId="a4e9568f-11fd-40e5-921c-5a14062fd28d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9ecec512-7534-47bb-a555-253d4b54abc1" executionId="17a82e64-c41e-46c1-a5db-27a58693d69d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d16a8acc-254b-7dca-738b-07958409e7d9" executionId="b93ec4ed-50e5-461f-8866-5765c875c146" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="64914c10-6625-af28-8d8a-9e55bcbb424c" executionId="b59ccfe8-b071-445e-abfb-f118e2bc2c7b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c5d01b0a-5938-a6c4-e1b2-0d784c29ff45" executionId="45809788-45c3-44cd-8982-6ec64bd57a48" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="54e640ee-3b05-6eed-7eba-c70724cfd828" executionId="20253b4b-9d01-43eb-b001-35cb713aa9b2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dc4d71cc-b192-5917-1e8d-ee4fd98c5930" executionId="728e8477-59fa-4f5a-ad5d-fa3106c42125" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="de748f2a-30ae-21c1-3931-346381649a13" executionId="b20ee7a7-9fb3-4f65-90a4-f61f6f10f0cd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1237d985-9ccb-7c7f-ea19-c85f48981d51" executionId="47c2ee7d-55a3-4c04-92e5-26f5305aba88" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="388942b0-9251-77f9-66bb-31d94382b46a" executionId="d8be9eb0-5bd4-459b-90a1-e28df6488de9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="19a331a2-a6ff-681b-2a88-24b42c1dcbce" executionId="39f28c9d-a984-4fa2-b634-24aa5f2d73dd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="50cad885-d269-e24f-1f35-a450a6fa29e4" executionId="f72e4dc0-6d9a-4439-b6be-44709aac3df1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bbbdba5c-6873-31f9-0574-80feb27bacbe" executionId="dad2db4f-23f4-449b-a3fe-40587d423c50" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7b0905b7-2a5e-f3f6-74a7-8589f3fdc596" executionId="74c9c52f-1a6e-4f28-ba45-5ef0c1f5140e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eb399cc0-5e44-ad7b-a61f-99f02cfee20d" executionId="c5fd877b-2480-4989-a41e-b0abccc97483" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="15e1f783-b91c-5b7e-8515-422d0e641df5" executionId="f162c482-49a7-4325-83e8-c9274190b184" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6115f649-ed56-e021-f01b-031ce26ab371" executionId="3bca6896-d216-4b2b-889c-194519bc283a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a610c374-9f87-75ec-a19b-7743e3131f45" executionId="915821c7-be6d-49f8-bf73-9cf0ba9531a9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1d2757f3-51fa-2f82-50f8-d81595e85e32" executionId="31107070-1db6-4876-9215-5ee55e8b051e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9a0b8d6f-da7e-126f-7cc1-64bdaf244d09" executionId="8011880e-6b55-4974-af76-04822def2c69" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d51844c2-6632-dcb3-0045-27bfc4388db0" executionId="e24d4549-4acf-4c5d-bb7e-8ac5781c443a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c63294a8-69c1-ffcf-e6cb-2f75a22b4186" executionId="52be7a3b-99bc-47ba-99d7-effe109f1886" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="67c16d20-fc9e-cd4b-3386-54ce406d5c2e" executionId="381d53de-4e5c-4952-a889-d617137aac64" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="336be225-a841-f5f6-8543-7ae0582e5902" executionId="efc5d9f5-44db-47d7-aa2d-7517e2e5fbd3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6fc74593-bdbf-39bb-18f6-ef0fe172c80e" executionId="17ad9e5b-5961-4f42-83f9-2888ed7c9c43" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="50c590f1-0ab3-c531-0d50-6fffff7eaedd" executionId="c9d982bc-161a-4d22-a9d7-0edc92c63e55" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7cba0af7-ba70-3d52-4f92-890ddbf5429f" executionId="18788f19-0417-4b04-a9f6-bdeb063c1279" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="104" executed="104" passed="104" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 8.0.31)
+[xUnit.net 00:00:00.04]   Discovering: Tests
+[xUnit.net 00:00:00.07]   Discovered:  Tests
+[xUnit.net 00:00:00.07]   Starting:    Tests
+[xUnit.net 00:00:00.41]   Finished:    Tests
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

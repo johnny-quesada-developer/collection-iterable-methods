@@ -1,0 +1,187 @@
+{
+  "runtime": ".NET 8.0.31",
+  "architecture": "Arm64",
+  "processors": 10,
+  "results": [
+    {
+      "method": "FilterParallel",
+      "size": 32,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 4.7139999999999995,
+      "minUs": 3.2885000000000004,
+      "maxUs": 6.507999999999999,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallel",
+      "size": 32,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 5.353,
+      "minUs": 3.3225,
+      "maxUs": 17.8855,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallelCpu",
+      "size": 32,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 11.369000000000002,
+      "minUs": 8.0035,
+      "maxUs": 15.357000000000001,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallelCpu",
+      "size": 32,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 11.3905,
+      "minUs": 8.7445,
+      "maxUs": 28.090999999999998,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallelAsync",
+      "size": 32,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 10.376,
+      "minUs": 8.0255,
+      "maxUs": 12.353,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallelAsync",
+      "size": 32,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 10.0305,
+      "minUs": 8.189,
+      "maxUs": 23.2325,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallel",
+      "size": 1000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 17.134,
+      "minUs": 14.7345,
+      "maxUs": 31.994,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallel",
+      "size": 1000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 7.1555,
+      "minUs": 5.9195,
+      "maxUs": 15.0205,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallelCpu",
+      "size": 1000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 72.56181818181818,
+      "minUs": 60.95454545454545,
+      "maxUs": 75.37454545454545,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallelCpu",
+      "size": 1000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 78.47411764705882,
+      "minUs": 70.0764705882353,
+      "maxUs": 90.94235294117648,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallelAsync",
+      "size": 1000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 34.468548387096774,
+      "minUs": 30.68951612903226,
+      "maxUs": 44.65403225806452,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallelAsync",
+      "size": 1000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 21.648,
+      "minUs": 19.061142857142855,
+      "maxUs": 32.14114285714285,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallel",
+      "size": 10000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 57.747899159663866,
+      "minUs": 48.47899159663866,
+      "maxUs": 67.9201680672269,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallel",
+      "size": 10000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 25.71142857142857,
+      "minUs": 20.40095238095238,
+      "maxUs": 31.716190476190473,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallelCpu",
+      "size": 10000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 457.2,
+      "minUs": 443.23,
+      "maxUs": 569.8100000000001,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallelCpu",
+      "size": 10000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 501.53999999999996,
+      "minUs": 487.75,
+      "maxUs": 513.4399999999999,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallelAsync",
+      "size": 10000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 73.46790123456789,
+      "minUs": 66.55308641975309,
+      "maxUs": 87.8074074074074,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallelAsync",
+      "size": 10000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 35.7425,
+      "minUs": 30.4465,
+      "maxUs": 37.934,
+      "bytesPerOp": null
+    }
+  ]
+}

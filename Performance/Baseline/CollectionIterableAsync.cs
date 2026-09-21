@@ -1,30 +1,18 @@
-﻿namespace CollectionIterableAsync
+namespace PreviousCollectionIterableAsync
 {
     using System;
     using System.Collections.Generic;
-    using CollectionIterable;
-    using CollectionIterableParallel;
-    using CollectionIterableUtils;
+    using PreviousCollectionIterable;
+    using PreviousCollectionIterableParallel;
+    using PreviousCollectionIterableUtils;
 
-    public static class CollectionIterableAsync
+    public static class PreviousCollectionIterableAsync
     {
         #region Concat
 
         internal static Task<IEnumerable<T>> ConcatCommonAsync<T>(IEnumerable<T> first, IEnumerable<T> second, IIterableOptions? options = null)
         {
-            // These inputs already completed their copy inside Task.Run in 1.0.2.
-            if (options?.cancellationToken?.CanBeCanceled != true && first is ICollection<T> && second is ICollection<T>)
-            {
-                return Task.Run(() => CollectionIterable.ConcatCommon(first, second, options));
-            }
-
-            return Task.Run<IEnumerable<T>>(() =>
-            {
-                var result = CollectionIterable.ConcatCommon(first, second, options);
-                if (result is not ICollection<T>) result = result.ToArray();
-                options?.cancellationToken?.ThrowIfCancellationRequested();
-                return result;
-            }, options?.cancellationToken ?? default);
+            return Task.Run(() => PreviousCollectionIterable.ConcatCommon(first, second, options));
         }
 
         public static Task<IEnumerable<T>> ConcatAsync<T>(this T[] first, T[] second, IIterableOptions? options = null)
@@ -46,30 +34,9 @@
 
         #region Filter
 
-        internal static Task<IEnumerable<T>> FilterCommonAsync<T>(IEnumerable<T> source, Func<T, bool> callback, IIterableOptions? options)
-        {
-            return Task.Run<IEnumerable<T>>(() =>
-            {
-                var result = options?.cancellationToken?.CanBeCanceled == true
-                    ? source.Where(item =>
-                    {
-                        options.cancellationToken.Value.ThrowIfCancellationRequested();
-                        return callback(item);
-                    }).ToArray()
-                    : source.Where(callback).ToArray();
-                options?.cancellationToken?.ThrowIfCancellationRequested();
-                return result;
-            }, options?.cancellationToken ?? default);
-        }
-
         internal static Task<IEnumerable<T>> FilterCommonAsync<T>(IEnumerable<T> source, Func<T, Int32, bool> callback, IIterableOptions? options)
         {
-            return Task.Run<IEnumerable<T>>(() =>
-            {
-                var result = CollectionIterable.FilterCommon(source, callback, options).ToArray();
-                options?.cancellationToken?.ThrowIfCancellationRequested();
-                return result;
-            }, options?.cancellationToken ?? default);
+            return Task.Run(() => PreviousCollectionIterable.FilterCommon(source, callback, options));
         }
 
         public static Task<IEnumerable<T>> FilterAsync<T>(this T[] source, Func<T, Int32, Boolean> callback, IIterableOptions? options = null)
@@ -79,7 +46,7 @@
 
         public static Task<IEnumerable<T>> FilterAsync<T>(this T[] source, Func<T, Boolean> callback, IIterableOptions? options = null)
         {
-            return FilterCommonAsync(source, callback, options);
+            return FilterCommonAsync(source, (item, index) => callback(item), options);
         }
 
         public static Task<IEnumerable<T>> FilterAsync<T>(this ICollection<T> source, Func<T, Int32, Boolean> callback, IIterableOptions? options = null)
@@ -89,7 +56,7 @@
 
         public static Task<IEnumerable<T>> FilterAsync<T>(this ICollection<T> source, Func<T, Boolean> callback, IIterableOptions? options = null)
         {
-            return FilterCommonAsync(source, callback, options);
+            return FilterCommonAsync(source, (item, index) => callback(item), options);
         }
 
         public static Task<IEnumerable<T>> FilterAsync<T>(this IEnumerable<T> source, Func<T, Int32, Boolean> callback, IIterableOptions? options = null)
@@ -99,7 +66,7 @@
 
         public static Task<IEnumerable<T>> FilterAsync<T>(this IEnumerable<T> source, Func<T, Boolean> callback, IIterableOptions? options = null)
         {
-            return FilterCommonAsync(source, callback, options);
+            return FilterCommonAsync(source, (item, index) => callback(item), options);
         }
 
         #endregion
@@ -108,7 +75,7 @@
 
         internal static Task<IEnumerable<T>> FilterParallelCommonAsync<T>(IEnumerable<T> source, Func<T, Boolean> callback, IIterableOptions? options = null)
         {
-            return Task.Run(() => CollectionIterableParallel.FilterParallelCommon(source, callback, options), options?.cancellationToken ?? default);
+            return Task.Run(() => PreviousCollectionIterableParallel.FilterParallelCommon(source, callback, options));
         }
 
         public static Task<IEnumerable<T>> FilterParallelAsync<T>(this T[] source, Func<T, Boolean> callback, IIterableOptions? options = null)
@@ -132,11 +99,7 @@
 
         internal static Task ForEachCommonAsync<T>(IEnumerable<T> source, Action<T, Int32> callback, IIterableOptions? options)
         {
-            return Task.Run(() =>
-            {
-                CollectionIterable.ForEachCommon(source, callback, options);
-                options?.cancellationToken?.ThrowIfCancellationRequested();
-            }, options?.cancellationToken ?? default);
+            return Task.Run(() => PreviousCollectionIterable.ForEachCommon(source, callback, options));
         }
 
         public static Task ForEachAsync<T>(this T[] source, Action<T, Int32> callback, IIterableOptions? options = null)
@@ -146,11 +109,7 @@
 
         public static Task ForEachAsync<T>(this T[] source, Action<T> callback, IIterableOptions? options = null)
         {
-            return Task.Run(() =>
-            {
-                CollectionIterable.ForEachCommon(source, callback, options);
-                options?.cancellationToken?.ThrowIfCancellationRequested();
-            }, options?.cancellationToken ?? default);
+            return ForEachCommonAsync(source, (item, index) => callback(item), options);
         }
 
         public static Task ForEachAsync<T>(this ICollection<T> source, Action<T, Int32> callback, IIterableOptions? options = null)
@@ -160,11 +119,7 @@
 
         public static Task ForEachAsync<T>(this ICollection<T> source, Action<T> callback, IIterableOptions? options = null)
         {
-            return Task.Run(() =>
-            {
-                CollectionIterable.ForEachCommon(source, callback, options);
-                options?.cancellationToken?.ThrowIfCancellationRequested();
-            }, options?.cancellationToken ?? default);
+            return ForEachCommonAsync(source, (item, index) => callback(item), options);
         }
 
         public static Task ForEachAsync<T>(this IEnumerable<T> source, Action<T, Int32> callback, IIterableOptions? options = null)
@@ -174,40 +129,28 @@
 
         public static Task ForEachAsync<T>(this IEnumerable<T> source, Action<T> callback, IIterableOptions? options = null)
         {
-            return Task.Run(() =>
-            {
-                CollectionIterable.ForEachCommon(source, callback, options);
-                options?.cancellationToken?.ThrowIfCancellationRequested();
-            }, options?.cancellationToken ?? default);
+            return ForEachCommonAsync(source, (item, index) => callback(item), options);
         }
 
         #endregion
 
         #region ForeachParallel
 
-        public static Task ForEachParallelAsync<T>(this IEnumerable<T> source, Action<T> callback, IIterableOptions? options = null)
-        {
-            return Task.Run(() => CollectionIterableParallel.ForEachParallelCommon(source, callback, options), options?.cancellationToken ?? default);
-        }
-
         internal static void ForeachParallelCommonAsync<T>(IEnumerable<T> source, Action<T> callback, IIterableOptions? options = null)
         {
-            Task.Run(() => CollectionIterableParallel.ForEachParallelCommon(source, callback, options));
+            Task.Run(() => PreviousCollectionIterableParallel.ForEachParallelCommon(source, callback, options));
         }
 
-        [Obsolete("Use ForEachParallelAsync and await completion to observe errors.")]
         public static void ForeachParallel<T>(this T[] source, Action<T> callback, IIterableOptions? options = null)
         {
             ForeachParallelCommonAsync(source, callback, options);
         }
 
-        [Obsolete("Use ForEachParallelAsync and await completion to observe errors.")]
         public static void ForeachParallel<T>(this ICollection<T> source, Action<T> callback, IIterableOptions? options = null)
         {
             ForeachParallelCommonAsync(source, callback, options);
         }
 
-        [Obsolete("Use ForEachParallelAsync and await completion to observe errors.")]
         public static void ForeachParallel<T>(this IEnumerable<T> source, Action<T> callback, IIterableOptions? options = null)
         {
             ForeachParallelCommonAsync(source, callback, options);

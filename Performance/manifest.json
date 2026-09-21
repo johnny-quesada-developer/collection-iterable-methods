@@ -1,0 +1,22 @@
+{
+  "baselineCommit": "fb87e6795ad60b353a2cd0012b9b42b892fd397f",
+  "baselineVersion": "1.0.2",
+  "candidateVersion": "2.0.0-preview.1",
+  "date": "2026-09-20",
+  "candidateHashes": {
+    "CollectionIterableTest.cs": "d304fd551230151430a993ba5b96b4f1a029bbfa3a83dad6b9cc03759aa85425",
+    "CollectionIterableParallel.cs": "15ee35c5bac693dcc04f6c6fbcc35c0b5a48c6da790c0bab452e4123aadf9acc",
+    "CollectionIterableAsyncTest.cs": "2f10c42d4fe5264332048262040c8fe7187661d270a230b9ea43428d6aacf689",
+    "CollectionIterableParallelTest.cs": "11622617937d6bd09cddcec33e2dcde0c52d13a8f49e794f2de1a0495ebd9dab",
+    "CollectionIterableUtils.cs": "3599ea5f51477e4d6ca9d3d26c2c943c653286eec095596cc0ed5c87b5426e32",
+    "CollectionIterable.cs": "5f8a94d75837014d31e9868ac2d990abec6f5b47537426818080d6484bc695d7",
+    "CollectionIterableAsync.cs": "8e5d707e64f520f98dad347b8bfc8dfd804ed539127dd61047b1bc6f75f07131",
+    "ParallelExecutionScope.cs": "df9a09fe0de0cfa73204a5078c54cd7c389d1517463376108ddd6e5857f48b34"
+  },
+  "finalResults": [
+    "Results/retained-final.json",
+    "Results/retained-repeat.json"
+  ],
+  "workloads": 156,
+  "passedTests": 107
+}

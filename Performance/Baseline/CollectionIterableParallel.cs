@@ -1,20 +1,18 @@
-﻿namespace CollectionIterableParallel
+namespace PreviousCollectionIterableParallel
 {
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
     using System.Collections.Concurrent;
-    using CollectionIterable;
-    using CollectionIterableUtils;
+    using PreviousCollectionIterable;
+    using PreviousCollectionIterableUtils;
 
-    public static class CollectionIterableParallel
+    public static class PreviousCollectionIterableParallel
     {
         #region FilterParallel
 
         internal static IEnumerable<T> FilterParallelCommon<T>(IEnumerable<T> source, Func<T, Boolean> callback, IIterableOptions? options)
         {
-            if (options is not null) return FilterParallelConfigured(source, callback, options);
-
             if (options == null)
             {
                 options = new IIterableOptions();
@@ -40,19 +38,6 @@
             return result;
         }
 
-        private static IEnumerable<T> FilterParallelConfigured<T>(IEnumerable<T> source, Func<T, Boolean> callback, IIterableOptions? options)
-        {
-            using var execution = options is null ? null : new ParallelExecutionScope(options);
-            var parallelOptions = execution?.Options ?? new ParallelOptions { MaxDegreeOfParallelism = 5 };
-
-            var result = new ConcurrentBag<T>();
-            Parallel.ForEach(source, parallelOptions, item =>
-            {
-                if (callback(item)) result.Add(item);
-            });
-            return result;
-        }
-
         public static IEnumerable<T> FilterParallel<T>(this T[] source, Func<T, Boolean> callback, IIterableOptions? options)
         {
             return FilterParallelCommon(source, callback, options);
@@ -74,10 +59,17 @@
 
         internal static void ForEachParallelCommon<T>(IEnumerable<T> source, Action<T> callback, IIterableOptions? options)
         {
-            using var execution = options is null ? null : new ParallelExecutionScope(options);
-            var parallelOptions = execution?.Options ?? new ParallelOptions { MaxDegreeOfParallelism = 5 };
+            if (options == null)
+            {
+                options = new IIterableOptions();
+            }
 
-            Parallel.ForEach(source, parallelOptions, callback);
+            if (options.parallelOptions == null)
+            {
+                options.parallelOptions = new ParallelOptions { MaxDegreeOfParallelism = 5 };
+            }
+
+            Parallel.ForEach(source, options.parallelOptions, callback);
         }
 
         public static void ForeachParallel<T>(this T[] source, Action<T> callback, IIterableOptions? options)
@@ -99,41 +91,24 @@
 
         #region SortCollectionParallel
 
-        internal static void SortRangeParallel<T, TKey>(T[] array, int left, int right, Func<T, TKey> keySelector, SortDirection direction) where TKey : IComparable<TKey>
+        internal static void QuickSortParallel<T, TKey>(T[] array, int left, int right, Func<T, TKey> keySelector, SortDirection direction) where TKey : IComparable<TKey>
         {
-            if (left >= right) return;
-            var keys = new TKey[array.Length];
-            for (var index = left; index <= right; index++) keys[index] = keySelector(array[index]);
-            var comparer = direction == SortDirection.Ascending
-                ? Comparer<TKey>.Default
-                : Comparer<TKey>.Create((first, second) => Comparer<TKey>.Default.Compare(second, first));
-            int length = right - left + 1;
-            if (length < 2048)
+            if (left < right)
             {
-                Array.Sort(keys, array, left, length, comparer);
-                return;
-            }
+                int pivotIndex = PreviousCollectionIterable.Partition(array, left, right, keySelector, direction);
 
-            int middle = left + length / 2;
-            Parallel.Invoke(
-                () => Array.Sort(keys, array, left, middle - left, comparer),
-                () => Array.Sort(keys, array, middle, right - middle + 1, comparer));
-            var merged = new T[length];
-            int firstIndex = left, secondIndex = middle;
-            for (var destination = 0; destination < length; destination++)
-            {
-                bool takeFirst = firstIndex < middle &&
-                    (secondIndex > right || comparer.Compare(keys[firstIndex], keys[secondIndex]) <= 0);
-                merged[destination] = array[takeFirst ? firstIndex++ : secondIndex++];
+                Parallel.Invoke(
+                    () => PreviousCollectionIterable.QuickSort(array, left, pivotIndex - 1, keySelector, direction),
+                    () => PreviousCollectionIterable.QuickSort(array, pivotIndex + 1, right, keySelector, direction)
+                );
             }
-            Array.Copy(merged, 0, array, left, length);
         }
 
         internal static IEnumerable<T> SortCollectionParallelCommon<T, TKey>(IEnumerable<T> source, Func<T, TKey> keySelector, SortDirection direction = SortDirection.Ascending) where TKey : IComparable<TKey>
         {
             var array = source.ToArray();
 
-            SortRangeParallel(array, 0, array.Length - 1, keySelector, direction);
+            QuickSortParallel(array, 0, array.Length - 1, keySelector, direction);
 
             return array;
         }
@@ -159,38 +134,27 @@
 
         internal static IDictionary<TKey, TValue> ToDictionaryParallelCommon<T, TKey, TValue>(IEnumerable<T> source, Func<T, KeyValuePair<TKey, TValue>> callback, IIterableOptions? options) where TKey : notnull
         {
-            using var execution = options is null ? null : new ParallelExecutionScope(options);
-            var parallelOptions = execution?.Options ?? new ParallelOptions { MaxDegreeOfParallelism = 5 };
-
-            if (source.TryGetNonEnumeratedCount(out var count) && count <= 64)
+            if (options == null)
             {
-                var result = new ConcurrentDictionary<TKey, TValue>();
-                Parallel.ForEach(source, parallelOptions, item =>
-                {
-                    var pair = callback(item);
-                    result.TryAdd(pair.Key, pair.Value);
-                });
-                return result;
+                options = new IIterableOptions();
             }
 
-            var batches = new ConcurrentBag<List<KeyValuePair<TKey, TValue>>>();
-            Parallel.ForEach(source, parallelOptions,
-                () => new List<KeyValuePair<TKey, TValue>>(),
-                (item, state, batch) =>
-                {
-                    batch.Add(callback(item));
-                    return batch;
-                },
-                batch => { if (batch.Count > 0) batches.Add(batch); });
-
-            var totalCount = batches.Sum(batch => batch.Count);
-            var dictionary = new ConcurrentDictionary<TKey, TValue>(Environment.ProcessorCount, totalCount);
-            foreach (var batch in batches)
-            foreach (var pair in batch)
+            if (options.parallelOptions == null)
             {
-                parallelOptions.CancellationToken.ThrowIfCancellationRequested();
+                options.parallelOptions = new ParallelOptions { MaxDegreeOfParallelism = 5 };
+            }
+
+            var dictionary = new ConcurrentDictionary<TKey, TValue>();
+
+            Parallel.ForEach(source, options.parallelOptions, (item, state) =>
+            {
+                options.cancellationToken?.ThrowIfCancellationRequested();
+
+                var pair = callback(item);
+
                 dictionary.TryAdd(pair.Key, pair.Value);
-            }
+            });
+
             return dictionary;
         }
 

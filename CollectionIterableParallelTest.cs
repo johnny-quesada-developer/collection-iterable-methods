@@ -69,10 +69,9 @@ namespace Test
         cancellationToken = new System.Threading.CancellationToken(true)
       };
 
-      var exception = Assert.Throws<AggregateException>(() => source.FilterParallel(item => item % 2 == 0, options).ToArray());
+      var exception = Assert.ThrowsAny<OperationCanceledException>(() => source.FilterParallel(item => item % 2 == 0, options).ToArray());
 
-      // Check if the AggregateException contains an OperationCanceledException
-      Assert.Contains(exception.InnerExceptions, ex => ex is OperationCanceledException);
+      Assert.IsAssignableFrom<OperationCanceledException>(exception);
     }
 
     #endregion
@@ -84,7 +83,7 @@ namespace Test
     {
       var source = new[] { 1, 2, 3, 4, 5 };
 
-      var result = new List<int>();
+      var result = new System.Collections.Concurrent.ConcurrentBag<int>();
 
       source.ForEachParallel(item => result.Add(item), null);
 
@@ -101,7 +100,7 @@ namespace Test
     {
       var source = new[] { 1, 2, 3, 4, 5 };
 
-      var result = new List<int>();
+      var result = new System.Collections.Concurrent.ConcurrentBag<int>();
 
       source.ForEachParallel(item => result.Add(item), null);
 
@@ -119,7 +118,7 @@ namespace Test
     {
       var source = new[] { 1, 2, 3, 4, 5 };
 
-      var result = new List<int>();
+      var result = new System.Collections.Concurrent.ConcurrentBag<int>();
 
       source.ForEachParallel(item => result.Add(item), null);
 
@@ -142,13 +141,12 @@ namespace Test
         cancellationToken = new System.Threading.CancellationToken(true)
       };
 
-      var exception = Assert.Throws<AggregateException>(() => source.ForEachParallel(item =>
+      var exception = Assert.ThrowsAny<OperationCanceledException>(() => source.ForEachParallel(item =>
       {
         options.cancellationToken?.ThrowIfCancellationRequested();
       }, options));
 
-      // Check if the AggregateException contains an OperationCanceledException
-      Assert.Contains(exception.InnerExceptions, ex => ex is OperationCanceledException);
+      Assert.IsAssignableFrom<OperationCanceledException>(exception);
     }
 
     #endregion

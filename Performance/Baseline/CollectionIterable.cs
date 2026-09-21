@@ -1,8 +1,8 @@
-﻿namespace CollectionIterable
+namespace PreviousCollectionIterable
 {
     using System;
     using System.Collections.Generic;
-    using CollectionIterableUtils;
+    using PreviousCollectionIterableUtils;
 
     public enum SortDirection
     {
@@ -10,7 +10,7 @@
         Descending
     }
 
-    public static class CollectionIterable
+    public static class PreviousCollectionIterable
     {
         #region Concat
 
@@ -56,9 +56,7 @@
             }
 
             // Default to enumerable concatenation
-            return options?.cancellationToken?.CanBeCanceled == true
-                ? ConcatEnumerables(first, second, options)
-                : Enumerable.Concat(first, second);
+            return ConcatEnumerables(first, second, options);
         }
 
         public static IEnumerable<T> Concat<T>(this T[] first, T[] second)
@@ -80,44 +78,19 @@
 
         #region Filter
 
-        internal static IEnumerable<T> FilterCommon<T>(IEnumerable<T> source, Func<T, int, bool> callback, IIterableOptions? options)
+        internal static IEnumerable<T> FilterCommon<T>(IEnumerable<T> source, Func<T, Int32, Boolean> callback, IIterableOptions? options)
         {
-            if (options?.cancellationToken?.CanBeCanceled == true)
-            {
-                var token = options.cancellationToken.Value;
-                return Enumerable.Where(source, (item, index) =>
-                {
-                    token.ThrowIfCancellationRequested();
-                    return callback(item, index);
-                });
-            }
-            return FilterIndexed(source, callback);
-        }
-
-        private static IEnumerable<T> FilterIndexed<T>(IEnumerable<T> source, Func<T, int, bool> callback)
-        {
-            if (source is T[] array)
-            {
-                for (var arrayIndex = 0; arrayIndex < array.Length; arrayIndex++)
-                {
-                    var item = array[arrayIndex];
-                    if (callback(item, arrayIndex)) yield return item;
-                }
-                yield break;
-            }
             var index = 0;
-            if (source is List<T> list)
-            {
-                foreach (var item in list)
-                {
-                    if (callback(item, index)) yield return item;
-                    index++;
-                }
-                yield break;
-            }
+
             foreach (var item in source)
             {
-                if (callback(item, index)) yield return item;
+                options?.cancellationToken?.ThrowIfCancellationRequested();
+
+                if (callback(item, index))
+                {
+                    yield return item;
+                }
+
                 index++;
             }
         }
@@ -129,7 +102,7 @@
 
         public static IEnumerable<T> Filter<T>(this T[] source, Func<T, Boolean> callback)
         {
-            return Enumerable.Where(source, callback);
+            return FilterCommon(source, (item, index) => callback(item), null);
         }
 
         public static IEnumerable<T> Filter<T>(this ICollection<T> source, Func<T, Int32, Boolean> callback)
@@ -139,7 +112,7 @@
 
         public static IEnumerable<T> Filter<T>(this ICollection<T> source, Func<T, Boolean> callback)
         {
-            return Enumerable.Where(source, callback);
+            return FilterCommon(source, (item, index) => callback(item), null);
         }
 
         public static IEnumerable<T> Filter<T>(this IEnumerable<T> source, Func<T, Int32, Boolean> callback)
@@ -149,39 +122,12 @@
 
         public static IEnumerable<T> Filter<T>(this IEnumerable<T> source, Func<T, Boolean> callback)
         {
-            return Enumerable.Where(source, callback);
+            return FilterCommon(source, (item, index) => callback(item), null);
         }
 
         #endregion
 
         #region ForEach
-
-        internal static void ForEachCommon<T>(IEnumerable<T> source, Action<T> callback, IIterableOptions? options)
-        {
-            if (options?.cancellationToken?.CanBeCanceled == true)
-            {
-                foreach (var item in source)
-                {
-                    options.cancellationToken.Value.ThrowIfCancellationRequested();
-                    callback(item);
-                }
-                return;
-            }
-
-            if (source is T[] array)
-            {
-                foreach (var item in array) callback(item);
-                return;
-            }
-
-            if (source is List<T> list)
-            {
-                foreach (var item in list) callback(item);
-                return;
-            }
-
-            foreach (var item in source) callback(item);
-        }
 
         internal static void ForEachCommon<T>(IEnumerable<T> source, Action<T, Int32> callback, IIterableOptions? options)
         {
@@ -204,12 +150,12 @@
         */
         public static void ForEach<T>(this T[] source, Action<T, Int32> callback)
         {
-            for (var index = 0; index < source.Length; index++) callback(source[index], index);
+            ForEachCommon(source, callback, null);
         }
 
         public static void ForEach<T>(this T[] source, Action<T> callback)
         {
-            ForEachCommon(source, callback, null);
+            ForEachCommon(source, (item, index) => callback(item), null);
         }
 
         public static void ForEach<T>(this ICollection<T> source, Action<T, Int32> callback)
@@ -219,7 +165,7 @@
 
         public static void ForEach<T>(this ICollection<T> source, Action<T> callback)
         {
-            ForEachCommon(source, callback, null);
+            ForEachCommon(source, (item, index) => callback(item), null);
         }
 
         public static void ForEach<T>(this IEnumerable<T> source, Action<T, Int32> callback)
@@ -229,41 +175,55 @@
 
         public static void ForEach<T>(this IEnumerable<T> source, Action<T> callback)
         {
-            ForEachCommon(source, callback, null);
+            ForEachCommon(source, (item, index) => callback(item), null);
         }
 
         #endregion
 
         #region Map
 
-        public static IEnumerable<TResult> Map<TSource, TResult>(this TSource[] source, Func<TSource, TResult> callback)
+        internal static IEnumerable<T> MapCommon<T>(IEnumerable<T> source, Func<T, Int32, T> callback, IIterableOptions? options)
         {
-            return Enumerable.Select(source, callback);
+            var index = 0;
+
+            foreach (var item in source)
+            {
+                options?.cancellationToken?.ThrowIfCancellationRequested();
+
+                yield return callback(item, index);
+
+                index++;
+            }
         }
 
-        public static IEnumerable<TResult> Map<TSource, TResult>(this TSource[] source, Func<TSource, int, TResult> callback)
+        public static IEnumerable<T> Map<T>(this T[] source, Func<T, Int32, T> callback) where T : IEnumerable<T>, new()
         {
-            return Enumerable.Select(source, callback);
+            return MapCommon(source, callback, null);
         }
 
-        public static IEnumerable<TResult> Map<TSource, TResult>(this ICollection<TSource> source, Func<TSource, TResult> callback)
+        public static IEnumerable<T> Map<T>(this T[] source, Func<T, T> callback) where T : IEnumerable<T>, new()
         {
-            return Enumerable.Select(source, callback);
+            return MapCommon(source, (item, index) => callback(item), null);
         }
 
-        public static IEnumerable<TResult> Map<TSource, TResult>(this ICollection<TSource> source, Func<TSource, int, TResult> callback)
+        public static IEnumerable<T> Map<T>(this ICollection<T> source, Func<T, Int32, T> callback)
         {
-            return Enumerable.Select(source, callback);
+            return MapCommon(source, callback, null);
         }
 
-        public static IEnumerable<TResult> Map<TSource, TResult>(this IEnumerable<TSource> source, Func<TSource, TResult> callback)
+        public static IEnumerable<T> Map<T>(this ICollection<T> source, Func<T, T> callback)
         {
-            return Enumerable.Select(source, callback);
+            return MapCommon(source, (item, index) => callback(item), null);
         }
 
-        public static IEnumerable<TResult> Map<TSource, TResult>(this IEnumerable<TSource> source, Func<TSource, int, TResult> callback)
+        public static IEnumerable<T> Map<T>(this IEnumerable<T> source, Func<T, Int32, T> callback)
         {
-            return Enumerable.Select(source, callback);
+            return MapCommon(source, callback, null);
+        }
+
+        public static IEnumerable<T> Map<T>(this IEnumerable<T> source, Func<T, T> callback)
+        {
+            return MapCommon(source, (item, index) => callback(item), null);
         }
 
         #endregion
@@ -293,14 +253,12 @@
         */
         public static IResult Reduce<T, IResult>(this T[] source, Func<IResult, T, Int32, IResult> callback, IResult initialValue)
         {
-            var result = initialValue;
-            for (var index = 0; index < source.Length; index++) result = callback(result, source[index], index);
-            return result;
+            return ReduceCommon(source, callback, initialValue, null);
         }
 
         public static IResult Reduce<T, IResult>(this T[] source, Func<IResult, T, IResult> callback, IResult initialValue)
         {
-            return Enumerable.Aggregate(source, initialValue, callback);
+            return ReduceCommon(source, (accumulator, item, index) => callback(accumulator, item), initialValue, null);
         }
 
         public static IResult Reduce<T, IResult>(this ICollection<T> source, Func<IResult, T, Int32, IResult> callback, IResult initialValue)
@@ -310,7 +268,7 @@
 
         public static IResult Reduce<T, IResult>(this ICollection<T> source, Func<IResult, T, IResult> callback, IResult initialValue)
         {
-            return Enumerable.Aggregate(source, initialValue, callback);
+            return ReduceCommon(source, (accumulator, item, index) => callback(accumulator, item), initialValue, null);
         }
 
         public static IResult Reduce<T, IResult>(this IEnumerable<T> source, Func<IResult, T, Int32, IResult> callback, IResult initialValue)
@@ -320,7 +278,7 @@
 
         public static IResult Reduce<T, IResult>(this IEnumerable<T> source, Func<IResult, T, IResult> callback, IResult initialValue)
         {
-            return Enumerable.Aggregate(source, initialValue, callback);
+            return ReduceCommon(source, (accumulator, item, index) => callback(accumulator, item), initialValue, null);
         }
 
         #endregion
@@ -329,24 +287,38 @@
 
         internal static IEnumerable<T> SliceCommon<T>(IEnumerable<T> source, int start, int end, IIterableOptions? options)
         {
-            ArgumentNullException.ThrowIfNull(source);
-            ArgumentOutOfRangeException.ThrowIfNegative(start);
-            if (end <= start) return Array.Empty<T>();
-            if (options?.cancellationToken?.CanBeCanceled != true)
-            {
-                return Enumerable.Take(Enumerable.Skip(source, start), end - start);
-            }
-            return WithCancellation();
+            var sourceLength = 0;
 
-            IEnumerable<T> WithCancellation()
+            // if the source is an array, we can use the length property
+            if (source is T[] array)
             {
-                using var enumerator = source.GetEnumerator();
-                for (var index = 0; index < end; index++)
+                sourceLength = array.Length;
+
+                for (var index = start; index < end && index < sourceLength; index++)
                 {
-                    options.cancellationToken.Value.ThrowIfCancellationRequested();
-                    if (!enumerator.MoveNext()) yield break;
-                    if (index >= start) yield return enumerator.Current;
+                    options?.cancellationToken?.ThrowIfCancellationRequested();
+
+                    yield return array[index];
                 }
+
+                yield break; // Exit the method after handling the array
+            }
+
+            if (source is ICollection<T> collection)
+            {
+                sourceLength = collection.Count;
+            }
+
+            else if (source is IEnumerable<T> enumerable)
+            {
+                sourceLength = enumerable.Count();
+            }
+
+            for (var index = start; index < end && index < sourceLength; index++)
+            {
+                options?.cancellationToken?.ThrowIfCancellationRequested();
+
+                yield return source.ElementAt(index);
             }
         }
 
@@ -369,30 +341,9 @@
 
         #region ToRecord
 
-        internal static IDictionary<TKey, TValue> ToRecordCommon<T, TKey, TValue>(IEnumerable<T> source, Func<T, KeyValuePair<TKey, TValue>> callback, IIterableOptions? options) where TKey : notnull
-        {
-            if (!source.TryGetNonEnumeratedCount(out var sourceCount))
-            {
-                if (options?.cancellationToken?.CanBeCanceled == true)
-                {
-                    return ToRecordCommon(source, (item, index) => callback(item), options);
-                }
-                return new Dictionary<TKey, TValue>(Enumerable.Select(source, callback));
-            }
-
-            var dictionary = new Dictionary<TKey, TValue>(sourceCount);
-            foreach (var item in source)
-            {
-                options?.cancellationToken?.ThrowIfCancellationRequested();
-                var pair = callback(item);
-                dictionary.Add(pair.Key, pair.Value);
-            }
-            return dictionary;
-        }
-
         internal static IDictionary<TKey, TValue> ToRecordCommon<T, TKey, TValue>(IEnumerable<T> source, Func<T, int, KeyValuePair<TKey, TValue>> callback, IIterableOptions? options) where TKey : notnull
         {
-            var dictionary = new Dictionary<TKey, TValue>(source.TryGetNonEnumeratedCount(out var count) ? count : 0);
+            var dictionary = new Dictionary<TKey, TValue>();
 
             var index = 0;
 
@@ -417,7 +368,7 @@
 
         public static IDictionary<TKey, TValue> ToRecord<T, TKey, TValue>(this T[] source, Func<T, KeyValuePair<TKey, TValue>> callback) where TKey : notnull
         {
-            return ToRecordCommon(source, callback, null);
+            return ToRecordCommon(source, (item, index) => callback(item), null);
         }
 
         public static IDictionary<TKey, TValue> ToRecord<T, TKey, TValue>(this ICollection<T> source, Func<T, int, KeyValuePair<TKey, TValue>> callback) where TKey : notnull
@@ -427,7 +378,7 @@
 
         public static IDictionary<TKey, TValue> ToRecord<T, TKey, TValue>(this ICollection<T> source, Func<T, KeyValuePair<TKey, TValue>> callback) where TKey : notnull
         {
-            return ToRecordCommon(source, callback, null);
+            return ToRecordCommon(source, (item, index) => callback(item), null);
         }
 
         public static IDictionary<TKey, TValue> ToRecord<T, TKey, TValue>(this IEnumerable<T> source, Func<T, int, KeyValuePair<TKey, TValue>> callback) where TKey : notnull
@@ -437,35 +388,59 @@
 
         public static IDictionary<TKey, TValue> ToRecord<T, TKey, TValue>(this IEnumerable<T> source, Func<T, KeyValuePair<TKey, TValue>> callback) where TKey : notnull
         {
-            return ToRecordCommon(source, callback, null);
+            return ToRecordCommon(source, (item, index) => callback(item), null);
         }
 
         #endregion
 
         #region SortCollection
 
+        internal static void QuickSort<T, TKey>(T[] array, int left, int right, Func<T, TKey> keySelector, SortDirection direction) where TKey : IComparable<TKey>
+        {
+            if (left < right)
+            {
+                int pivotIndex = Partition(array, left, right, keySelector, direction);
+
+                QuickSort(array, left, pivotIndex - 1, keySelector, direction);
+                QuickSort(array, pivotIndex + 1, right, keySelector, direction);
+            }
+        }
+
+        internal static int Partition<T, TKey>(T[] array, int left, int right, Func<T, TKey> keySelector, SortDirection direction) where TKey : IComparable<TKey>
+        {
+            var pivot = keySelector(array[right]);
+            int i = left - 1;
+
+            for (int j = left; j < right; j++)
+            {
+                bool shouldSwap = direction == SortDirection.Ascending
+                    ? keySelector(array[j]).CompareTo(pivot) < 0
+                    : keySelector(array[j]).CompareTo(pivot) > 0;
+
+                if (shouldSwap)
+                {
+                    i++;
+                    Swap(ref array[i], ref array[j]);
+                }
+            }
+
+            Swap(ref array[i + 1], ref array[right]);
+            return i + 1;
+        }
+
+        private static void Swap<T>(ref T x, ref T y)
+        {
+            T temp = x;
+            x = y;
+            y = temp;
+        }
+
         internal static IEnumerable<T> SortCollectionCommon<T, TKey>(IEnumerable<T> source, Func<T, TKey> keySelector, SortDirection direction = SortDirection.Ascending) where TKey : IComparable<TKey>
         {
             var array = source.ToArray();
 
-            if (array.Length < 2) return array;
+            QuickSort(array, 0, array.Length - 1, keySelector, direction);
 
-            // Cache projections once; avoid quadratic last-pivot quicksort on ordered inputs.
-            var keys = new TKey[array.Length];
-            for (var index = 0; index < array.Length; index++)
-            {
-                keys[index] = keySelector(array[index]);
-            }
-
-            if (direction == SortDirection.Ascending)
-            {
-                Array.Sort(keys, array);
-                return array;
-            }
-
-            var descendingComparer = Comparer<TKey>.Create(
-                (first, second) => Comparer<TKey>.Default.Compare(second, first));
-            Array.Sort(keys, array, descendingComparer);
             return array;
         }
 

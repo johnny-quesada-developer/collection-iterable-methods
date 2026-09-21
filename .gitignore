@@ -1,3 +1,8 @@
 bin
 obj
 .fake
+
+# Local publishing credentials
+.env
+.env.*
+!.env.example

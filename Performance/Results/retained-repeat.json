@@ -1,0 +1,3847 @@
+{
+  "runtime": ".NET 8.0.31",
+  "architecture": "Arm64",
+  "processors": 10,
+  "results": [
+    {
+      "method": "Filter",
+      "size": 32,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 0.3496765847347995,
+      "minUs": 0.3426261319534282,
+      "maxUs": 0.4073738680465718,
+      "bytesPerOp": 432
+    },
+    {
+      "method": "Filter",
+      "size": 32,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 0.133,
+      "minUs": 0.12905999999999998,
+      "maxUs": 0.16399,
+      "bytesPerOp": 272
+    },
+    {
+      "method": "Filter",
+      "size": 32,
+      "shape": "array",
+      "variant": "native",
+      "medianUs": 0.12903,
+      "minUs": 0.127495,
+      "maxUs": 0.133745,
+      "bytesPerOp": 272
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 32,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 0.32836,
+      "minUs": 0.31806,
+      "maxUs": 0.35075,
+      "bytesPerOp": 344
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 32,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 0.26479172777940746,
+      "minUs": 0.2537841009093576,
+      "maxUs": 0.2736432971545908,
+      "bytesPerOp": 368
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 32,
+      "shape": "array",
+      "variant": "native",
+      "medianUs": 0.3486392789044895,
+      "minUs": 0.33659213035188074,
+      "maxUs": 0.3597070549488646,
+      "bytesPerOp": 328
+    },
+    {
+      "method": "Map",
+      "size": 32,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 0.5160164271047228,
+      "minUs": 0.4982266193765167,
+      "maxUs": 0.5391077095389211,
+      "bytesPerOp": 656
+    },
+    {
+      "method": "Map",
+      "size": 32,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 0.104745,
+      "minUs": 0.10095499999999999,
+      "maxUs": 0.109425,
+      "bytesPerOp": 200
+    },
+    {
+      "method": "Map",
+      "size": 32,
+      "shape": "array",
+      "variant": "native",
+      "medianUs": 0.10733,
+      "minUs": 0.101635,
+      "maxUs": 0.11047,
+      "bytesPerOp": 200
+    },
+    {
+      "method": "MapIndexed",
+      "size": 32,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 0.4762731188244236,
+      "minUs": 0.45776539143653405,
+      "maxUs": 0.49005573853559664,
+      "bytesPerOp": 568
+    },
+    {
+      "method": "MapIndexed",
+      "size": 32,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 0.45233,
+      "minUs": 0.43985,
+      "maxUs": 0.45848,
+      "bytesPerOp": 552
+    },
+    {
+      "method": "MapIndexed",
+      "size": 32,
+      "shape": "array",
+      "variant": "native",
+      "medianUs": 0.45656,
+      "minUs": 0.44321000000000005,
+      "maxUs": 0.46548,
+      "bytesPerOp": 552
+    },
+    {
+      "method": "Reduce",
+      "size": 32,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 0.1698,
+      "minUs": 0.164745,
+      "maxUs": 0.173505,
+      "bytesPerOp": 120
+    },
+    {
+      "method": "Reduce",
+      "size": 32,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 0.12477,
+      "minUs": 0.1236,
+      "maxUs": 0.12586,
+      "bytesPerOp": 32
+    },
+    {
+      "method": "Reduce",
+      "size": 32,
+      "shape": "array",
+      "variant": "native",
+      "medianUs": 0.126825,
+      "minUs": 0.12439000000000001,
+      "maxUs": 0.132485,
+      "bytesPerOp": 32
+    },
+    {
+      "method": "ReduceIndexed",
+      "size": 32,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 0.132825,
+      "minUs": 0.131145,
+      "maxUs": 0.14061500000000002,
+      "bytesPerOp": 32
+    },
+    {
+      "method": "ReduceIndexed",
+      "size": 32,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 0.13355,
+      "minUs": 0.13216,
+      "maxUs": 0.139875,
+      "bytesPerOp": 32
+    },
+    {
+      "method": "ForEach",
+      "size": 32,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 0.1733349333973359,
+      "minUs": 0.16899075963038523,
+      "maxUs": 0.19167166686667467,
+      "bytesPerOp": 208
+    },
+    {
+      "method": "ForEach",
+      "size": 32,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 0.08977,
+      "minUs": 0.086535,
+      "maxUs": 0.09171,
+      "bytesPerOp": 88
+    },
+    {
+      "method": "ForEachIndexed",
+      "size": 32,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 0.14107999999999998,
+      "minUs": 0.13759000000000002,
+      "maxUs": 0.14711,
+      "bytesPerOp": 120
+    },
+    {
+      "method": "ForEachIndexed",
+      "size": 32,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 0.1411,
+      "minUs": 0.137685,
+      "maxUs": 0.1505,
+      "bytesPerOp": 120
+    },
+    {
+      "method": "Concat",
+      "size": 32,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 0.07863333333333333,
+      "minUs": 0.07688666666666666,
+      "maxUs": 0.08224,
+      "bytesPerOp": 560
+    },
+    {
+      "method": "Concat",
+      "size": 32,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 0.08274,
+      "minUs": 0.080185,
+      "maxUs": 0.090535,
+      "bytesPerOp": 560
+    },
+    {
+      "method": "Concat",
+      "size": 32,
+      "shape": "array",
+      "variant": "native",
+      "medianUs": 0.12827,
+      "minUs": 0.12491500000000001,
+      "maxUs": 0.14045,
+      "bytesPerOp": 392
+    },
+    {
+      "method": "Slice",
+      "size": 32,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 0.16396,
+      "minUs": 0.16089333333333333,
+      "maxUs": 0.17098666666666668,
+      "bytesPerOp": 312
+    },
+    {
+      "method": "Slice",
+      "size": 32,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 0.095555,
+      "minUs": 0.090775,
+      "maxUs": 0.11675,
+      "bytesPerOp": 200
+    },
+    {
+      "method": "Slice",
+      "size": 32,
+      "shape": "array",
+      "variant": "native",
+      "medianUs": 0.08314500000000001,
+      "minUs": 0.078455,
+      "maxUs": 0.09032000000000001,
+      "bytesPerOp": 160
+    },
+    {
+      "method": "ToRecord",
+      "size": 32,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 0.44445333333333337,
+      "minUs": 0.43946666666666667,
+      "maxUs": 0.46887999999999996,
+      "bytesPerOp": 1688
+    },
+    {
+      "method": "ToRecord",
+      "size": 32,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 0.311792314461719,
+      "minUs": 0.3090129070108536,
+      "maxUs": 0.31977119389850395,
+      "bytesPerOp": 928
+    },
+    {
+      "method": "ToRecord",
+      "size": 32,
+      "shape": "array",
+      "variant": "native",
+      "medianUs": 0.24900999999999998,
+      "minUs": 0.243575,
+      "maxUs": 0.25999,
+      "bytesPerOp": 872
+    },
+    {
+      "method": "ToRecordIndexed",
+      "size": 32,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 0.4436132834636745,
+      "minUs": 0.4080924855491329,
+      "maxUs": 0.45773546412784766,
+      "bytesPerOp": 1600
+    },
+    {
+      "method": "ToRecordIndexed",
+      "size": 32,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 0.31900799999999996,
+      "minUs": 0.3034986666666667,
+      "maxUs": 0.3269013333333333,
+      "bytesPerOp": 904
+    },
+    {
+      "method": "ReduceIndexedTypedArray",
+      "size": 32,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 0.132112,
+      "minUs": 0.13014399999999998,
+      "maxUs": 0.18461333333333332,
+      "bytesPerOp": 32
+    },
+    {
+      "method": "ReduceIndexedTypedArray",
+      "size": 32,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 0.04678,
+      "minUs": 0.045835,
+      "maxUs": 0.047760000000000004,
+      "bytesPerOp": 0
+    },
+    {
+      "method": "ForEachIndexedTypedArray",
+      "size": 32,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 0.14286,
+      "minUs": 0.137185,
+      "maxUs": 0.14745,
+      "bytesPerOp": 120
+    },
+    {
+      "method": "ForEachIndexedTypedArray",
+      "size": 32,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 0.08972999999999999,
+      "minUs": 0.08621000000000001,
+      "maxUs": 0.09839500000000001,
+      "bytesPerOp": 88
+    },
+    {
+      "method": "FilterAsync",
+      "size": 32,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 2.1630000000000003,
+      "minUs": 1.666,
+      "maxUs": 3.525,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterAsync",
+      "size": 32,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 1.9835,
+      "minUs": 1.4055000000000002,
+      "maxUs": 2.436,
+      "bytesPerOp": null
+    },
+    {
+      "method": "ConcatAsync",
+      "size": 32,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 1.5475,
+      "minUs": 1.462,
+      "maxUs": 1.87,
+      "bytesPerOp": null
+    },
+    {
+      "method": "ConcatAsync",
+      "size": 32,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 1.6015000000000001,
+      "minUs": 1.5330000000000001,
+      "maxUs": 2.274,
+      "bytesPerOp": null
+    },
+    {
+      "method": "ForEachAsync",
+      "size": 32,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 1.5575,
+      "minUs": 1.255,
+      "maxUs": 2.051,
+      "bytesPerOp": null
+    },
+    {
+      "method": "ForEachAsync",
+      "size": 32,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 1.4405000000000001,
+      "minUs": 1.1595,
+      "maxUs": 1.8685,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallel",
+      "size": 32,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 3.218,
+      "minUs": 2.7710000000000004,
+      "maxUs": 11.5285,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallel",
+      "size": 32,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 3.445,
+      "minUs": 2.8975,
+      "maxUs": 5.8420000000000005,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallelCpu",
+      "size": 32,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 8.4245,
+      "minUs": 7.173500000000001,
+      "maxUs": 26.02,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallelCpu",
+      "size": 32,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 8.9165,
+      "minUs": 7.8465,
+      "maxUs": 12.4175,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallelAsync",
+      "size": 32,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 8.993500000000001,
+      "minUs": 7.2604999999999995,
+      "maxUs": 24.639,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallelAsync",
+      "size": 32,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 6.399,
+      "minUs": 5.6875,
+      "maxUs": 20.227,
+      "bytesPerOp": null
+    },
+    {
+      "method": "ForEachParallel",
+      "size": 32,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 2.1725,
+      "minUs": 2.1425,
+      "maxUs": 3.1489999999999996,
+      "bytesPerOp": null
+    },
+    {
+      "method": "ForEachParallel",
+      "size": 32,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 2.2735,
+      "minUs": 2.153,
+      "maxUs": 8.289,
+      "bytesPerOp": null
+    },
+    {
+      "method": "ToDictionaryParallel",
+      "size": 32,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 5.3075,
+      "minUs": 4.1275,
+      "maxUs": 10.6985,
+      "bytesPerOp": null
+    },
+    {
+      "method": "ToDictionaryParallel",
+      "size": 32,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 5.1514999999999995,
+      "minUs": 4.2364999999999995,
+      "maxUs": 8.2065,
+      "bytesPerOp": null
+    },
+    {
+      "method": "Filter",
+      "size": 32,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 0.48352,
+      "minUs": 0.4646,
+      "maxUs": 0.5326266666666667,
+      "bytesPerOp": 440
+    },
+    {
+      "method": "Filter",
+      "size": 32,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 0.15936,
+      "minUs": 0.15508,
+      "maxUs": 0.16663499999999998,
+      "bytesPerOp": 296
+    },
+    {
+      "method": "Filter",
+      "size": 32,
+      "shape": "list",
+      "variant": "native",
+      "medianUs": 0.157915,
+      "minUs": 0.15323499999999998,
+      "maxUs": 0.16024000000000002,
+      "bytesPerOp": 296
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 32,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 0.45216,
+      "minUs": 0.43818666666666667,
+      "maxUs": 0.47429333333333334,
+      "bytesPerOp": 352
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 32,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 0.3109144365774631,
+      "minUs": 0.3052202088083523,
+      "maxUs": 0.32534501380055203,
+      "bytesPerOp": 368
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 32,
+      "shape": "list",
+      "variant": "native",
+      "medianUs": 0.5034067575135337,
+      "minUs": 0.4883516893783834,
+      "maxUs": 0.5232686204965465,
+      "bytesPerOp": 336
+    },
+    {
+      "method": "Map",
+      "size": 32,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 0.7124725791287998,
+      "minUs": 0.697649639611407,
+      "maxUs": 0.7905985584456284,
+      "bytesPerOp": 664
+    },
+    {
+      "method": "Map",
+      "size": 32,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 0.100515,
+      "minUs": 0.091875,
+      "maxUs": 0.11047,
+      "bytesPerOp": 224
+    },
+    {
+      "method": "Map",
+      "size": 32,
+      "shape": "list",
+      "variant": "native",
+      "medianUs": 0.10185,
+      "minUs": 0.093125,
+      "maxUs": 0.10862999999999999,
+      "bytesPerOp": 224
+    },
+    {
+      "method": "MapIndexed",
+      "size": 32,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 0.712222051832541,
+      "minUs": 0.6788836068087717,
+      "maxUs": 0.7271430762153044,
+      "bytesPerOp": 576
+    },
+    {
+      "method": "MapIndexed",
+      "size": 32,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 0.6865066666666667,
+      "minUs": 0.6635866666666667,
+      "maxUs": 0.7124933333333333,
+      "bytesPerOp": 560
+    },
+    {
+      "method": "MapIndexed",
+      "size": 32,
+      "shape": "list",
+      "variant": "native",
+      "medianUs": 0.69256,
+      "minUs": 0.65196,
+      "maxUs": 0.7193466666666667,
+      "bytesPerOp": 560
+    },
+    {
+      "method": "Reduce",
+      "size": 32,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 0.3233206218832502,
+      "minUs": 0.31514373716632443,
+      "maxUs": 0.3486799647990613,
+      "bytesPerOp": 128
+    },
+    {
+      "method": "Reduce",
+      "size": 32,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 0.2795626666666667,
+      "minUs": 0.276464,
+      "maxUs": 0.2885546666666666,
+      "bytesPerOp": 40
+    },
+    {
+      "method": "Reduce",
+      "size": 32,
+      "shape": "list",
+      "variant": "native",
+      "medianUs": 0.27856533333333333,
+      "minUs": 0.27644799999999997,
+      "maxUs": 0.290608,
+      "bytesPerOp": 40
+    },
+    {
+      "method": "ReduceIndexed",
+      "size": 32,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 0.28971225515687293,
+      "minUs": 0.2842953718148726,
+      "maxUs": 0.306569596117178,
+      "bytesPerOp": 40
+    },
+    {
+      "method": "ReduceIndexed",
+      "size": 32,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 0.29626785071402856,
+      "minUs": 0.2918396735869435,
+      "maxUs": 0.3112144485779431,
+      "bytesPerOp": 40
+    },
+    {
+      "method": "ForEach",
+      "size": 32,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 0.328600762687005,
+      "minUs": 0.3221619243179818,
+      "maxUs": 0.3549281314168378,
+      "bytesPerOp": 216
+    },
+    {
+      "method": "ForEach",
+      "size": 32,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 0.08696,
+      "minUs": 0.0865,
+      "maxUs": 0.104465,
+      "bytesPerOp": 88
+    },
+    {
+      "method": "ForEachIndexed",
+      "size": 32,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 0.3022666666666667,
+      "minUs": 0.29063333333333335,
+      "maxUs": 0.31775333333333333,
+      "bytesPerOp": 128
+    },
+    {
+      "method": "ForEachIndexed",
+      "size": 32,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 0.2965978639145566,
+      "minUs": 0.2932317292691708,
+      "maxUs": 0.3097263890555622,
+      "bytesPerOp": 128
+    },
+    {
+      "method": "Concat",
+      "size": 32,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 0.12864533333333333,
+      "minUs": 0.12195199999999999,
+      "maxUs": 0.14057066666666665,
+      "bytesPerOp": 592
+    },
+    {
+      "method": "Concat",
+      "size": 32,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 0.1323,
+      "minUs": 0.12757000000000002,
+      "maxUs": 0.138325,
+      "bytesPerOp": 592
+    },
+    {
+      "method": "Concat",
+      "size": 32,
+      "shape": "list",
+      "variant": "native",
+      "medianUs": 0.11584000000000001,
+      "minUs": 0.111365,
+      "maxUs": 0.131885,
+      "bytesPerOp": 392
+    },
+    {
+      "method": "Slice",
+      "size": 32,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 0.2649765990639626,
+      "minUs": 0.25705028201128044,
+      "maxUs": 0.2810392415696628,
+      "bytesPerOp": 312
+    },
+    {
+      "method": "Slice",
+      "size": 32,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 0.075975,
+      "minUs": 0.067885,
+      "maxUs": 0.08431,
+      "bytesPerOp": 200
+    },
+    {
+      "method": "Slice",
+      "size": 32,
+      "shape": "list",
+      "variant": "native",
+      "medianUs": 0.062215,
+      "minUs": 0.0597,
+      "maxUs": 0.07891000000000001,
+      "bytesPerOp": 160
+    },
+    {
+      "method": "ToRecord",
+      "size": 32,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 0.6809152366094643,
+      "minUs": 0.644253770150806,
+      "maxUs": 0.7157566302652105,
+      "bytesPerOp": 1696
+    },
+    {
+      "method": "ToRecord",
+      "size": 32,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 0.45887,
+      "minUs": 0.44351999999999997,
+      "maxUs": 0.48772,
+      "bytesPerOp": 936
+    },
+    {
+      "method": "ToRecord",
+      "size": 32,
+      "shape": "list",
+      "variant": "native",
+      "medianUs": 0.282475,
+      "minUs": 0.268045,
+      "maxUs": 0.29279499999999997,
+      "bytesPerOp": 872
+    },
+    {
+      "method": "ToRecordIndexed",
+      "size": 32,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 0.6198,
+      "minUs": 0.5965333333333334,
+      "maxUs": 0.63348,
+      "bytesPerOp": 1608
+    },
+    {
+      "method": "ToRecordIndexed",
+      "size": 32,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 0.4558,
+      "minUs": 0.441696,
+      "maxUs": 0.47388800000000003,
+      "bytesPerOp": 912
+    },
+    {
+      "method": "Filter",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 0.44618,
+      "minUs": 0.42536999999999997,
+      "maxUs": 0.53354,
+      "bytesPerOp": 456
+    },
+    {
+      "method": "Filter",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 0.3233349333973359,
+      "minUs": 0.31357254290171604,
+      "maxUs": 0.34003360134405375,
+      "bytesPerOp": 336
+    },
+    {
+      "method": "Filter",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "native",
+      "medianUs": 0.328123124924997,
+      "minUs": 0.3195187807512301,
+      "maxUs": 0.33517340693627745,
+      "bytesPerOp": 336
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 0.41067,
+      "minUs": 0.39205,
+      "maxUs": 0.43416000000000005,
+      "bytesPerOp": 368
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 0.38995199999999997,
+      "minUs": 0.372008,
+      "maxUs": 0.401136,
+      "bytesPerOp": 424
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "native",
+      "medianUs": 0.4619084763390536,
+      "minUs": 0.44316172646905877,
+      "maxUs": 0.472430230542555,
+      "bytesPerOp": 352
+    },
+    {
+      "method": "Map",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 0.6842666062117434,
+      "minUs": 0.6686919065971435,
+      "maxUs": 0.7408070732260258,
+      "bytesPerOp": 680
+    },
+    {
+      "method": "Map",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 0.320272,
+      "minUs": 0.314624,
+      "maxUs": 0.334656,
+      "bytesPerOp": 560
+    },
+    {
+      "method": "Map",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "native",
+      "medianUs": 0.3219908796351854,
+      "minUs": 0.31141845673826957,
+      "maxUs": 0.3387015480619225,
+      "bytesPerOp": 560
+    },
+    {
+      "method": "MapIndexed",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 0.6406360424028269,
+      "minUs": 0.6349823321554771,
+      "maxUs": 0.7443109540636043,
+      "bytesPerOp": 592
+    },
+    {
+      "method": "MapIndexed",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 0.6536356726627819,
+      "minUs": 0.6193691411198379,
+      "maxUs": 0.6665442107930073,
+      "bytesPerOp": 576
+    },
+    {
+      "method": "MapIndexed",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "native",
+      "medianUs": 0.6457309348872561,
+      "minUs": 0.6237775525715734,
+      "maxUs": 0.6635039270331897,
+      "bytesPerOp": 576
+    },
+    {
+      "method": "Reduce",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 0.27282194191845116,
+      "minUs": 0.267585802288061,
+      "maxUs": 0.29592255793487826,
+      "bytesPerOp": 144
+    },
+    {
+      "method": "Reduce",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 0.232225,
+      "minUs": 0.22776,
+      "maxUs": 0.23814000000000002,
+      "bytesPerOp": 56
+    },
+    {
+      "method": "Reduce",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "native",
+      "medianUs": 0.23686,
+      "minUs": 0.227975,
+      "maxUs": 0.249325,
+      "bytesPerOp": 56
+    },
+    {
+      "method": "ReduceIndexed",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 0.25256,
+      "minUs": 0.239248,
+      "maxUs": 0.26651733333333333,
+      "bytesPerOp": 56
+    },
+    {
+      "method": "ReduceIndexed",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 0.242885,
+      "minUs": 0.23918499999999998,
+      "maxUs": 0.264085,
+      "bytesPerOp": 56
+    },
+    {
+      "method": "ForEach",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 0.32116456438838364,
+      "minUs": 0.3155984159577589,
+      "maxUs": 0.337078322088589,
+      "bytesPerOp": 232
+    },
+    {
+      "method": "ForEach",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 0.19555999999999998,
+      "minUs": 0.183105,
+      "maxUs": 0.207,
+      "bytesPerOp": 144
+    },
+    {
+      "method": "ForEachIndexed",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 0.24723733333333334,
+      "minUs": 0.24518399999999999,
+      "maxUs": 0.261504,
+      "bytesPerOp": 144
+    },
+    {
+      "method": "ForEachIndexed",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 0.254,
+      "minUs": 0.24600999999999998,
+      "maxUs": 0.26305,
+      "bytesPerOp": 144
+    },
+    {
+      "method": "Concat",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 0.7912524002560273,
+      "minUs": 0.7723917217836569,
+      "maxUs": 0.8190526989545551,
+      "bytesPerOp": 904
+    },
+    {
+      "method": "Concat",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 0.4356300918703415,
+      "minUs": 0.4239816259317039,
+      "maxUs": 0.45005200208008317,
+      "bytesPerOp": 744
+    },
+    {
+      "method": "Concat",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "native",
+      "medianUs": 0.3998093282487533,
+      "minUs": 0.3872616603109416,
+      "maxUs": 0.41687444998533296,
+      "bytesPerOp": 744
+    },
+    {
+      "method": "Slice",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 1.0552392065344223,
+      "minUs": 1.0057642940490081,
+      "maxUs": 1.0999299883313884,
+      "bytesPerOp": 928
+    },
+    {
+      "method": "Slice",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 0.1795,
+      "minUs": 0.17105,
+      "maxUs": 0.18803,
+      "bytesPerOp": 424
+    },
+    {
+      "method": "Slice",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "native",
+      "medianUs": 0.171925,
+      "minUs": 0.16285,
+      "maxUs": 0.179055,
+      "bytesPerOp": 384
+    },
+    {
+      "method": "ToRecord",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 0.600704,
+      "minUs": 0.585152,
+      "maxUs": 0.650144,
+      "bytesPerOp": 1712
+    },
+    {
+      "method": "ToRecord",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 0.6157013333333333,
+      "minUs": 0.59648,
+      "maxUs": 0.6524693333333333,
+      "bytesPerOp": 1704
+    },
+    {
+      "method": "ToRecord",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "native",
+      "medianUs": 0.4835542281127497,
+      "minUs": 0.4685551614709726,
+      "maxUs": 0.5185458278887437,
+      "bytesPerOp": 1624
+    },
+    {
+      "method": "ToRecordIndexed",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 0.5812672506900276,
+      "minUs": 0.5661466458658346,
+      "maxUs": 0.5970238809552382,
+      "bytesPerOp": 1624
+    },
+    {
+      "method": "ToRecordIndexed",
+      "size": 32,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 0.58244,
+      "minUs": 0.56348,
+      "maxUs": 0.60317,
+      "bytesPerOp": 1624
+    },
+    {
+      "method": "Filter",
+      "size": 1000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 7.9144,
+      "minUs": 7.57792,
+      "maxUs": 8.5216,
+      "bytesPerOp": 3968
+    },
+    {
+      "method": "Filter",
+      "size": 1000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 2.275205895101864,
+      "minUs": 2.2231035977459905,
+      "maxUs": 2.3094061551798872,
+      "bytesPerOp": 3808
+    },
+    {
+      "method": "Filter",
+      "size": 1000,
+      "shape": "array",
+      "variant": "native",
+      "medianUs": 2.260420168067227,
+      "minUs": 2.211050420168067,
+      "maxUs": 2.3559663865546216,
+      "bytesPerOp": 3808
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 1000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 7.180571428571428,
+      "minUs": 6.935285714285714,
+      "maxUs": 7.836714285714286,
+      "bytesPerOp": 3880
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 1000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 4.073008507347254,
+      "minUs": 3.855065738592421,
+      "maxUs": 4.176024748646559,
+      "bytesPerOp": 3904
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 1000,
+      "shape": "array",
+      "variant": "native",
+      "medianUs": 5.738695652173914,
+      "minUs": 5.525760869565217,
+      "maxUs": 5.8877173913043475,
+      "bytesPerOp": 3864
+    },
+    {
+      "method": "Map",
+      "size": 1000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 10.411568627450979,
+      "minUs": 9.986078431372547,
+      "maxUs": 10.805294117647058,
+      "bytesPerOp": 8704
+    },
+    {
+      "method": "Map",
+      "size": 1000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 1.8606796116504853,
+      "minUs": 1.8338765603328708,
+      "maxUs": 1.8982662968099862,
+      "bytesPerOp": 4072
+    },
+    {
+      "method": "Map",
+      "size": 1000,
+      "shape": "array",
+      "variant": "native",
+      "medianUs": 1.8318333333333334,
+      "minUs": 1.7706,
+      "maxUs": 1.8687333333333334,
+      "bytesPerOp": 4072
+    },
+    {
+      "method": "MapIndexed",
+      "size": 1000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 9.82389210019268,
+      "minUs": 9.359344894026975,
+      "maxUs": 10.175337186897881,
+      "bytesPerOp": 8616
+    },
+    {
+      "method": "MapIndexed",
+      "size": 1000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 9.130754716981132,
+      "minUs": 8.90698113207547,
+      "maxUs": 9.668301886792452,
+      "bytesPerOp": 8600
+    },
+    {
+      "method": "MapIndexed",
+      "size": 1000,
+      "shape": "array",
+      "variant": "native",
+      "medianUs": 9.298144712430426,
+      "minUs": 8.731168831168832,
+      "maxUs": 9.659925788497217,
+      "bytesPerOp": 8600
+    },
+    {
+      "method": "Reduce",
+      "size": 1000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 4.194796183868171,
+      "minUs": 4.118126626192541,
+      "maxUs": 4.451951431049436,
+      "bytesPerOp": 120
+    },
+    {
+      "method": "Reduce",
+      "size": 1000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 3.237769328263625,
+      "minUs": 3.197084917617237,
+      "maxUs": 3.26489226869455,
+      "bytesPerOp": 32
+    },
+    {
+      "method": "Reduce",
+      "size": 1000,
+      "shape": "array",
+      "variant": "native",
+      "medianUs": 3.249556400506971,
+      "minUs": 3.196831432192649,
+      "maxUs": 3.3364385297845374,
+      "bytesPerOp": 32
+    },
+    {
+      "method": "ReduceIndexed",
+      "size": 1000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 3.492362598144183,
+      "minUs": 3.466095645967166,
+      "maxUs": 3.5433261955745894,
+      "bytesPerOp": 32
+    },
+    {
+      "method": "ReduceIndexed",
+      "size": 1000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 3.489010989010989,
+      "minUs": 3.460645604395604,
+      "maxUs": 3.654739010989011,
+      "bytesPerOp": 32
+    },
+    {
+      "method": "ForEach",
+      "size": 1000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 4.22311600338696,
+      "minUs": 4.112193056731583,
+      "maxUs": 4.347332768839966,
+      "bytesPerOp": 208
+    },
+    {
+      "method": "ForEach",
+      "size": 1000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 2.3980859010270774,
+      "minUs": 2.3721288515406163,
+      "maxUs": 2.456769374416433,
+      "bytesPerOp": 88
+    },
+    {
+      "method": "ForEachIndexed",
+      "size": 1000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 3.4980014275517486,
+      "minUs": 3.4722341184867953,
+      "maxUs": 3.6526052819414705,
+      "bytesPerOp": 120
+    },
+    {
+      "method": "ForEachIndexed",
+      "size": 1000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 3.5048076923076925,
+      "minUs": 3.463598901098901,
+      "maxUs": 3.576167582417582,
+      "bytesPerOp": 120
+    },
+    {
+      "method": "Concat",
+      "size": 1000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 1.0191176470588235,
+      "minUs": 0.9632773109243697,
+      "maxUs": 1.1207563025210086,
+      "bytesPerOp": 16048
+    },
+    {
+      "method": "Concat",
+      "size": 1000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 0.9963598543941757,
+      "minUs": 0.9513780551222049,
+      "maxUs": 1.0627838446871207,
+      "bytesPerOp": 16048
+    },
+    {
+      "method": "Concat",
+      "size": 1000,
+      "shape": "array",
+      "variant": "native",
+      "medianUs": 0.6080949904662853,
+      "minUs": 0.5544981799271971,
+      "maxUs": 0.6267724042295025,
+      "bytesPerOp": 8136
+    },
+    {
+      "method": "Slice",
+      "size": 1000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 0.17701,
+      "minUs": 0.168465,
+      "maxUs": 0.18141500000000002,
+      "bytesPerOp": 312
+    },
+    {
+      "method": "Slice",
+      "size": 1000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 0.103065,
+      "minUs": 0.09233999999999999,
+      "maxUs": 0.10661,
+      "bytesPerOp": 200
+    },
+    {
+      "method": "Slice",
+      "size": 1000,
+      "shape": "array",
+      "variant": "native",
+      "medianUs": 0.08003500000000001,
+      "minUs": 0.07825,
+      "maxUs": 0.08821,
+      "bytesPerOp": 160
+    },
+    {
+      "method": "ToRecord",
+      "size": 1000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 14.193601895734597,
+      "minUs": 13.592417061611375,
+      "maxUs": 14.965165876777252,
+      "bytesPerOp": 73288
+    },
+    {
+      "method": "ToRecord",
+      "size": 1000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 7.894868238557558,
+      "minUs": 7.6715672676837725,
+      "maxUs": 8.646601941747573,
+      "bytesPerOp": 22248
+    },
+    {
+      "method": "ToRecord",
+      "size": 1000,
+      "shape": "array",
+      "variant": "native",
+      "medianUs": 6.360435779816514,
+      "minUs": 6.301605504587156,
+      "maxUs": 6.874885321100917,
+      "bytesPerOp": 22192
+    },
+    {
+      "method": "ToRecordIndexed",
+      "size": 1000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 12.945124716553288,
+      "minUs": 12.770975056689343,
+      "maxUs": 14.156916099773243,
+      "bytesPerOp": 73200
+    },
+    {
+      "method": "ToRecordIndexed",
+      "size": 1000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 7.758698727015558,
+      "minUs": 7.366053748231966,
+      "maxUs": 8.587128712871287,
+      "bytesPerOp": 22224
+    },
+    {
+      "method": "ReduceIndexedTypedArray",
+      "size": 1000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 3.496113074204947,
+      "minUs": 3.457809187279152,
+      "maxUs": 3.577173144876325,
+      "bytesPerOp": 32
+    },
+    {
+      "method": "ReduceIndexedTypedArray",
+      "size": 1000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 1.3048897897137066,
+      "minUs": 1.2912085127945274,
+      "maxUs": 1.3231061565746136,
+      "bytesPerOp": 0
+    },
+    {
+      "method": "ForEachIndexedTypedArray",
+      "size": 1000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 3.5017130620985006,
+      "minUs": 3.457673090649536,
+      "maxUs": 3.599143468950749,
+      "bytesPerOp": 120
+    },
+    {
+      "method": "ForEachIndexedTypedArray",
+      "size": 1000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 2.361624649859944,
+      "minUs": 2.342063492063492,
+      "maxUs": 2.4436041083099904,
+      "bytesPerOp": 88
+    },
+    {
+      "method": "FilterAsync",
+      "size": 1000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 9.6525,
+      "minUs": 8.8905,
+      "maxUs": 10.886,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterAsync",
+      "size": 1000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 4.544,
+      "minUs": 3.8605,
+      "maxUs": 7.5275,
+      "bytesPerOp": null
+    },
+    {
+      "method": "ConcatAsync",
+      "size": 1000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 3.236,
+      "minUs": 2.25,
+      "maxUs": 4.1964999999999995,
+      "bytesPerOp": null
+    },
+    {
+      "method": "ConcatAsync",
+      "size": 1000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 3.2739999999999996,
+      "minUs": 2.362,
+      "maxUs": 4.226,
+      "bytesPerOp": null
+    },
+    {
+      "method": "ForEachAsync",
+      "size": 1000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 5.921,
+      "minUs": 5.5175,
+      "maxUs": 6.564500000000001,
+      "bytesPerOp": null
+    },
+    {
+      "method": "ForEachAsync",
+      "size": 1000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 3.8335000000000004,
+      "minUs": 3.6944999999999997,
+      "maxUs": 5.1995000000000005,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallel",
+      "size": 1000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 13.450999999999999,
+      "minUs": 11.466500000000002,
+      "maxUs": 25.699,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallel",
+      "size": 1000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 12.8595,
+      "minUs": 11.5165,
+      "maxUs": 21.570500000000003,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallelCpu",
+      "size": 1000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 53.09069767441861,
+      "minUs": 48.67325581395348,
+      "maxUs": 82.48372093023256,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallelCpu",
+      "size": 1000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 53.53181818181818,
+      "minUs": 52.38636363636363,
+      "maxUs": 81.06363636363636,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallelAsync",
+      "size": 1000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 21.055500000000002,
+      "minUs": 19.4545,
+      "maxUs": 22.164499999999997,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallelAsync",
+      "size": 1000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 21.7775,
+      "minUs": 19.9805,
+      "maxUs": 34.161,
+      "bytesPerOp": null
+    },
+    {
+      "method": "ForEachParallel",
+      "size": 1000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 47.7344537815126,
+      "minUs": 46.80336134453782,
+      "maxUs": 48.84285714285714,
+      "bytesPerOp": null
+    },
+    {
+      "method": "ForEachParallel",
+      "size": 1000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 48.518,
+      "minUs": 46.006,
+      "maxUs": 68.832,
+      "bytesPerOp": null
+    },
+    {
+      "method": "ToDictionaryParallel",
+      "size": 1000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 93.91818181818181,
+      "minUs": 78.63181818181819,
+      "maxUs": 115.25,
+      "bytesPerOp": null
+    },
+    {
+      "method": "ToDictionaryParallel",
+      "size": 1000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 39.72802547770701,
+      "minUs": 38.256687898089176,
+      "maxUs": 43.538216560509554,
+      "bytesPerOp": null
+    },
+    {
+      "method": "Filter",
+      "size": 1000,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 10.018446601941747,
+      "minUs": 9.715922330097087,
+      "maxUs": 10.439417475728156,
+      "bytesPerOp": 3976
+    },
+    {
+      "method": "Filter",
+      "size": 1000,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 2.333978873239437,
+      "minUs": 2.258142605633803,
+      "maxUs": 2.5031250000000003,
+      "bytesPerOp": 3832
+    },
+    {
+      "method": "Filter",
+      "size": 1000,
+      "shape": "list",
+      "variant": "native",
+      "medianUs": 2.3448634590377115,
+      "minUs": 2.242262678803641,
+      "maxUs": 2.4322496749024705,
+      "bytesPerOp": 3832
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 1000,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 9.467706422018347,
+      "minUs": 9.15394495412844,
+      "maxUs": 9.877614678899082,
+      "bytesPerOp": 3888
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 1000,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 5.488653234358431,
+      "minUs": 5.347932131495228,
+      "maxUs": 7.832979851537646,
+      "bytesPerOp": 3904
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 1000,
+      "shape": "list",
+      "variant": "native",
+      "medianUs": 11.14508547008547,
+      "minUs": 10.726495726495726,
+      "maxUs": 11.52948717948718,
+      "bytesPerOp": 3872
+    },
+    {
+      "method": "Map",
+      "size": 1000,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 15.544615384615385,
+      "minUs": 15.300615384615384,
+      "maxUs": 16.899384615384616,
+      "bytesPerOp": 8712
+    },
+    {
+      "method": "Map",
+      "size": 1000,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 1.566846684668467,
+      "minUs": 1.5397539753975398,
+      "maxUs": 1.721962196219622,
+      "bytesPerOp": 4096
+    },
+    {
+      "method": "Map",
+      "size": 1000,
+      "shape": "list",
+      "variant": "native",
+      "medianUs": 1.6085435779816515,
+      "minUs": 1.547505733944954,
+      "maxUs": 1.671473623853211,
+      "bytesPerOp": 4096
+    },
+    {
+      "method": "MapIndexed",
+      "size": 1000,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 15.358160237388724,
+      "minUs": 14.667359050445103,
+      "maxUs": 15.847774480712166,
+      "bytesPerOp": 8624
+    },
+    {
+      "method": "MapIndexed",
+      "size": 1000,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 14.360224089635855,
+      "minUs": 14.107002801120448,
+      "maxUs": 15.200280112044817,
+      "bytesPerOp": 8608
+    },
+    {
+      "method": "MapIndexed",
+      "size": 1000,
+      "shape": "list",
+      "variant": "native",
+      "medianUs": 14.603641456582633,
+      "minUs": 14.056022408963585,
+      "maxUs": 15.298599439775911,
+      "bytesPerOp": 8608
+    },
+    {
+      "method": "Reduce",
+      "size": 1000,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 8.869942196531792,
+      "minUs": 8.744894026974952,
+      "maxUs": 9.244701348747592,
+      "bytesPerOp": 128
+    },
+    {
+      "method": "Reduce",
+      "size": 1000,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 7.8978159126365055,
+      "minUs": 7.790951638065523,
+      "maxUs": 8.062402496099844,
+      "bytesPerOp": 40
+    },
+    {
+      "method": "Reduce",
+      "size": 1000,
+      "shape": "list",
+      "variant": "native",
+      "medianUs": 7.890202177293934,
+      "minUs": 7.838569206842924,
+      "maxUs": 8.02954898911353,
+      "bytesPerOp": 40
+    },
+    {
+      "method": "ReduceIndexed",
+      "size": 1000,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 8.235179153094462,
+      "minUs": 8.107817589576547,
+      "maxUs": 8.399022801302932,
+      "bytesPerOp": 40
+    },
+    {
+      "method": "ReduceIndexed",
+      "size": 1000,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 8.210912052117264,
+      "minUs": 8.113680781758958,
+      "maxUs": 8.313517915309447,
+      "bytesPerOp": 40
+    },
+    {
+      "method": "ForEach",
+      "size": 1000,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 8.889752650176678,
+      "minUs": 8.72791519434629,
+      "maxUs": 9.226678445229682,
+      "bytesPerOp": 216
+    },
+    {
+      "method": "ForEach",
+      "size": 1000,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 2.3987394957983197,
+      "minUs": 2.346498599439776,
+      "maxUs": 2.885200746965453,
+      "bytesPerOp": 88
+    },
+    {
+      "method": "ForEachIndexed",
+      "size": 1000,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 8.218954248366012,
+      "minUs": 8.134313725490196,
+      "maxUs": 8.452450980392156,
+      "bytesPerOp": 128
+    },
+    {
+      "method": "ForEachIndexed",
+      "size": 1000,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 8.186807817589576,
+      "minUs": 8.137296416938112,
+      "maxUs": 8.44755700325733,
+      "bytesPerOp": 128
+    },
+    {
+      "method": "Concat",
+      "size": 1000,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 1.0660833333333333,
+      "minUs": 1.0413833333333333,
+      "maxUs": 1.14595,
+      "bytesPerOp": 16080
+    },
+    {
+      "method": "Concat",
+      "size": 1000,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 1.0645865834633386,
+      "minUs": 1.0383515340613625,
+      "maxUs": 1.1159386375455018,
+      "bytesPerOp": 16080
+    },
+    {
+      "method": "Concat",
+      "size": 1000,
+      "shape": "list",
+      "variant": "native",
+      "medianUs": 0.5591469105842822,
+      "minUs": 0.5353742766473772,
+      "maxUs": 0.6628243419824529,
+      "bytesPerOp": 8136
+    },
+    {
+      "method": "Slice",
+      "size": 1000,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 0.26282851314052563,
+      "minUs": 0.2514460578423137,
+      "maxUs": 0.26656066242649706,
+      "bytesPerOp": 312
+    },
+    {
+      "method": "Slice",
+      "size": 1000,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 0.07005,
+      "minUs": 0.06636,
+      "maxUs": 0.0786,
+      "bytesPerOp": 200
+    },
+    {
+      "method": "Slice",
+      "size": 1000,
+      "shape": "list",
+      "variant": "native",
+      "medianUs": 0.06761,
+      "minUs": 0.06089,
+      "maxUs": 0.075805,
+      "bytesPerOp": 160
+    },
+    {
+      "method": "ToRecord",
+      "size": 1000,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 18.49013157894737,
+      "minUs": 18.10098684210526,
+      "maxUs": 20.151315789473685,
+      "bytesPerOp": 73296
+    },
+    {
+      "method": "ToRecord",
+      "size": 1000,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 12.535962877030162,
+      "minUs": 12.00278422273782,
+      "maxUs": 13.049883990719257,
+      "bytesPerOp": 22256
+    },
+    {
+      "method": "ToRecord",
+      "size": 1000,
+      "shape": "list",
+      "variant": "native",
+      "medianUs": 6.586238532110092,
+      "minUs": 6.326605504587156,
+      "maxUs": 6.99598623853211,
+      "bytesPerOp": 22192
+    },
+    {
+      "method": "ToRecordIndexed",
+      "size": 1000,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 19.55110410094637,
+      "minUs": 17.458675078864353,
+      "maxUs": 33.00662460567823,
+      "bytesPerOp": 73208
+    },
+    {
+      "method": "ToRecordIndexed",
+      "size": 1000,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 13.681818181818182,
+      "minUs": 12.448717948717949,
+      "maxUs": 31.87365967365967,
+      "bytesPerOp": 22232
+    },
+    {
+      "method": "Filter",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 8.491764705882353,
+      "minUs": 8.409579831932772,
+      "maxUs": 9.123529411764705,
+      "bytesPerOp": 3992
+    },
+    {
+      "method": "Filter",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 6.083765501691094,
+      "minUs": 5.713416009019166,
+      "maxUs": 6.253889515219842,
+      "bytesPerOp": 3872
+    },
+    {
+      "method": "Filter",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "native",
+      "medianUs": 5.983765501691094,
+      "minUs": 5.705186020293123,
+      "maxUs": 6.0611048478015785,
+      "bytesPerOp": 3872
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 7.8730275229357805,
+      "minUs": 7.748256880733945,
+      "maxUs": 8.387155963302753,
+      "bytesPerOp": 3904
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 6.299386503067485,
+      "minUs": 6.139877300613497,
+      "maxUs": 6.5052760736196324,
+      "bytesPerOp": 3960
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "native",
+      "medianUs": 9.44916820702403,
+      "minUs": 9.34935304990758,
+      "maxUs": 10.09630314232902,
+      "bytesPerOp": 3888
+    },
+    {
+      "method": "Map",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 15.167272727272726,
+      "minUs": 14.384848484848485,
+      "maxUs": 15.688484848484848,
+      "bytesPerOp": 8728
+    },
+    {
+      "method": "Map",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 5.728571428571429,
+      "minUs": 5.57110633727175,
+      "maxUs": 6.165413533834586,
+      "bytesPerOp": 8608
+    },
+    {
+      "method": "Map",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "native",
+      "medianUs": 5.71389183457052,
+      "minUs": 5.548568398727466,
+      "maxUs": 5.815694591728525,
+      "bytesPerOp": 8608
+    },
+    {
+      "method": "MapIndexed",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 14.39862258953168,
+      "minUs": 13.734986225895318,
+      "maxUs": 14.705234159779614,
+      "bytesPerOp": 8640
+    },
+    {
+      "method": "MapIndexed",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 13.795977011494253,
+      "minUs": 13.203735632183907,
+      "maxUs": 14.47873563218391,
+      "bytesPerOp": 8624
+    },
+    {
+      "method": "MapIndexed",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "native",
+      "medianUs": 13.300271002710028,
+      "minUs": 13.089972899728997,
+      "maxUs": 14.120596205962059,
+      "bytesPerOp": 8624
+    },
+    {
+      "method": "Reduce",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 7.376339285714285,
+      "minUs": 7.3117559523809526,
+      "maxUs": 7.538541666666666,
+      "bytesPerOp": 144
+    },
+    {
+      "method": "Reduce",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 6.369077306733167,
+      "minUs": 6.289152119700748,
+      "maxUs": 6.625062344139651,
+      "bytesPerOp": 56
+    },
+    {
+      "method": "Reduce",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "native",
+      "medianUs": 6.350313676286072,
+      "minUs": 6.300627352572146,
+      "maxUs": 6.517942283563363,
+      "bytesPerOp": 56
+    },
+    {
+      "method": "ReduceIndexed",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 6.6574636723910166,
+      "minUs": 6.585997357992074,
+      "maxUs": 6.8937912813738444,
+      "bytesPerOp": 56
+    },
+    {
+      "method": "ReduceIndexed",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 6.638069705093834,
+      "minUs": 6.577077747989276,
+      "maxUs": 6.822654155495978,
+      "bytesPerOp": 56
+    },
+    {
+      "method": "ForEach",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 8.576271186440678,
+      "minUs": 8.41406779661017,
+      "maxUs": 9.18813559322034,
+      "bytesPerOp": 232
+    },
+    {
+      "method": "ForEach",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 4.10968,
+      "minUs": 4.07816,
+      "maxUs": 4.23592,
+      "bytesPerOp": 144
+    },
+    {
+      "method": "ForEachIndexed",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 6.676726726726726,
+      "minUs": 6.606606606606607,
+      "maxUs": 6.872972972972972,
+      "bytesPerOp": 144
+    },
+    {
+      "method": "ForEachIndexed",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 6.6737051792828685,
+      "minUs": 6.616865869853918,
+      "maxUs": 6.853652058432935,
+      "bytesPerOp": 144
+    },
+    {
+      "method": "Concat",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 17.843686006825937,
+      "minUs": 17.18703071672355,
+      "maxUs": 18.236860068259386,
+      "bytesPerOp": 16792
+    },
+    {
+      "method": "Concat",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 6.6513715710723185,
+      "minUs": 6.403366583541147,
+      "maxUs": 6.8773067331670825,
+      "bytesPerOp": 12664
+    },
+    {
+      "method": "Concat",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "native",
+      "medianUs": 6.6996078431372545,
+      "minUs": 6.415163398692811,
+      "maxUs": 7.080392156862745,
+      "bytesPerOp": 12664
+    },
+    {
+      "method": "Slice",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 13.772144846796657,
+      "minUs": 13.478551532033427,
+      "maxUs": 14.326462395543174,
+      "bytesPerOp": 928
+    },
+    {
+      "method": "Slice",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 1.1943110897743638,
+      "minUs": 1.1715554488718194,
+      "maxUs": 1.2491598655784926,
+      "bytesPerOp": 424
+    },
+    {
+      "method": "Slice",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "native",
+      "medianUs": 1.1742082594375476,
+      "minUs": 1.1620977957942742,
+      "maxUs": 1.248467190271092,
+      "bytesPerOp": 384
+    },
+    {
+      "method": "ToRecord",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 17.10836653386454,
+      "minUs": 16.562948207171317,
+      "maxUs": 19.41593625498008,
+      "bytesPerOp": 73312
+    },
+    {
+      "method": "ToRecord",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 16.58295081967213,
+      "minUs": 15.597704918032788,
+      "maxUs": 17.857049180327866,
+      "bytesPerOp": 73304
+    },
+    {
+      "method": "ToRecord",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "native",
+      "medianUs": 14.431016042780747,
+      "minUs": 13.890641711229948,
+      "maxUs": 16.205882352941178,
+      "bytesPerOp": 73224
+    },
+    {
+      "method": "ToRecordIndexed",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 16.944540229885057,
+      "minUs": 15.966666666666665,
+      "maxUs": 17.919827586206896,
+      "bytesPerOp": 73224
+    },
+    {
+      "method": "ToRecordIndexed",
+      "size": 1000,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 16.194857142857142,
+      "minUs": 15.940571428571428,
+      "maxUs": 17.379142857142856,
+      "bytesPerOp": 73224
+    },
+    {
+      "method": "Filter",
+      "size": 10000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 75.28095238095237,
+      "minUs": 72.77936507936508,
+      "maxUs": 79.90952380952382,
+      "bytesPerOp": 30376
+    },
+    {
+      "method": "Filter",
+      "size": 10000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 20.02123552123552,
+      "minUs": 19.806563706563704,
+      "maxUs": 21.033976833976833,
+      "bytesPerOp": 30216
+    },
+    {
+      "method": "Filter",
+      "size": 10000,
+      "shape": "array",
+      "variant": "native",
+      "medianUs": 20.327380952380953,
+      "minUs": 19.563095238095237,
+      "maxUs": 22.28849206349206,
+      "bytesPerOp": 30216
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 10000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 70.03142857142856,
+      "minUs": 66.92142857142858,
+      "maxUs": 73.31,
+      "bytesPerOp": 30288
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 10000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 37.65114503816794,
+      "minUs": 37.17328244274809,
+      "maxUs": 39.9969465648855,
+      "bytesPerOp": 30312
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 10000,
+      "shape": "array",
+      "variant": "native",
+      "medianUs": 53.41954022988506,
+      "minUs": 51.9264367816092,
+      "maxUs": 57.056321839080454,
+      "bytesPerOp": 30272
+    },
+    {
+      "method": "Map",
+      "size": 10000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 101.61923076923077,
+      "minUs": 98.65961538461539,
+      "maxUs": 104.09038461538461,
+      "bytesPerOp": 106392
+    },
+    {
+      "method": "Map",
+      "size": 10000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 17.938636363636366,
+      "minUs": 16.960389610389612,
+      "maxUs": 18.775,
+      "bytesPerOp": 40072
+    },
+    {
+      "method": "Map",
+      "size": 10000,
+      "shape": "array",
+      "variant": "native",
+      "medianUs": 17.631543624161072,
+      "minUs": 16.803691275167786,
+      "maxUs": 18.37248322147651,
+      "bytesPerOp": 40072
+    },
+    {
+      "method": "MapIndexed",
+      "size": 10000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 96.91041666666666,
+      "minUs": 90.76458333333333,
+      "maxUs": 106.67916666666667,
+      "bytesPerOp": 106304
+    },
+    {
+      "method": "MapIndexed",
+      "size": 10000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 89.89183673469387,
+      "minUs": 87.80408163265305,
+      "maxUs": 97.9734693877551,
+      "bytesPerOp": 106288
+    },
+    {
+      "method": "MapIndexed",
+      "size": 10000,
+      "shape": "array",
+      "variant": "native",
+      "medianUs": 88.86,
+      "minUs": 87.37799999999999,
+      "maxUs": 99.90799999999999,
+      "bytesPerOp": 106288
+    },
+    {
+      "method": "Reduce",
+      "size": 10000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 41.721008403361346,
+      "minUs": 41.227731092436976,
+      "maxUs": 42.705882352941174,
+      "bytesPerOp": 120
+    },
+    {
+      "method": "Reduce",
+      "size": 10000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 31.946875,
+      "minUs": 31.68984375,
+      "maxUs": 32.92578125,
+      "bytesPerOp": 32
+    },
+    {
+      "method": "Reduce",
+      "size": 10000,
+      "shape": "array",
+      "variant": "native",
+      "medianUs": 32.36,
+      "minUs": 31.783870967741937,
+      "maxUs": 32.72967741935484,
+      "bytesPerOp": 32
+    },
+    {
+      "method": "ReduceIndexed",
+      "size": 10000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 34.68150684931507,
+      "minUs": 34.406164383561645,
+      "maxUs": 35.01301369863013,
+      "bytesPerOp": 32
+    },
+    {
+      "method": "ReduceIndexed",
+      "size": 10000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 34.705479452054796,
+      "minUs": 34.45753424657534,
+      "maxUs": 35.189726027397256,
+      "bytesPerOp": 32
+    },
+    {
+      "method": "ForEach",
+      "size": 10000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 41.54655172413793,
+      "minUs": 40.8551724137931,
+      "maxUs": 42.606896551724134,
+      "bytesPerOp": 208
+    },
+    {
+      "method": "ForEach",
+      "size": 10000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 23.890196078431373,
+      "minUs": 23.755882352941175,
+      "maxUs": 24.504411764705882,
+      "bytesPerOp": 88
+    },
+    {
+      "method": "ForEachIndexed",
+      "size": 10000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 34.70068965517242,
+      "minUs": 34.388275862068966,
+      "maxUs": 35.1848275862069,
+      "bytesPerOp": 120
+    },
+    {
+      "method": "ForEachIndexed",
+      "size": 10000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 34.71095890410959,
+      "minUs": 34.35068493150685,
+      "maxUs": 35.62328767123287,
+      "bytesPerOp": 120
+    },
+    {
+      "method": "Concat",
+      "size": 10000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 7.562694877505568,
+      "minUs": 7.444432071269488,
+      "maxUs": 8.730400890868596,
+      "bytesPerOp": 160048
+    },
+    {
+      "method": "Concat",
+      "size": 10000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 7.63982398239824,
+      "minUs": 7.398899889988999,
+      "maxUs": 8.041364136413641,
+      "bytesPerOp": 160048
+    },
+    {
+      "method": "Concat",
+      "size": 10000,
+      "shape": "array",
+      "variant": "native",
+      "medianUs": 3.6870933333333333,
+      "minUs": 3.6048,
+      "maxUs": 4.16608,
+      "bytesPerOp": 80136
+    },
+    {
+      "method": "Slice",
+      "size": 10000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 0.16961600000000002,
+      "minUs": 0.16694399999999998,
+      "maxUs": 0.17850666666666667,
+      "bytesPerOp": 312
+    },
+    {
+      "method": "Slice",
+      "size": 10000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 0.10096000000000001,
+      "minUs": 0.09233999999999999,
+      "maxUs": 0.102265,
+      "bytesPerOp": 200
+    },
+    {
+      "method": "Slice",
+      "size": 10000,
+      "shape": "array",
+      "variant": "native",
+      "medianUs": 0.08732000000000001,
+      "minUs": 0.07887999999999999,
+      "maxUs": 0.09502000000000001,
+      "bytesPerOp": 160
+    },
+    {
+      "method": "ToRecord",
+      "size": 10000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 209.89736842105265,
+      "minUs": 193.47894736842105,
+      "maxUs": 217.0421052631579,
+      "bytesPerOp": 673319.7894736842
+    },
+    {
+      "method": "ToRecord",
+      "size": 10000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 118.16129032258064,
+      "minUs": 100.59677419354838,
+      "maxUs": 129.1741935483871,
+      "bytesPerOp": 202248
+    },
+    {
+      "method": "ToRecord",
+      "size": 10000,
+      "shape": "array",
+      "variant": "native",
+      "medianUs": 102.92857142857143,
+      "minUs": 94.19999999999999,
+      "maxUs": 113.73506493506494,
+      "bytesPerOp": 202192
+    },
+    {
+      "method": "ToRecordIndexed",
+      "size": 10000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 191.83695652173913,
+      "minUs": 188.56304347826085,
+      "maxUs": 209.44782608695652,
+      "bytesPerOp": 673324.1739130435
+    },
+    {
+      "method": "ToRecordIndexed",
+      "size": 10000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 108.83999999999999,
+      "minUs": 84.86333333333333,
+      "maxUs": 127.92666666666668,
+      "bytesPerOp": 202224
+    },
+    {
+      "method": "ReduceIndexedTypedArray",
+      "size": 10000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 34.6486301369863,
+      "minUs": 34.37808219178082,
+      "maxUs": 35.154794520547945,
+      "bytesPerOp": 32
+    },
+    {
+      "method": "ReduceIndexedTypedArray",
+      "size": 10000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 13.040721649484537,
+      "minUs": 12.889690721649485,
+      "maxUs": 13.188144329896907,
+      "bytesPerOp": 0
+    },
+    {
+      "method": "ForEachIndexedTypedArray",
+      "size": 10000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 34.69657534246575,
+      "minUs": 34.60479452054795,
+      "maxUs": 35.61369863013699,
+      "bytesPerOp": 120
+    },
+    {
+      "method": "ForEachIndexedTypedArray",
+      "size": 10000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 23.51064814814815,
+      "minUs": 23.165277777777778,
+      "maxUs": 23.819444444444443,
+      "bytesPerOp": 88
+    },
+    {
+      "method": "FilterAsync",
+      "size": 10000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 81.02758620689656,
+      "minUs": 78.48103448275862,
+      "maxUs": 84.48275862068965,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterAsync",
+      "size": 10000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 30.020779220779218,
+      "minUs": 28.30064935064935,
+      "maxUs": 34.77467532467533,
+      "bytesPerOp": null
+    },
+    {
+      "method": "ConcatAsync",
+      "size": 10000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 12.3815,
+      "minUs": 10.917,
+      "maxUs": 14.2345,
+      "bytesPerOp": null
+    },
+    {
+      "method": "ConcatAsync",
+      "size": 10000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 13.4565,
+      "minUs": 10.565,
+      "maxUs": 14.229000000000001,
+      "bytesPerOp": null
+    },
+    {
+      "method": "ForEachAsync",
+      "size": 10000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 50.87604166666667,
+      "minUs": 49.40729166666667,
+      "maxUs": 57.56354166666667,
+      "bytesPerOp": null
+    },
+    {
+      "method": "ForEachAsync",
+      "size": 10000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 30.041772151898737,
+      "minUs": 29.25759493670886,
+      "maxUs": 35.618354430379746,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallel",
+      "size": 10000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 41.31333333333333,
+      "minUs": 39.254000000000005,
+      "maxUs": 47.358666666666664,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallel",
+      "size": 10000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 41.17596899224806,
+      "minUs": 39.798449612403104,
+      "maxUs": 47.06821705426357,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallelCpu",
+      "size": 10000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 401.85833333333335,
+      "minUs": 399.5416666666667,
+      "maxUs": 481.34999999999997,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallelCpu",
+      "size": 10000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 404.09999999999997,
+      "minUs": 399.35833333333335,
+      "maxUs": 471.09999999999997,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallelAsync",
+      "size": 10000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 53.160000000000004,
+      "minUs": 46.00952380952381,
+      "maxUs": 59.00190476190476,
+      "bytesPerOp": null
+    },
+    {
+      "method": "FilterParallelAsync",
+      "size": 10000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 53.66306306306306,
+      "minUs": 52.428828828828834,
+      "maxUs": 55.61351351351352,
+      "bytesPerOp": null
+    },
+    {
+      "method": "ForEachParallel",
+      "size": 10000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 528.675,
+      "minUs": 479.0375,
+      "maxUs": 540.4375,
+      "bytesPerOp": null
+    },
+    {
+      "method": "ForEachParallel",
+      "size": 10000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 543.4222222222222,
+      "minUs": 523.5111111111112,
+      "maxUs": 568.4333333333333,
+      "bytesPerOp": null
+    },
+    {
+      "method": "ToDictionaryParallel",
+      "size": 10000,
+      "shape": "array",
+      "variant": "previous",
+      "medianUs": 726.175,
+      "minUs": 362.725,
+      "maxUs": 1021.55,
+      "bytesPerOp": null
+    },
+    {
+      "method": "ToDictionaryParallel",
+      "size": 10000,
+      "shape": "array",
+      "variant": "candidate",
+      "medianUs": 401.65263157894736,
+      "minUs": 300.08947368421053,
+      "maxUs": 525.4,
+      "bytesPerOp": null
+    },
+    {
+      "method": "Filter",
+      "size": 10000,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 95.77884615384616,
+      "minUs": 94.4076923076923,
+      "maxUs": 100.81346153846154,
+      "bytesPerOp": 30384
+    },
+    {
+      "method": "Filter",
+      "size": 10000,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 20.675471698113206,
+      "minUs": 19.622264150943394,
+      "maxUs": 22.525283018867924,
+      "bytesPerOp": 30240
+    },
+    {
+      "method": "Filter",
+      "size": 10000,
+      "shape": "list",
+      "variant": "native",
+      "medianUs": 20.075,
+      "minUs": 19.652272727272727,
+      "maxUs": 21.28181818181818,
+      "bytesPerOp": 30240
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 10000,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 90.80181818181819,
+      "minUs": 88.22181818181818,
+      "maxUs": 97.2090909090909,
+      "bytesPerOp": 30296
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 10000,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 52.85544554455445,
+      "minUs": 49.84851485148515,
+      "maxUs": 54.439603960396035,
+      "bytesPerOp": 30312
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 10000,
+      "shape": "list",
+      "variant": "native",
+      "medianUs": 105.47916666666667,
+      "minUs": 103.7,
+      "maxUs": 112.16875,
+      "bytesPerOp": 30280
+    },
+    {
+      "method": "Map",
+      "size": 10000,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 155.78181818181818,
+      "minUs": 152.12727272727273,
+      "maxUs": 160.9848484848485,
+      "bytesPerOp": 106400
+    },
+    {
+      "method": "Map",
+      "size": 10000,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 15.136756756756757,
+      "minUs": 14.544324324324323,
+      "maxUs": 15.843243243243244,
+      "bytesPerOp": 40096
+    },
+    {
+      "method": "Map",
+      "size": 10000,
+      "shape": "list",
+      "variant": "native",
+      "medianUs": 15.611799410029498,
+      "minUs": 14.509439528023599,
+      "maxUs": 16.01386430678466,
+      "bytesPerOp": 40096
+    },
+    {
+      "method": "MapIndexed",
+      "size": 10000,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 149.8875,
+      "minUs": 145.165625,
+      "maxUs": 165.059375,
+      "bytesPerOp": 106312
+    },
+    {
+      "method": "MapIndexed",
+      "size": 10000,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 140.66190476190476,
+      "minUs": 137.43333333333334,
+      "maxUs": 151.45714285714286,
+      "bytesPerOp": 106296
+    },
+    {
+      "method": "MapIndexed",
+      "size": 10000,
+      "shape": "list",
+      "variant": "native",
+      "medianUs": 144.31176470588235,
+      "minUs": 138.6264705882353,
+      "maxUs": 149.56176470588235,
+      "bytesPerOp": 106296
+    },
+    {
+      "method": "Reduce",
+      "size": 10000,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 87.99122807017544,
+      "minUs": 87.35964912280701,
+      "maxUs": 89.64035087719299,
+      "bytesPerOp": 128
+    },
+    {
+      "method": "Reduce",
+      "size": 10000,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 78.40166666666667,
+      "minUs": 77.95833333333333,
+      "maxUs": 79.67666666666668,
+      "bytesPerOp": 40
+    },
+    {
+      "method": "Reduce",
+      "size": 10000,
+      "shape": "list",
+      "variant": "native",
+      "medianUs": 78.55625,
+      "minUs": 77.9359375,
+      "maxUs": 79.4375,
+      "bytesPerOp": 40
+    },
+    {
+      "method": "ReduceIndexed",
+      "size": 10000,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 82.0327868852459,
+      "minUs": 80.91147540983607,
+      "maxUs": 82.83934426229509,
+      "bytesPerOp": 40
+    },
+    {
+      "method": "ReduceIndexed",
+      "size": 10000,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 82.1467741935484,
+      "minUs": 81.36774193548388,
+      "maxUs": 83.12258064516129,
+      "bytesPerOp": 40
+    },
+    {
+      "method": "ForEach",
+      "size": 10000,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 88.20350877192983,
+      "minUs": 87.41929824561403,
+      "maxUs": 90.19999999999999,
+      "bytesPerOp": 216
+    },
+    {
+      "method": "ForEach",
+      "size": 10000,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 23.66495327102804,
+      "minUs": 23.31121495327103,
+      "maxUs": 24.129439252336446,
+      "bytesPerOp": 88
+    },
+    {
+      "method": "ForEachIndexed",
+      "size": 10000,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 81.58196721311475,
+      "minUs": 80.75409836065573,
+      "maxUs": 83.98524590163935,
+      "bytesPerOp": 128
+    },
+    {
+      "method": "ForEachIndexed",
+      "size": 10000,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 81.69672131147541,
+      "minUs": 81.23770491803279,
+      "maxUs": 83.02295081967212,
+      "bytesPerOp": 128
+    },
+    {
+      "method": "Concat",
+      "size": 10000,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 9.117777777777778,
+      "minUs": 7.731111111111111,
+      "maxUs": 12.88,
+      "bytesPerOp": 160080
+    },
+    {
+      "method": "Concat",
+      "size": 10000,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 8.405594405594405,
+      "minUs": 8.144289044289044,
+      "maxUs": 8.603263403263403,
+      "bytesPerOp": 160080
+    },
+    {
+      "method": "Concat",
+      "size": 10000,
+      "shape": "list",
+      "variant": "native",
+      "medianUs": 4.007604562737643,
+      "minUs": 3.464828897338403,
+      "maxUs": 4.2138783269961975,
+      "bytesPerOp": 80136
+    },
+    {
+      "method": "Slice",
+      "size": 10000,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 0.26150246009840394,
+      "minUs": 0.24554782191287652,
+      "maxUs": 0.2690147605904236,
+      "bytesPerOp": 312
+    },
+    {
+      "method": "Slice",
+      "size": 10000,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 0.07845,
+      "minUs": 0.06741,
+      "maxUs": 0.08288,
+      "bytesPerOp": 200
+    },
+    {
+      "method": "Slice",
+      "size": 10000,
+      "shape": "list",
+      "variant": "native",
+      "medianUs": 0.06816,
+      "minUs": 0.06035,
+      "maxUs": 0.07136,
+      "bytesPerOp": 160
+    },
+    {
+      "method": "ToRecord",
+      "size": 10000,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 244.48620689655175,
+      "minUs": 230.59310344827585,
+      "maxUs": 275.0689655172414,
+      "bytesPerOp": 673195.0344827586
+    },
+    {
+      "method": "ToRecord",
+      "size": 10000,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 173.11304347826086,
+      "minUs": 157.38695652173914,
+      "maxUs": 188.65652173913045,
+      "bytesPerOp": 202256
+    },
+    {
+      "method": "ToRecord",
+      "size": 10000,
+      "shape": "list",
+      "variant": "native",
+      "medianUs": 107.07384615384616,
+      "minUs": 91.68153846153847,
+      "maxUs": 120.96,
+      "bytesPerOp": 202192
+    },
+    {
+      "method": "ToRecordIndexed",
+      "size": 10000,
+      "shape": "list",
+      "variant": "previous",
+      "medianUs": 250.6578947368421,
+      "minUs": 237.1578947368421,
+      "maxUs": 265.36842105263156,
+      "bytesPerOp": 673379.7894736842
+    },
+    {
+      "method": "ToRecordIndexed",
+      "size": 10000,
+      "shape": "list",
+      "variant": "candidate",
+      "medianUs": 152.00465116279068,
+      "minUs": 137.02558139534884,
+      "maxUs": 184.62558139534883,
+      "bytesPerOp": 202232
+    },
+    {
+      "method": "Filter",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 83.05000000000001,
+      "minUs": 82.02258064516128,
+      "maxUs": 89.87741935483871,
+      "bytesPerOp": 30400
+    },
+    {
+      "method": "Filter",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 54.65531914893617,
+      "minUs": 53.28297872340426,
+      "maxUs": 59.515957446808514,
+      "bytesPerOp": 30280
+    },
+    {
+      "method": "Filter",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "native",
+      "medianUs": 56.06041666666667,
+      "minUs": 52.723958333333336,
+      "maxUs": 58.77708333333334,
+      "bytesPerOp": 30280
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 75.81587301587301,
+      "minUs": 74.55238095238096,
+      "maxUs": 81.95238095238095,
+      "bytesPerOp": 30312
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 60.006410256410255,
+      "minUs": 58.51282051282051,
+      "maxUs": 63.869230769230775,
+      "bytesPerOp": 30368
+    },
+    {
+      "method": "FilterIndexed",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "native",
+      "medianUs": 91.23148148148148,
+      "minUs": 89.98703703703704,
+      "maxUs": 96.02037037037037,
+      "bytesPerOp": 30296
+    },
+    {
+      "method": "Map",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 146.97058823529412,
+      "minUs": 141.01176470588234,
+      "maxUs": 152.5205882352941,
+      "bytesPerOp": 106416
+    },
+    {
+      "method": "Map",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 55.94838709677419,
+      "minUs": 54.12043010752688,
+      "maxUs": 62.04408602150538,
+      "bytesPerOp": 106296
+    },
+    {
+      "method": "Map",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "native",
+      "medianUs": 55.618947368421054,
+      "minUs": 53.68315789473684,
+      "maxUs": 56.97157894736842,
+      "bytesPerOp": 106296
+    },
+    {
+      "method": "MapIndexed",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 140.61621621621623,
+      "minUs": 135.86486486486487,
+      "maxUs": 150.25675675675674,
+      "bytesPerOp": 106328
+    },
+    {
+      "method": "MapIndexed",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 135.65,
+      "minUs": 132.93684210526317,
+      "maxUs": 139.64736842105265,
+      "bytesPerOp": 106312
+    },
+    {
+      "method": "MapIndexed",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "native",
+      "medianUs": 135.5257142857143,
+      "minUs": 129.3057142857143,
+      "maxUs": 148.70285714285714,
+      "bytesPerOp": 106312
+    },
+    {
+      "method": "Reduce",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 72.93088235294118,
+      "minUs": 72.66617647058824,
+      "maxUs": 75.20882352941176,
+      "bytesPerOp": 144
+    },
+    {
+      "method": "Reduce",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 63.15875,
+      "minUs": 62.3525,
+      "maxUs": 64.12875,
+      "bytesPerOp": 56
+    },
+    {
+      "method": "Reduce",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "native",
+      "medianUs": 63.6675,
+      "minUs": 62.79375,
+      "maxUs": 64.13125,
+      "bytesPerOp": 56
+    },
+    {
+      "method": "ReduceIndexed",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 65.85263157894737,
+      "minUs": 65.43157894736842,
+      "maxUs": 67.50657894736842,
+      "bytesPerOp": 56
+    },
+    {
+      "method": "ReduceIndexed",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 66.05263157894737,
+      "minUs": 65.68026315789473,
+      "maxUs": 68.04605263157895,
+      "bytesPerOp": 56
+    },
+    {
+      "method": "ForEach",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 84.74237288135593,
+      "minUs": 84.38135593220339,
+      "maxUs": 86.54067796610168,
+      "bytesPerOp": 232
+    },
+    {
+      "method": "ForEach",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 40.673228346456696,
+      "minUs": 40.311023622047244,
+      "maxUs": 41.161417322834644,
+      "bytesPerOp": 144
+    },
+    {
+      "method": "ForEachIndexed",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 66.03157894736842,
+      "minUs": 65.3578947368421,
+      "maxUs": 67.66842105263159,
+      "bytesPerOp": 144
+    },
+    {
+      "method": "ForEachIndexed",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 66.576,
+      "minUs": 65.276,
+      "maxUs": 68.92,
+      "bytesPerOp": 144
+    },
+    {
+      "method": "Concat",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 174.4851851851852,
+      "minUs": 171.13333333333335,
+      "maxUs": 192.07777777777778,
+      "bytesPerOp": 211920
+    },
+    {
+      "method": "Concat",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 64.6075,
+      "minUs": 61.98125,
+      "maxUs": 70.70625,
+      "bytesPerOp": 146352
+    },
+    {
+      "method": "Concat",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "native",
+      "medianUs": 62.99878048780487,
+      "minUs": 60.4390243902439,
+      "maxUs": 65.5219512195122,
+      "bytesPerOp": 146352
+    },
+    {
+      "method": "Slice",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 131.87297297297297,
+      "minUs": 129.69459459459458,
+      "maxUs": 136.65405405405406,
+      "bytesPerOp": 928
+    },
+    {
+      "method": "Slice",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 10.638362068965517,
+      "minUs": 10.47198275862069,
+      "maxUs": 11.392241379310345,
+      "bytesPerOp": 424
+    },
+    {
+      "method": "Slice",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "native",
+      "medianUs": 10.629653679653678,
+      "minUs": 10.535064935064934,
+      "maxUs": 11.019696969696971,
+      "bytesPerOp": 384
+    },
+    {
+      "method": "ToRecord",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 233.8764705882353,
+      "minUs": 187.73529411764707,
+      "maxUs": 261.15882352941173,
+      "bytesPerOp": 673213.1764705882
+    },
+    {
+      "method": "ToRecord",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 255.0909090909091,
+      "minUs": 169.1818181818182,
+      "maxUs": 298.54545454545456,
+      "bytesPerOp": 673213.8181818182
+    },
+    {
+      "method": "ToRecord",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "native",
+      "medianUs": 203.65263157894736,
+      "minUs": 184.92894736842106,
+      "maxUs": 221.80789473684212,
+      "bytesPerOp": 673394.947368421
+    },
+    {
+      "method": "ToRecordIndexed",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "previous",
+      "medianUs": 228.659375,
+      "minUs": 204.271875,
+      "maxUs": 272.5625,
+      "bytesPerOp": 673283.25
+    },
+    {
+      "method": "ToRecordIndexed",
+      "size": 10000,
+      "shape": "iterator",
+      "variant": "candidate",
+      "medianUs": 224.455,
+      "minUs": 185.675,
+      "maxUs": 256.8,
+      "bytesPerOp": 673381.2
+    },
+    {
+      "method": "SortCollection",
+      "size": 32,
+      "shape": "sorted",
+      "variant": "previous",
+      "medianUs": 1.3155822854018588,
+      "minUs": 1.2907599781301258,
+      "maxUs": 1.3335702569710224,
+      "bytesPerOp": 152
+    },
+    {
+      "method": "SortCollection",
+      "size": 32,
+      "shape": "sorted",
+      "variant": "candidate",
+      "medianUs": 0.21985,
+      "minUs": 0.210275,
+      "maxUs": 0.252655,
+      "bytesPerOp": 304
+    },
+    {
+      "method": "SortCollectionParallel",
+      "size": 32,
+      "shape": "sorted",
+      "variant": "previous",
+      "medianUs": 1.806,
+      "minUs": 1.7945,
+      "maxUs": 4.3505,
+      "bytesPerOp": null
+    },
+    {
+      "method": "SortCollectionParallel",
+      "size": 32,
+      "shape": "sorted",
+      "variant": "candidate",
+      "medianUs": 0.2275,
+      "minUs": 0.22,
+      "maxUs": 0.2325,
+      "bytesPerOp": null
+    },
+    {
+      "method": "SortCollection",
+      "size": 32,
+      "shape": "shuffled",
+      "variant": "previous",
+      "medianUs": 0.5323812762099059,
+      "minUs": 0.5183951037062224,
+      "maxUs": 0.5477842003853565,
+      "bytesPerOp": 152
+    },
+    {
+      "method": "SortCollection",
+      "size": 32,
+      "shape": "shuffled",
+      "variant": "candidate",
+      "medianUs": 0.3125165006600264,
+      "minUs": 0.2944857794311772,
+      "maxUs": 0.3174846993879755,
+      "bytesPerOp": 304
+    },
+    {
+      "method": "SortCollectionParallel",
+      "size": 32,
+      "shape": "shuffled",
+      "variant": "previous",
+      "medianUs": 2.3955,
+      "minUs": 1.3625,
+      "maxUs": 2.6525,
+      "bytesPerOp": null
+    },
+    {
+      "method": "SortCollectionParallel",
+      "size": 32,
+      "shape": "shuffled",
+      "variant": "candidate",
+      "medianUs": 0.327,
+      "minUs": 0.324,
+      "maxUs": 0.33899999999999997,
+      "bytesPerOp": null
+    },
+    {
+      "method": "SortCollection",
+      "size": 32,
+      "shape": "duplicates",
+      "variant": "previous",
+      "medianUs": 0.5360194945030036,
+      "minUs": 0.5273489742717896,
+      "maxUs": 0.570202878839397,
+      "bytesPerOp": 152
+    },
+    {
+      "method": "SortCollection",
+      "size": 32,
+      "shape": "duplicates",
+      "variant": "candidate",
+      "medianUs": 0.3203168126725069,
+      "minUs": 0.3057482299291972,
+      "maxUs": 0.3297971918876755,
+      "bytesPerOp": 304
+    },
+    {
+      "method": "SortCollectionParallel",
+      "size": 32,
+      "shape": "duplicates",
+      "variant": "previous",
+      "medianUs": 1.585,
+      "minUs": 0.9575,
+      "maxUs": 3.1905,
+      "bytesPerOp": null
+    },
+    {
+      "method": "SortCollectionParallel",
+      "size": 32,
+      "shape": "duplicates",
+      "variant": "candidate",
+      "medianUs": 0.3325,
+      "minUs": 0.3265,
+      "maxUs": 0.33799999999999997,
+      "bytesPerOp": null
+    },
+    {
+      "method": "SortCollection",
+      "size": 1000,
+      "shape": "sorted",
+      "variant": "previous",
+      "medianUs": 958.64,
+      "minUs": 948,
+      "maxUs": 976.32,
+      "bytesPerOp": 4024
+    },
+    {
+      "method": "SortCollection",
+      "size": 1000,
+      "shape": "sorted",
+      "variant": "candidate",
+      "medianUs": 5.771541950113379,
+      "minUs": 5.732199546485261,
+      "maxUs": 6.020408163265306,
+      "bytesPerOp": 8048
+    },
+    {
+      "method": "SortCollectionParallel",
+      "size": 1000,
+      "shape": "sorted",
+      "variant": "previous",
+      "medianUs": 972.5,
+      "minUs": 964.86,
+      "maxUs": 981.6600000000001,
+      "bytesPerOp": null
+    },
+    {
+      "method": "SortCollectionParallel",
+      "size": 1000,
+      "shape": "sorted",
+      "variant": "candidate",
+      "medianUs": 5.6425,
+      "minUs": 5.5565,
+      "maxUs": 6.9525,
+      "bytesPerOp": null
+    },
+    {
+      "method": "SortCollection",
+      "size": 1000,
+      "shape": "shuffled",
+      "variant": "previous",
+      "medianUs": 39.939316239316234,
+      "minUs": 39.005982905982904,
+      "maxUs": 42.457264957264954,
+      "bytesPerOp": 4024
+    },
+    {
+      "method": "SortCollection",
+      "size": 1000,
+      "shape": "shuffled",
+      "variant": "candidate",
+      "medianUs": 10.151666666666666,
+      "minUs": 9.48952380952381,
+      "maxUs": 14.622619047619047,
+      "bytesPerOp": 8048
+    },
+    {
+      "method": "SortCollectionParallel",
+      "size": 1000,
+      "shape": "shuffled",
+      "variant": "previous",
+      "medianUs": 33.46013513513514,
+      "minUs": 32.9081081081081,
+      "maxUs": 40.48108108108108,
+      "bytesPerOp": null
+    },
+    {
+      "method": "SortCollectionParallel",
+      "size": 1000,
+      "shape": "shuffled",
+      "variant": "candidate",
+      "medianUs": 10.515337423312884,
+      "minUs": 9.539263803680981,
+      "maxUs": 11.991411042944785,
+      "bytesPerOp": null
+    },
+    {
+      "method": "SortCollection",
+      "size": 1000,
+      "shape": "duplicates",
+      "variant": "previous",
+      "medianUs": 132.02162162162162,
+      "minUs": 131.32972972972973,
+      "maxUs": 133.5891891891892,
+      "bytesPerOp": 4024
+    },
+    {
+      "method": "SortCollection",
+      "size": 1000,
+      "shape": "duplicates",
+      "variant": "candidate",
+      "medianUs": 7.603314121037464,
+      "minUs": 7.382420749279539,
+      "maxUs": 7.899135446685879,
+      "bytesPerOp": 8048
+    },
+    {
+      "method": "SortCollectionParallel",
+      "size": 1000,
+      "shape": "duplicates",
+      "variant": "previous",
+      "medianUs": 123.1825,
+      "minUs": 116.5175,
+      "maxUs": 128.135,
+      "bytesPerOp": null
+    },
+    {
+      "method": "SortCollectionParallel",
+      "size": 1000,
+      "shape": "duplicates",
+      "variant": "candidate",
+      "medianUs": 7.32,
+      "minUs": 7.2275,
+      "maxUs": 9.5525,
+      "bytesPerOp": null
+    },
+    {
+      "method": "SortCollection",
+      "size": 5000,
+      "shape": "sorted",
+      "variant": "previous",
+      "medianUs": 23885.7,
+      "minUs": 23683.1,
+      "maxUs": 24667.2,
+      "bytesPerOp": 20024
+    },
+    {
+      "method": "SortCollection",
+      "size": 5000,
+      "shape": "sorted",
+      "variant": "candidate",
+      "medianUs": 37.06859504132232,
+      "minUs": 34.71900826446281,
+      "maxUs": 39.509090909090915,
+      "bytesPerOp": 40048
+    },
+    {
+      "method": "SortCollectionParallel",
+      "size": 5000,
+      "shape": "sorted",
+      "variant": "previous",
+      "medianUs": 24197.5,
+      "minUs": 23979.6,
+      "maxUs": 24487.2,
+      "bytesPerOp": null
+    },
+    {
+      "method": "SortCollectionParallel",
+      "size": 5000,
+      "shape": "sorted",
+      "variant": "candidate",
+      "medianUs": 41.608333333333334,
+      "minUs": 39.326190476190476,
+      "maxUs": 43.84285714285714,
+      "bytesPerOp": null
+    },
+    {
+      "method": "SortCollection",
+      "size": 5000,
+      "shape": "shuffled",
+      "variant": "previous",
+      "medianUs": 310.7125,
+      "minUs": 297.40625,
+      "maxUs": 313.25,
+      "bytesPerOp": 20024
+    },
+    {
+      "method": "SortCollection",
+      "size": 5000,
+      "shape": "shuffled",
+      "variant": "candidate",
+      "medianUs": 183.45555555555555,
+      "minUs": 172.4814814814815,
+      "maxUs": 199.24814814814815,
+      "bytesPerOp": 40048
+    },
+    {
+      "method": "SortCollectionParallel",
+      "size": 5000,
+      "shape": "shuffled",
+      "variant": "previous",
+      "medianUs": 270.6111111111111,
+      "minUs": 258.3888888888889,
+      "maxUs": 283.93333333333334,
+      "bytesPerOp": null
+    },
+    {
+      "method": "SortCollectionParallel",
+      "size": 5000,
+      "shape": "shuffled",
+      "variant": "candidate",
+      "medianUs": 133.73529411764707,
+      "minUs": 126.07647058823531,
+      "maxUs": 149.47352941176473,
+      "bytesPerOp": null
+    },
+    {
+      "method": "SortCollection",
+      "size": 5000,
+      "shape": "duplicates",
+      "variant": "previous",
+      "medianUs": 3107,
+      "minUs": 3063.2,
+      "maxUs": 3177.8,
+      "bytesPerOp": 20024
+    },
+    {
+      "method": "SortCollection",
+      "size": 5000,
+      "shape": "duplicates",
+      "variant": "candidate",
+      "medianUs": 55.731428571428566,
+      "minUs": 45.18857142857143,
+      "maxUs": 59.51,
+      "bytesPerOp": 40048
+    },
+    {
+      "method": "SortCollectionParallel",
+      "size": 5000,
+      "shape": "duplicates",
+      "variant": "previous",
+      "medianUs": 2777,
+      "minUs": 2672,
+      "maxUs": 2904.7,
+      "bytesPerOp": null
+    },
+    {
+      "method": "SortCollectionParallel",
+      "size": 5000,
+      "shape": "duplicates",
+      "variant": "candidate",
+      "medianUs": 55.13709677419355,
+      "minUs": 45.630645161290325,
+      "maxUs": 64.28225806451613,
+      "bytesPerOp": null
+    }
+  ]
+}

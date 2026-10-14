@@ -10,6 +10,12 @@ Bring the simplicity of `Filter`, `Map`, and `Reduce` to .NET 8 and later. Turn 
 
 **[Explore the website](https://johnny-quesada-developer.github.io/collection-iterable-methods/)** · [Install from NuGet](https://www.nuget.org/packages/collection-iterable-methods) · [API guide](https://github.com/johnny-quesada-developer/collection-iterable-methods/blob/main/docs/API.md) · [About the developer](https://johnny-quesada-developer.github.io/react-global-state-hooks/about/)
 
+## Explore the existing guides
+
+- [Collection API guide](docs/API.md) — synchronous methods, async pipelines, and concurrency.
+- [LINQ integration and runnable examples](https://johnny-quesada-developer.github.io/collection-iterable-methods/#examples).
+- [Recorded benchmarks and methodology](Performance/README.md) — compare the tested operations, inputs, and allocations.
+
 ## Why use it?
 
 - **Express the transformation.** Filter, map, slice, sort, and reduce with familiar names and concise, chainable code.
